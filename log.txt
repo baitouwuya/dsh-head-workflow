@@ -1,0 +1,15 @@
+SPDX-License-Identifier: GPL-3.0-or-later
+SPDX-FileCopyrightText: 2026 Head Workflow contributors
+
+2026-10-24 Packaged the seven construction scripts behind head_tool.py.
+Added fresh scene setup, explicit fitted profile, component and aperture discovery,
+the two final lid corrections, anatomy checks and input/output hash accounting.
+Preserved compatible upstream Three.js notices. Final package license is GPL-3.0-or-later.
+Validated 17 Python source files; 6 Python and 4 Node tests passed.
+Validated the delivered external GLB, including sparse morphs.
+Portable WebGL2 harness passed 37 views with exact neutral reset and stationary
+eyeballs during blinks. STOP was exercised on a separate run with no completed output.
+No model or texture assets, credentials, or machine-specific paths are included.
+Full consolidated Blender execution remains unverified because the host connector
+token was expired. Publication and the Tripo Lab rebuild have not occurred.
+No credits were spent. See VERIFICATION.md for the exact evidence boundaries.

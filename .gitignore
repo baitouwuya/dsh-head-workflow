@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: 2026 Head Workflow contributors
+__pycache__/
+*.py[cod]
+.DS_Store
+build/
+review-result/
+private-inputs/
+*.blend
+*.blend1
+*.glb
+*.vrm
+*.fbx
+*.png
+*.jpg
+*.jpeg
+node_modules/

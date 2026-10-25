@@ -1,0 +1,18 @@
+<!--
+SPDX-License-Identifier: GPL-3.0-or-later
+SPDX-FileCopyrightText: 2026 Head Workflow contributors
+-->
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Head workflow verification and expression sheet</title>
+<style>body{background:#15202d;color:#edf5fc;font:16px system-ui;margin:24px}canvas{max-width:100%;height:auto}a{color:#8fd7ff}button{font:inherit;padding:8px 18px}</style>
+<h1>Head expression overview</h1>
+<p>Copyright 2026 Head Workflow contributors. GPL-3.0-or-later; no warranty. <a href="/license">License</a> · <a href="/source">Corresponding source</a></p>
+<p id="status">Preparing the local renderer…</p>
+<button id="stop">STOP</button>
+<p><a href="/expression-overview.png" download>Full-resolution image</a> · <a href="/render-report.json">Verification and exact control values</a></p>
+<canvas id="sheet"></canvas>
+<script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script>
+<script type="module" src="/overview.js"></script>
+</html>
