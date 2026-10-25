@@ -17,13 +17,14 @@ for (const full of walk(root)) {
   if (excluded.has(relative)) continue;
   if (relative.includes('__pycache__') || /\.(glb|blend|vrm|fbx|png|jpg|pyc|zip)$/i.test(relative)) throw Error('Unexpected asset/cache: ' + relative);
   const data = fs.readFileSync(full), text = data.toString('utf8');
+  if (text.includes('\r\n')) throw Error('Normalize text to LF before sealing: ' + relative);
   if (!text.slice(0, 800).includes('SPDX-License-Identifier')) throw Error('Missing SPDX header: ' + relative);
   if (/[A-Za-z]:[\\/](?:Users|ProgramData|Staging|tripo-studio|hostshare)/i.test(text) || /\\\\(?:vboxsvr|VBoxSvr)\\/.test(text)) throw Error('Machine-specific path in ' + relative);
   if (/\b(?:Bearer|Cookie:)\s+[a-zA-Z0-9_.=-]{20,}/.test(text) || /\bgh[pousr]_[A-Za-z0-9]{20,}/.test(text)) throw Error('Potential credential in ' + relative);
   files.push({path: relative, bytes: data.length, sha256: crypto.createHash('sha256').update(data).digest('hex')});
 }
 files.sort((a, b) => a.path.localeCompare(b.path));
-const manifest = {'SPDX-License-Identifier': 'GPL-3.0-or-later', 'SPDX-FileCopyrightText': '2026 Head Workflow contributors', name: 'head-workflow', version: '0.1.0', license: 'GPL-3.0-or-later', status: 'source package; clean Blender rebuild pending', files};
+const manifest = {'SPDX-License-Identifier': 'GPL-3.0-or-later', 'SPDX-FileCopyrightText': '2026 Head Workflow contributors', name: 'head-workflow', version: '0.1.1', license: 'GPL-3.0-or-later', status: 'Blender5.2 clean rebuild verified; Blender4.2 Lab reproduction recorded in VERIFICATION.md', files};
 fs.writeFileSync(path.join(root, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 const hash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'manifest.json'))).digest('hex');
 const header = '# SPDX-License-Identifier: GPL-3.0-or-later\n# SPDX-FileCopyrightText: 2026 Head Workflow contributors\n';

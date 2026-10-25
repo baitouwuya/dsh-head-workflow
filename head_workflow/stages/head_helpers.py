@@ -178,7 +178,10 @@ def run(h):
     h.rebuild_apertures=rebuild_apertures
     
     def setup_render(scene):
-        scene.render.engine='BLENDER_EEVEE';scene.render.resolution_x=640;scene.render.resolution_y=640;scene.render.resolution_percentage=100;scene.render.image_settings.file_format='PNG'
+        try:scene.render.engine='BLENDER_EEVEE'
+        except TypeError:scene.render.engine='BLENDER_EEVEE_NEXT'
+        h.render_engine=scene.render.engine
+        scene.render.resolution_x=640;scene.render.resolution_y=640;scene.render.resolution_percentage=100;scene.render.image_settings.file_format='PNG'
         world=bpy.data.worlds.new('dsh-head-review-world');world.use_nodes=True;bg=next(n for n in world.node_tree.nodes if n.type=='BACKGROUND');bg.inputs[0].default_value=(.25,.25,.25,1);bg.inputs[1].default_value=.8;scene.world=world
         scene.view_settings.view_transform='Standard'
         cd=bpy.data.cameras.new('dsh-head-review-camera');cam=bpy.data.objects.new(cd.name,cd);scene.collection.objects.link(cam);cam.data.type='ORTHO';cam.data.ortho_scale=h.config['render']['ortho_scale'];scene.camera=cam
@@ -190,7 +193,7 @@ def run(h):
     if not hasattr(h,'camera'):h.camera,h.lights,h.target,h.views=setup_render(h.scene)
     for obj in [h.camera]+h.lights:
         if obj.name not in h.source_scene.objects:h.source_scene.collection.objects.link(obj)
-    h.source_scene.camera=h.camera;h.source_scene.world=h.scene.world;h.source_scene.render.engine='BLENDER_EEVEE';h.source_scene.render.resolution_x=640;h.source_scene.render.resolution_y=640;h.source_scene.render.resolution_percentage=100;h.source_scene.render.image_settings.file_format='PNG';h.source_scene.view_settings.view_transform='Standard'
+    h.source_scene.camera=h.camera;h.source_scene.world=h.scene.world;h.source_scene.render.engine=h.render_engine;h.source_scene.render.resolution_x=640;h.source_scene.render.resolution_y=640;h.source_scene.render.resolution_percentage=100;h.source_scene.render.image_settings.file_format='PNG';h.source_scene.view_settings.view_transform='Standard'
     
     def render(label,scene=None,views=None):
         if not h.render_enabled:return

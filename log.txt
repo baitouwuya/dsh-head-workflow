@@ -13,3 +13,10 @@ No model or texture assets, credentials, or machine-specific paths are included.
 Full consolidated Blender execution remains unverified because the host connector
 token was expired. Publication and the Tripo Lab rebuild have not occurred.
 No credits were spent. See VERIFICATION.md for the exact evidence boundaries.
+
+2026-10-24 Verified public base in fresh Blender 5.2; documented Blender 4.2 engine-name failure.
+Applied renderer-only compatibility correction and verified Blender 5.2 again.
+Native Lab Blender 4.2 then rebuilt, exported and checked the head successfully.
+Actual Lab head passed37 independent WebGL2 views, exact reset and stationary-eye tests.
+Visible mouth/lid limitations retained. Two Lab attempts:277774->277774 each.
+Version 0.1.1 normalized text toLF and added.gitattributes; no GitHub push performed.

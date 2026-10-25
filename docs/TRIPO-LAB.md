@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2026 Head Workflow contributors
 -->
 # Using the public repository in a Tripo Lab node
 
-This phase is pending publication by the operator. No repository URL, commit, Lab download route or Lab runtime capability is assumed here.
+The public base https://github.com/baitouwuya/dsh-head-workflow at commit fd7b5d504ddd241f5d6980377a1a43df0c384f83 was fetched and executed in native Tripo Lab. The unchanged source failed on the Blender4.2 engine identifier. Applying docs/blender-4-5-compat.patch allowed the full build, exported-file checks and native pose review to complete. The returned GLB then passed the independent local browser harness. This updated source folder has not itself been pushed to GitHub.
 
 After the operator supplies the public URL:
 
@@ -19,4 +19,4 @@ After the operator supplies the public URL:
 
 > Use the public repository REPOSITORY_URL at commit COMMIT_SHA. Inspect its README and VERIFICATION.md first. Rebuild the supplied original character with head_tool.py using the fitted original-character profile. Preserve the source asset and every existing canvas record. Work only in the authorized new output scope. Use the attached input asset's actual local artifact path. Run Blender in a fresh process, then the included structural and anatomy checks. Return the generated head and integrated GLBs, control manifest, build manifest, all check results and logs. Stop on an input-hash mismatch or failed geometry check. Do not invent repository access, tool results or output associations; report any missing capability. Do not publish the resulting assets.
 
-The workflow is procedural; a public repository URL alone does not prove that Tripo Lab can execute it. The first canvas run must establish that capability from observed results. No canvas action has been performed by packaging this folder.
+The workflow is procedural; a public repository URL alone does not prove that Tripo Lab can execute it. The first canvas run must establish that capability from observed results. The completed reproduction used the existing authorized dsh head Lab node and retained prior outputs. See VERIFICATION.md for accounting and preservation.

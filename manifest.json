@@ -2,19 +2,34 @@
   "SPDX-License-Identifier": "GPL-3.0-or-later",
   "SPDX-FileCopyrightText": "2026 Head Workflow contributors",
   "name": "head-workflow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "GPL-3.0-or-later",
-  "status": "source package; clean Blender rebuild pending",
+  "status": "Blender5.2 clean rebuild verified; Blender4.2 Lab reproduction recorded in VERIFICATION.md",
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 121,
+      "sha256": "9e8186d71d58df9aeeece59d7afd7758687b08d71711fb5006cce553e4a928b0"
+    },
     {
       "path": ".gitignore",
       "bytes": 241,
       "sha256": "78098c6588973d3b0e1d75579c121b537bce898b6fed11344d828c1330f56ddd"
     },
     {
+      "path": "CHANGELOG.md",
+      "bytes": 635,
+      "sha256": "a11b055bc0dd3eae2604de4a74900a95e1e2589ab1255ac148065feb44e2ae8c"
+    },
+    {
+      "path": "docs/blender-4-5-compat.patch",
+      "bytes": 2491,
+      "sha256": "adad7e9d070aedd03f080b71da5bc0f3c8eca008b807a99fd7adec6b3d8e968a"
+    },
+    {
       "path": "docs/TRIPO-LAB.md",
-      "bytes": 2703,
-      "sha256": "e1dbae1c69eda3bc204ae16655536d255b423f00a7b24b89549ffb0748a27554"
+      "bytes": 3135,
+      "sha256": "36040439d51e2006d1c096630bd6caab58e17b0ec33bedfa398973e8a0186648"
     },
     {
       "path": "head_tool.py",
@@ -24,7 +39,7 @@
     {
       "path": "head_workflow/__init__.py",
       "bytes": 178,
-      "sha256": "e25e8618c8026d7c3bf190f3c8786200f2581c938f79703d1ac3bfedc35b0fff"
+      "sha256": "fe1055897bc007976cc526a1c7c422a877c2ca9c5f373346d398d403e18da71f"
     },
     {
       "path": "head_workflow/config.py",
@@ -73,8 +88,8 @@
     },
     {
       "path": "head_workflow/stages/expressions_and_export.py",
-      "bytes": 4754,
-      "sha256": "370c97699176520c6f99ea0739e2da5dd8a02b5c0ac659b5df93fd03641ec4d4"
+      "bytes": 4753,
+      "sha256": "b646b37357d08199acffa4c88e946bd83993a57dbe40e12a880436e0c26e25d8"
     },
     {
       "path": "head_workflow/stages/fit_lids_and_blink.py",
@@ -83,8 +98,8 @@
     },
     {
       "path": "head_workflow/stages/head_helpers.py",
-      "bytes": 13479,
-      "sha256": "63f2ad510c47670e1761e12a124e0276d002f1f950087146888c6232cc964276"
+      "bytes": 13601,
+      "sha256": "c89beb05b164df9b3cbe7307c37dfc0cbde9a0b264a74a6eaedbd97f89327f45"
     },
     {
       "path": "head_workflow/stages/head_subset_and_export.py",
@@ -98,13 +113,13 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 34773,
-      "sha256": "e50f27a836046cfd7b625394a42cc3d7dbb49adb91c6beaf0ead0f8e850a8cfc"
+      "bytes": 34874,
+      "sha256": "11ff89a1bcd5eace15bebdda3151114acded0691ffa4d15da2eec32620b8325e"
     },
     {
       "path": "log.txt",
-      "bytes": 1041,
-      "sha256": "25b9fff53a5b26eb3557f878b7606b624cca27a4c24989147b72e65c0e272573"
+      "bytes": 1553,
+      "sha256": "11338bdbba2369116113c97475866a6ed9ece3ee605a36340ae2001ba1f04c51"
     },
     {
       "path": "profiles/original-character.json",
@@ -113,8 +128,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7293,
-      "sha256": "2738104812d2e9b9aeeca3c51db180ef7a37dc175ff38c51eb5364df8a504eed"
+      "bytes": 7165,
+      "sha256": "e0a266cfd7ee5bd2494bfdd618875dce3536c2c76c0554ff7f524d9f4015dfec"
     },
     {
       "path": "tests/test_config.py",
@@ -133,8 +148,8 @@
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 2759,
-      "sha256": "7645628d5c2229df1d0555fcc138c282532df8941c1747cb10aee6f63da36911"
+      "bytes": 2898,
+      "sha256": "558f9ef6abd57df7f41e5bf11e7ce9252f8f682ba3cdc45bee2b07c7c9fc572d"
     },
     {
       "path": "tools/review-server.cjs",
@@ -148,8 +163,8 @@
     },
     {
       "path": "VERIFICATION.md",
-      "bytes": 2613,
-      "sha256": "44393f9e41732222fc516eac86bc42cd4db7470dcb5b6f88a68805374637fbd6"
+      "bytes": 4651,
+      "sha256": "74a5551ba0ed94eec1bbfa7b213fa1370b5653269cd1caa982b9627dec1922fb"
     },
     {
       "path": "web/head-controller.js",
@@ -193,8 +208,8 @@
     },
     {
       "path": "WORKFLOW.md",
-      "bytes": 4818,
-      "sha256": "1824e1234ad12269b2416adaa67fcac1f45641fc21c5811c6b7b5416e7cd4076"
+      "bytes": 4740,
+      "sha256": "fc614ec574deab34b996f110bae2a8a219378bd0d88a6f7b483522e2241a1d00"
     }
   ]
 }

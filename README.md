@@ -6,13 +6,13 @@ SPDX-FileCopyrightText: 2026 Head Workflow contributors
 
 A reusable Blender command for targeted reconstruction of a rigged character's eye and mouth anatomy, with a browser verification harness and expression-sheet renderer. GPL-3.0-or-later licensed as a combined work; source only, with compatible Three.js code and its required upstream notice retained. No model assets are included.
 
-**Status:** the source stages produced a working head in the original production session. This package consolidates them into a fresh-process runner. Its configuration checks, source syntax, export verifier and portable browser renderer have separate verification records in `VERIFICATION.md`. A full run of the newly consolidated Blender command is still unverified. Do not treat the earlier production result as a test of this new runner.
+**Status:** version 0.1.1 reproduced the head in clean Blender 5.2 and native Tripo Lab Blender 4.2 using a renderer-only compatibility patch. The actual Lab-exported GLB passed all 37 independent WebGL2 views. Close-up mouth edges and lid creasing remain visible; see VERIFICATION.md for the exact scope and limits.
 
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 
 ## Requirements
 
-- Blender with its glTF importer/exporter, Python, NumPy, `mathutils`, mesh corner normals and color-attribute APIs. The source export used Khronos glTF Blender I/O v5.2.39. The consolidated runner has not yet established a supported Blender version matrix.
+- Blender with its glTF importer/exporter, Python, NumPy, `mathutils`, mesh corner normals and color-attribute APIs. Verified runtimes are Blender 5.2.0 LTS with glTF I/O v5.2.39 and Blender 4.2.9 LTS with glTF I/O v4.2.83. Other versions are unverified.
 - Node.js 18 or newer for the local server and tests; no npm install.
 - A browser with WebGL2 for actual deformation tests and the PNG sheet.
 - An external source GLB with the meshes, rig, textures and seven controls described below. No account credentials, service API, or network access is needed for a local build.
