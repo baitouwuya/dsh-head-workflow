@@ -1,3 +1,13 @@
+## v0.1.2
+
+Repair side published: the eye/mouth repair modules and the research stages behind them.
+
+- head_repair/ - 14 modules for targeted eye and mouth repair, plus repair.py, host_runner.py, audit-observability-tests.py, test_profile.py and audit-definition-lock-v1.json.
+- research_stages/ - 30 standalone geometry stages (closure, fairing, subdivision, portal walls, mouth integration, posed visibility, probe harnesses).
+- lab_recipes/lid_surface.py - the eyelid envelope surface recipe used for the cloud-Lab steps.
+- docs/REPAIR-PIPELINE.md, docs/RESEARCH-STAGES.md - what each module does.
+- No model, texture or rig asset is included in this release.
+
 <!--
 SPDX-License-Identifier: GPL-3.0-or-later
 SPDX-FileCopyrightText: 2026 Head Workflow contributors

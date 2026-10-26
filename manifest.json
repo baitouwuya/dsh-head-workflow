@@ -17,9 +17,14 @@
       "sha256": "78098c6588973d3b0e1d75579c121b537bce898b6fed11344d828c1330f56ddd"
     },
     {
+      "path": "audit-observability-tests.py",
+      "bytes": 13612,
+      "sha256": "2869a520c6b9d9f709766eb2fdf7959d42dca49eb3a907a5b17c139448707a70"
+    },
+    {
       "path": "CHANGELOG.md",
-      "bytes": 635,
-      "sha256": "a11b055bc0dd3eae2604de4a74900a95e1e2589ab1255ac148065feb44e2ae8c"
+      "bytes": 1299,
+      "sha256": "e010ad80481e6bd6efacd6cdf97cb744a7a5e3df0bd267e93c2e6c3f745c791a"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
@@ -27,9 +32,94 @@
       "sha256": "adad7e9d070aedd03f080b71da5bc0f3c8eca008b807a99fd7adec6b3d8e968a"
     },
     {
+      "path": "docs/REPAIR-PIPELINE.md",
+      "bytes": 1195,
+      "sha256": "819709797ffba9d073779cfde373f7fc6104a1dfde84e401ed97bac45e7a625d"
+    },
+    {
+      "path": "docs/RESEARCH-STAGES.md",
+      "bytes": 1949,
+      "sha256": "57961748b2e1b07ccdbcdc17a0c6ae1c5fa4a7d7b6e942cdec4b44d4a6123827"
+    },
+    {
       "path": "docs/TRIPO-LAB.md",
       "bytes": 3135,
       "sha256": "36040439d51e2006d1c096630bd6caab58e17b0ec33bedfa398973e8a0186648"
+    },
+    {
+      "path": "head_repair/__init__.py",
+      "bytes": 265,
+      "sha256": "ab7c9e71b282427bfd45f4dcdfa94d6a464284329fd2ba4f706d7948c16288aa"
+    },
+    {
+      "path": "head_repair/appearance.py",
+      "bytes": 5841,
+      "sha256": "c9834a4a4dda5534fe6c7e0ae57ef39a638f7c1eb9ecfde8288a37b95a12ed5e"
+    },
+    {
+      "path": "head_repair/audit.py",
+      "bytes": 4232,
+      "sha256": "df45655f4441268a74ef41d20749ddf84b4069202333b044b8e0c5db2bcf9186"
+    },
+    {
+      "path": "head_repair/config.py",
+      "bytes": 1869,
+      "sha256": "476e8dfaabef98db9ba056b29f0b2fffffabf96928adc37cb535669619d245d9"
+    },
+    {
+      "path": "head_repair/controls.py",
+      "bytes": 1907,
+      "sha256": "c3bdb2dfda87c9784d19ab6495113a65c07b8506c3401851543e03798f940e6f"
+    },
+    {
+      "path": "head_repair/eye_plan.py",
+      "bytes": 8406,
+      "sha256": "3c034a3091445e1bad9539022eb50dbb5d8acd64f2b563ca0771a874085196fb"
+    },
+    {
+      "path": "head_repair/eyes.py",
+      "bytes": 18016,
+      "sha256": "3ef6a885c842605a162b1cff30f67345adc0912e3d12b7c18bb426e666851552"
+    },
+    {
+      "path": "head_repair/fairing.py",
+      "bytes": 8998,
+      "sha256": "70174c6eead1a964b396886679f7f803a99014020378af14e030536cef759743"
+    },
+    {
+      "path": "head_repair/legacy.py",
+      "bytes": 2599,
+      "sha256": "1ae9ff47b6726f4c5f5adba313e2a692708897203f694f95f69ffd5fcf021cfc"
+    },
+    {
+      "path": "head_repair/measure.py",
+      "bytes": 5547,
+      "sha256": "6348dad48996cd401dba7e098df1fe2324b24df6e15e4140e0406aeca0aebeae"
+    },
+    {
+      "path": "head_repair/mouth.py",
+      "bytes": 11369,
+      "sha256": "cd11d1ede3634e0b2f9e4cf523f6792cfd236fe8a6168a030644760ece0db217"
+    },
+    {
+      "path": "head_repair/pipeline.py",
+      "bytes": 6369,
+      "sha256": "88bc79a42567361ddadc0c715784dbca7ddb4b3496c0a13825b7740e5bd6ac37"
+    },
+    {
+      "path": "head_repair/render.py",
+      "bytes": 1600,
+      "sha256": "214bf07b9fd1a37c2f8ecc796a57382d6b08e36f68c171b8bec3ce62a658f953"
+    },
+    {
+      "path": "head_repair/semantic.py",
+      "bytes": 6922,
+      "sha256": "576b9a5164c153b59130b077a5f9821bbab6cdca18626a5d47b975d411708d36"
+    },
+    {
+      "path": "head_repair/subdivision.py",
+      "bytes": 9932,
+      "sha256": "28c55a67d4ab32686b8d9f5585e9270c768f9895bedfc951238de497897a3885"
     },
     {
       "path": "head_tool.py",
@@ -112,9 +202,19 @@
       "sha256": "ed62e027b6cced7d27a5bf490ba8f701995895d61fdd91240b6a68c9eaecd9b5"
     },
     {
+      "path": "host_runner.py",
+      "bytes": 3106,
+      "sha256": "1eb212f8548cf05eef60d0a170c75980601b91606ad2cd86cb51befe63b672c3"
+    },
+    {
+      "path": "lab_recipes/lid_surface.py",
+      "bytes": 3618,
+      "sha256": "5d35a00731109d2735e68b3f5cda949d5fd919b92ab8a1d4b5e3f6e18449dce1"
+    },
+    {
       "path": "LICENSE",
-      "bytes": 34874,
-      "sha256": "11ff89a1bcd5eace15bebdda3151114acded0691ffa4d15da2eec32620b8325e"
+      "bytes": 34767,
+      "sha256": "29a0272dcc26bb607110ff78d1a11d36ff259940e160ca98eefe5379aa70e43b"
     },
     {
       "path": "log.txt",
@@ -130,6 +230,171 @@
       "path": "README.md",
       "bytes": 7165,
       "sha256": "e0a266cfd7ee5bd2494bfdd618875dce3536c2c76c0554ff7f524d9f4015dfec"
+    },
+    {
+      "path": "repair.py",
+      "bytes": 2851,
+      "sha256": "e22748ee53b17fd6e488cfb66a117442402c49260d3f7a86e3be3efefd56ac4f"
+    },
+    {
+      "path": "research_stages/__init__.py",
+      "bytes": 248,
+      "sha256": "1e01f4ca984c5d1c7609b7c9d5f1d49bb6e88d9b4f2498f218ca9e55b688c460"
+    },
+    {
+      "path": "research_stages/adaptive_refine.py",
+      "bytes": 2189,
+      "sha256": "1e2742054e31d2177ca7b39e13a11a7e0a7ec73944c6e9f40b6e7764300b9a8a"
+    },
+    {
+      "path": "research_stages/boolean_mouth.py",
+      "bytes": 6908,
+      "sha256": "a254307458034d3bf6910e2276d35470fdf5256cee87f3e9b437fcea61105be3"
+    },
+    {
+      "path": "research_stages/close_portals.py",
+      "bytes": 4554,
+      "sha256": "b9ef2ed2758665ada6dfaf12ec1c585fd0e9e0bdf6dd8acc0400cfb68947962a"
+    },
+    {
+      "path": "research_stages/contract_probes.py",
+      "bytes": 8533,
+      "sha256": "a019a2207e716346cdea3c472cfd755c56954984f218961d51163c0596dce372"
+    },
+    {
+      "path": "research_stages/defect_visibility.py",
+      "bytes": 7761,
+      "sha256": "06b98408ad535dc2358e8f41b42b7bf21f99aec462ee5de240f94f115ded63c9"
+    },
+    {
+      "path": "research_stages/edge_fair.py",
+      "bytes": 3746,
+      "sha256": "188bcb7be3b29a8113cec53aec4bc6ea10648884d6b0136c801fc433db17c4c9"
+    },
+    {
+      "path": "research_stages/evaluate_assembly.py",
+      "bytes": 1738,
+      "sha256": "f6249b432900216b371df9d683bd5a2edea9b1d0cd4c6280e65555798095b517"
+    },
+    {
+      "path": "research_stages/evaluate_boolean_candidate.py",
+      "bytes": 1782,
+      "sha256": "cf765f447fceec1d97d4bf9a2d531f29e54b4768b7e8fa21f9cab8114d937580"
+    },
+    {
+      "path": "research_stages/flip_repair.py",
+      "bytes": 2478,
+      "sha256": "c81288fbfe3720006b443c49ee0ffb0491236d6d00fdb3d68abaad79befc3911"
+    },
+    {
+      "path": "research_stages/fold_relax.py",
+      "bytes": 2000,
+      "sha256": "5929528a25faea991f61dcb69c45b76e652073ec7bf60d6e30b070526bb37b97"
+    },
+    {
+      "path": "research_stages/full_scene_probes.py",
+      "bytes": 9323,
+      "sha256": "afd478cbca57c432029368ec890bf28ff41b308ae45b6e42c044715f7e2cfa1c"
+    },
+    {
+      "path": "research_stages/joint_dihedral.py",
+      "bytes": 4862,
+      "sha256": "8841808fbde5e5a188466b69aff40d26297e06fd7effa163a242344cd185aecb"
+    },
+    {
+      "path": "research_stages/main_shell.py",
+      "bytes": 7149,
+      "sha256": "1a31692e366ece11c91e47acc2cbf320606e18e863f7945518bea2be61162897"
+    },
+    {
+      "path": "research_stages/mouth_corrective.py",
+      "bytes": 2350,
+      "sha256": "318d1fb822f802e262ed53413e28a701b39bb737c6b2dd212a325c0294bfeb8b"
+    },
+    {
+      "path": "research_stages/mouth_integration.py",
+      "bytes": 10276,
+      "sha256": "8ac9de88a73981cb49c0fc6e17b6175131c55553797624614475440bd009db16"
+    },
+    {
+      "path": "research_stages/mouth_pose_optimizer.py",
+      "bytes": 3409,
+      "sha256": "004a7658842e198633507ec4ed831421de62a52854ed42bb09d70cbd3cbddc43"
+    },
+    {
+      "path": "research_stages/native_cap_closure.py",
+      "bytes": 38811,
+      "sha256": "da47af020a5d16cdc4de2c95eea3baa13903dbdb9f49984c5791597340d86618"
+    },
+    {
+      "path": "research_stages/oral_portal_walls.py",
+      "bytes": 5947,
+      "sha256": "e72cc8d309a96041a1cd94aa74a8a2bd0e7eacb3544a906550f0fef7526bfca3"
+    },
+    {
+      "path": "research_stages/oral_stage.py",
+      "bytes": 5524,
+      "sha256": "e549fe4c74b5dc5ce947d3d90789cd5f5ddbf6b5d7c956067a7be6b80dbc514d"
+    },
+    {
+      "path": "research_stages/patch_mouth.py",
+      "bytes": 7975,
+      "sha256": "5293d078b3ea64d94963b30d1bc9d720c27f4e2554379f110b07bb91cbba2387"
+    },
+    {
+      "path": "research_stages/posed_visibility.py",
+      "bytes": 7666,
+      "sha256": "2327ff9359d244d5c371d938ae852c3eeb10d50946f570b8eca9c3bf7c6e5092"
+    },
+    {
+      "path": "research_stages/render_comparison.py",
+      "bytes": 2489,
+      "sha256": "8d5cb1d3cd64dd7d05fa5b967715cda0da80384dc4dea13a94e91f834b228455"
+    },
+    {
+      "path": "research_stages/rounded_lids.py",
+      "bytes": 5382,
+      "sha256": "fadd438b475dbd8a313c94d277cbe7940c4d69b71d8581b3947918622602e291"
+    },
+    {
+      "path": "research_stages/scleral_globes.py",
+      "bytes": 2912,
+      "sha256": "5472ec8faaff04c21629e0679a4243607844999a343f1e72f5be840b791a1c54"
+    },
+    {
+      "path": "research_stages/skin_repair.py",
+      "bytes": 5104,
+      "sha256": "1155f636c8638c93e18ce3ba21431e4003804dd1c26d883d79d72052a6eb7457"
+    },
+    {
+      "path": "research_stages/sm_eye_integration.py",
+      "bytes": 27382,
+      "sha256": "c09ebefe6a17fd9351f30b2031f54f83249e56acc47b8a418ff494f5680b8bbf"
+    },
+    {
+      "path": "research_stages/sm_native_cap_closure.py",
+      "bytes": 33507,
+      "sha256": "36075b6776d7c4f3d640a0c08c9ae0d89d9edb0cd812d37c7a9328d5ff7ab58d"
+    },
+    {
+      "path": "research_stages/sm_vroid_parts.py",
+      "bytes": 16594,
+      "sha256": "a57d6066ef037757d766234870b0b3e3044f7f83021e5b536f174f093e7a9b69"
+    },
+    {
+      "path": "research_stages/stable_dihedral.py",
+      "bytes": 8074,
+      "sha256": "3208d120b9e079efcf125eb1237805a01e36dbf28530d119738f8467a550ba59"
+    },
+    {
+      "path": "research_stages/topology_core.py",
+      "bytes": 8862,
+      "sha256": "9f6ae4a44b0ecc6ccc9c62146e742231b3c4f96414e8ec083d3b36452f971d2e"
+    },
+    {
+      "path": "test_profile.py",
+      "bytes": 1885,
+      "sha256": "170284d62b17d81ef41e146faaccc74fe26847ac1585395ae8a619c3a8f5e34d"
     },
     {
       "path": "tests/test_config.py",
@@ -148,8 +413,8 @@
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 2898,
-      "sha256": "558f9ef6abd57df7f41e5bf11e7ce9252f8f682ba3cdc45bee2b07c7c9fc572d"
+      "bytes": 2924,
+      "sha256": "f8974846bc14e8d77978da0e0b0208283f776516354678d80ebbaab5ec96b3b9"
     },
     {
       "path": "tools/review-server.cjs",

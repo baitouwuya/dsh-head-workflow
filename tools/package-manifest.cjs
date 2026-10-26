@@ -18,7 +18,7 @@ for (const full of walk(root)) {
   if (relative.includes('__pycache__') || /\.(glb|blend|vrm|fbx|png|jpg|pyc|zip)$/i.test(relative)) throw Error('Unexpected asset/cache: ' + relative);
   const data = fs.readFileSync(full), text = data.toString('utf8');
   if (text.includes('\r\n')) throw Error('Normalize text to LF before sealing: ' + relative);
-  if (!text.slice(0, 800).includes('SPDX-License-Identifier')) throw Error('Missing SPDX header: ' + relative);
+  if (relative !== 'LICENSE' && !text.slice(0, 800).includes('SPDX-License-Identifier')) throw Error('Missing SPDX header: ' + relative);
   if (/[A-Za-z]:[\\/](?:Users|ProgramData|Staging|tripo-studio|hostshare)/i.test(text) || /\\\\(?:vboxsvr|VBoxSvr)\\/.test(text)) throw Error('Machine-specific path in ' + relative);
   if (/\b(?:Bearer|Cookie:)\s+[a-zA-Z0-9_.=-]{20,}/.test(text) || /\bgh[pousr]_[A-Za-z0-9]{20,}/.test(text)) throw Error('Potential credential in ' + relative);
   files.push({path: relative, bytes: data.length, sha256: crypto.createHash('sha256').update(data).digest('hex')});
