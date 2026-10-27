@@ -6,6 +6,8 @@ The caller classifies complete original components from the actual input.
 Incidental neutral skin overlap is not automatically a static anatomical root.
 All distances, support spans and orientation limits come from runtime fitting.
 No character-specific vertex IDs, component numbers or filenames are embedded.
+An explicit diagnostics-only mode preserves measured support and thresholds
+without aborting a renderable animation when support count/span are insufficient.
 """
 import numpy as np
 
@@ -13,7 +15,8 @@ def classify_lash_contacts(vertices,triangles,canonical_ids,band_indices,skin_tr
                            accessory_groups,rail_poses,aperture_lateral_bounds,*,
                            contact_tolerance,corner_fraction,minimum_front_normal_x,
                            minimum_dynamic_motion,minimum_moving_roots,minimum_moving_span,
-                           query_nearest_triangles):
+                           query_nearest_triangles,support_diagnostics_only=False):
+    if not isinstance(support_diagnostics_only,bool):raise ValueError('support_diagnostics_only must be an explicit boolean')
     v=np.asarray(vertices,float);f=np.asarray(triangles);ids=np.asarray(canonical_ids);band=np.asarray(band_indices);skin=np.asarray(skin_triangle_indices);rail=np.asarray(rail_poses,float)
     if v.ndim!=2 or v.shape[1]!=3 or not len(v) or not np.isfinite(v).all():raise ValueError('Finite source vertices required')
     if f.ndim!=2 or f.shape[1]!=3 or not len(f) or not np.issubdtype(f.dtype,np.integer) or f.min()<0 or f.max()>=len(v):raise ValueError('Valid source triangle indices required')
@@ -42,7 +45,9 @@ def classify_lash_contacts(vertices,triangles,canonical_ids,band_indices,skin_tr
     fraction=np.clip(np.einsum('nki,ki->nk',v[band,None]-origin[None],edge)/den,0,1);point=origin[None]+fraction[:,:,None]*edge[None];dist=np.linalg.norm(point-v[band,None],axis=2);segment=dist.argmin(1);frac=fraction[np.arange(len(band)),segment];neutral=point[np.arange(len(band)),segment];gap=dist[np.arange(len(band)),segment]
     posed=rail[:,segment]*(1-frac[None,:,None])+rail[:,segment+1]*frac[None,:,None];motion=np.linalg.norm(posed-neutral[None],axis=2).max(0)
     moving=(gap<=contact_tolerance)&(motion>=minimum_dynamic_motion)&~np.isin(ids[band],ids[static]);mi=np.flatnonzero(moving)
-    if len(mi)<minimum_moving_roots or np.ptp(v[band[mi],1])<minimum_moving_span:raise ValueError('Insufficient measured moving-margin contact support')
+    observed_span=float(np.ptp(v[band[mi],1])) if len(mi) else 0.
+    support_satisfied=bool(len(mi)>=minimum_moving_roots and observed_span>=minimum_moving_span)
+    if not support_satisfied and not support_diagnostics_only:raise ValueError('Insufficient measured moving-margin contact support')
     accessories=[]
     for group in accessory_groups:
         group=np.asarray(group)
@@ -53,7 +58,7 @@ def classify_lash_contacts(vertices,triangles,canonical_ids,band_indices,skin_tr
     return {'static_vertices':static,'static_carrier_vertices':static_carriers,
             'moving_vertices':band[mi],'moving_segments':segment[mi],'moving_fractions':frac[mi],
             'moving_neutral_carrier':neutral[mi],'moving_neutral_offset':v[band[mi]]-neutral[mi],
-            'moving_gap':gap[mi],'moving_span':float(np.ptp(v[band[mi],1])),
+            'moving_gap':gap[mi],'moving_span':observed_span,'support_satisfied':support_satisfied,'support_diagnostics':{'observed_roots':len(mi),'required_roots':minimum_moving_roots,'observed_span':observed_span,'required_span':minimum_moving_span,'contact_tolerance':float(contact_tolerance)},
             'incidental_or_moving_skin_contacts':skin_contacts[~(corner&front)],
             'accessories':accessories,'contact_tolerance':float(contact_tolerance),
             'working_frame':'+X front, Y lateral, +Z up',

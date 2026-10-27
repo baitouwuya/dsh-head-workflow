@@ -24,7 +24,7 @@ for (const full of walk(root)) {
   files.push({path: relative, bytes: data.length, sha256: crypto.createHash('sha256').update(data).digest('hex')});
 }
 files.sort((a, b) => a.path.localeCompare(b.path));
-const manifest = {'SPDX-License-Identifier': 'GPL-3.0-or-later', 'SPDX-FileCopyrightText': '2026 Head Workflow contributors', name: 'head-workflow', version: '0.1.5-dev', license: 'GPL-3.0-or-later', status: 'Exterior boundary continuity verified in host and native runs; native follow-up stopped at original-lash contact; primary GLB withheld and no second construction; previous failures preserved', files};
+const manifest = {'SPDX-License-Identifier': 'GPL-3.0-or-later', 'SPDX-FileCopyrightText': '2026 Head Workflow contributors', name: 'head-workflow', version: '0.1.6-dev', license: 'GPL-3.0-or-later', status: 'Visual blink diagnosis and native own-file motion verification; numeric results are diagnostics; prior native failures preserved; new native visual acceptance and selected canvas artifact still required', files};
 fs.writeFileSync(path.join(root, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 const hash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'manifest.json'))).digest('hex');
 const header = '# SPDX-License-Identifier: GPL-3.0-or-later\n# SPDX-FileCopyrightText: 2026 Head Workflow contributors\n';

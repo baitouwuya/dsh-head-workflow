@@ -11,6 +11,7 @@ different Blender version. Source and candidate imports use identical views.
 import json,sys,math
 from numbers import Real
 from pathlib import Path
+from blender_runtime_compat import set_render_engine
 
 # Pure request/control validation is importable by ordinary Python tests. The
 # supplied Blender runtime is loaded only by main(), which runs inside the Lab.
@@ -125,7 +126,7 @@ def set_controls(mapping,values):
 
 def setup(request):
     scene=bpy.context.scene
-    scene.render.engine=request.get('engine',scene.render.engine)
+    set_render_engine(scene,request.get('engine',scene.render.engine))
     scene.render.resolution_x=int(request.get('resolution',512));scene.render.resolution_y=int(request.get('resolution',512));scene.render.resolution_percentage=100
     if scene.render.engine=='CYCLES':scene.cycles.samples=int(request.get('samples',16));scene.cycles.seed=0
     scene.render.image_settings.file_format='PNG';scene.view_settings.view_transform='Standard'

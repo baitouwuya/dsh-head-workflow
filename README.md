@@ -27,6 +27,13 @@ was reproduced and constructed in bridged host Blender. All four boundaries pass
 their whole-segment checks in host and native runs. The native follow-up stopped
 at original-lash contact; final appearance/export acceptance remains incomplete.
 
+The [visual handoff correction](docs/VISUAL-BLINK-HANDOFF.md) separates numerical
+diagnostics from rendered-motion acceptance, fixes double-evaluated preview
+normals, and adds native-only sealing, complete-head attachment and own-file
+animation verification. Host models remain diagnosis only. A new native result
+must be built by its canvas Lab, reviewed from its own motion renders, published
+and selected before this stage is complete.
+
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 
 ## Requirements
