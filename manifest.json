@@ -4,7 +4,7 @@
   "name": "head-workflow",
   "version": "0.1.6-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Visual blink diagnosis and native own-file motion verification; numeric results are diagnostics; prior native failures preserved; new native visual acceptance and selected canvas artifact still required",
+  "status": "Single native visual follow-up rejected for lash attachment and lid profile; four right-eye videos preserved, left/bilateral rendering incomplete after exit 143; no primary published or selected and no further attempt",
   "files": [
     {
       "path": ".gitattributes",
@@ -148,8 +148,8 @@
     },
     {
       "path": "docs/NATIVE-FULL-LOOK-EXPORT.md",
-      "bytes": 4107,
-      "sha256": "4edafda21e52c6912ab93c8439f06f4f27e33e0a9d42746af3b34e76d1576205"
+      "bytes": 5162,
+      "sha256": "d516cd41b849910d73318bab7a0dd0f011fcf186433fe2686e4d78c2cc534152"
     },
     {
       "path": "docs/NATIVE-RENDER-CONTROLS.md",
@@ -188,8 +188,8 @@
     },
     {
       "path": "docs/VISUAL-BLINK-HANDOFF.md",
-      "bytes": 5418,
-      "sha256": "cbd9f930502d08922a4d0fca786b9fb79f7a67cc41a4c5d21237e9db2bbf2b41"
+      "bytes": 8214,
+      "sha256": "47510116daba99e1eeaa72d463f84020fc039c74a1791a79072a23df6c3fa6dc"
     },
     {
       "path": "driver/artifact-download.js",
@@ -748,8 +748,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9413,
-      "sha256": "4adc31f98c85b61beed738bf7c9536bc0f2106076661df3221bb379600ff0e7a"
+      "bytes": 9872,
+      "sha256": "2dd864e076f10288d61f4843099abcb536e86ef674b002a1346fd7a4c0a71451"
     },
     {
       "path": "repair.py",
@@ -1012,6 +1012,11 @@
       "sha256": "6681a5dce702760eb81961495312c3c4ccaeee4017bfffe69ed593823f9ae342"
     },
     {
+      "path": "tests/test_native_export_compatibility.py",
+      "bytes": 3074,
+      "sha256": "be074517d60199e2478758b74cba0a7833f65af233e69417fbee3832601c812f"
+    },
+    {
       "path": "tests/test_native_glb_clips.py",
       "bytes": 5089,
       "sha256": "33056afeed706271277958b728f5d2c278a33d15fc0661b6acc537811e246750"
@@ -1138,13 +1143,13 @@
     },
     {
       "path": "tools/native_stage_export.py",
-      "bytes": 14485,
-      "sha256": "7deb6e8c8b477b5469600fbd3dde9f5d3265fd596acc5077deaf05161e821709"
+      "bytes": 14754,
+      "sha256": "d6f2f6670520a13b01ae17f69b2dc58a717fa7472780e17c587a8f9c6e4164d1"
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 3040,
-      "sha256": "506667e186b423178cc9d2a0caebf3630605ea4698e1c470f74e4c7ee1658aa1"
+      "bytes": 3055,
+      "sha256": "52f6d4fd8e9cf91a56f2501707bb0f1bb4216275bb8ed01337881734ddde01f2"
     },
     {
       "path": "tools/review-server.cjs",

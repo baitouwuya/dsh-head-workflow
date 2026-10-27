@@ -3,6 +3,23 @@
 
 # Native construction, sealing and own-file motion verification
 
+## Native exporter compatibility and remaining checkpoint limitation
+
+An empty dynamic RNA enum list is inconclusive: defer validation to Blender's
+operator. A nonempty static list still rejects unsupported values. For packed GLB
+images, use `export_keep_originals=False` with `export_image_format='AUTO'`. The
+native run demonstrated that enabling keep-originals omitted the packed image
+and texture entirely; disabling it embedded the original encoded bytes exactly.
+The post-export image hash check remains mandatory.
+
+Per-frame/per-view verification checkpoints are **not implemented**. The verifier
+writes its final report after the rendering loop, so external termination can
+leave complete videos and partial frames without the final report or imported
+Action inventory. Reconstructing an explicitly partial evidence manifest does not
+establish successful verification or the cause of termination. The completed
+native run retained that limitation; this exporter compatibility change does not
+change render loops or resolve checkpoint durability.
+
 These helpers run only in the native Lab's provided Blender. They do not install
 a runtime, submit a job, upload geometry or publish an asset. Host precheck mode
 is rejected before Blender is imported. A host render or array cache never serves

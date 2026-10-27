@@ -34,6 +34,13 @@ animation verification. Host models remain diagnosis only. A new native result
 must be built by its canvas Lab, reviewed from its own motion renders, published
 and selected before this stage is complete.
 
+That native follow-up completed one construction but failed its own motion
+review: the outer lash loses visible attachment and the closed-lid profile is
+implausible. Four right-eye videos and the rejected native GLB/BLEND are preserved
+in the verified evidence archive; left/bilateral rendering remained incomplete
+after exit 143. No primary model was published or selected. The native result
+and verified hashes are recorded in the visual handoff document.
+
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 
 ## Requirements

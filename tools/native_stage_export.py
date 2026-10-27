@@ -11,6 +11,13 @@ import hashlib,json,struct
 from native_glb_clips import append_blink_cycles,unpack_glb,embedded_image_hashes
 
 
+def enum_option_supported(prop,value):
+    # Dynamic RNA enums can be empty outside an operator context. Defer those
+    # to Blender; retain early rejection for a known static enum mismatch.
+    items={item.identifier for item in prop.enum_items}
+    return not items or value in items
+
+
 def _require_native(session):
     if session['request'].get('mode')!='native_stage_build':
         raise ValueError('Host precheck assets cannot be exported as pipeline deliverables')
@@ -126,14 +133,14 @@ def export_native_session(session_id,output_directory,stem='character'):
         obj.select_set(obj.type not in ('LIGHT','CAMERA'))
         if obj.type=='MESH' and not obj.get('native_animation_binding'):obj['native_animation_binding']=str(uuid.uuid4())
     bpy.context.view_layer.objects.active=session['source_object'];bpy.context.view_layer.update()
-    desired={'filepath':str(raw_path),'export_format':'GLB','use_selection':True,'use_active_scene':True,'export_skins':True,'export_morph':True,'export_morph_normal':True,'export_normals':True,'export_animations':False,'export_apply':False,'export_image_format':'AUTO','export_keep_originals':True,'export_all_vertex_colors':True,'export_extras':True}
+    desired={'filepath':str(raw_path),'export_format':'GLB','use_selection':True,'use_active_scene':True,'export_skins':True,'export_morph':True,'export_morph_normal':True,'export_normals':True,'export_animations':False,'export_apply':False,'export_image_format':'AUTO','export_keep_originals':False,'export_all_vertex_colors':True,'export_extras':True}
     rna=bpy.ops.export_scene.gltf.get_rna_type();available={p.identifier:p for p in rna.properties};required={'filepath','export_format','use_selection','export_skins','export_morph','export_normals','export_extras'}
     if not required.issubset(available):raise RuntimeError('Lab exporter lacks required GLB/skin/morph switches: '+str(sorted(required-set(available))))
     selected={};skipped={}
     for key,value in desired.items():
         if key not in available:skipped[key]='unavailable';continue
         prop=available[key]
-        if prop.type=='ENUM' and value not in {item.identifier for item in prop.enum_items}:
+        if prop.type=='ENUM' and not enum_option_supported(prop,value):
             if key in required:raise RuntimeError('Required export option unsupported: '+key)
             skipped[key]='enum value unavailable';continue
         selected[key]=value

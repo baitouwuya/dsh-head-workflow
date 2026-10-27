@@ -85,3 +85,49 @@ and eye close-ups. Publish its primary artifact last and leave it selected on th
 authorized canvas only when those renders look correct. Preserve any remaining
 visible failure and stop without another native attempt. The current diagnosis
 and source tests are not a claim that a native replacement has been accepted.
+
+## Native result: visual rejection, evidence retained
+
+The single native follow-up built from correction
+`396f9ad7051eaf2b3b130cbffd890edd04b08523` over the immutable base. Base tests
+passed (six Python and four Node); correction tests passed (208 Python and four
+Node); the final native adapter suites passed (212 Python and four Node).
+The provided runtime was Blender 4.2.9 LTS. Both construction entrypoints ran
+once. Three subsequent export assemblies reused the same constructed arrays to
+repair compatibility and packed-image serialization; no second construction ran.
+
+The reimported native model failed visible-motion acceptance. Its right-eye
+front, oblique, profile and close-up sequences show disappearing outer lash
+attachment, an exaggerated bowed ribbon and an implausible projecting lid
+profile during late closure. Neutral appearance and reopening match the input
+in the completed views. These visible defects, rather than numeric thresholds,
+are the reason for rejection.
+
+Measured moving contacts increased to five on the right and seven on the left.
+Source neutral/protected displacement and eye displacement remained zero. Yet
+82 right and 126 left band vertices became newly occluded behind source skin
+at full closure, beyond the inherited 62 and 58. Maximum band edge expansion
+was about 2.190 and 1.983. These measurements are diagnostic, not acceptance
+rules. The native bounded target-depth adapter did not solve final band/skin
+occlusion or the coupled silhouette problem.
+
+Four right-eye videos completed, each with 46 frames at 48 fps. Rendering then
+terminated with exit code 143; the cause was not supplied. Only three left-eye
+front frames survived, and no bilateral cycle completed. Ownership/shading
+ablations and the final verifier report remained incomplete. Per-frame report
+checkpointing remains an unimplemented limitation.
+
+The diagnostic GLB contains 15 meshes, a common head assembly and three actual
+blink clips. Its source was an unrigged Smart Mesh FBX, so it has no skins and
+eight blink target names; it is not the frozen accepted head's rig/morph
+contract. Its original 721,553-byte JPEG is preserved exactly. The rejected
+native candidate and editable scene are retained inside the evidence archive:
+
+- GLB SHA-256: `50d8350cdae06fe6444154346f6a4ae1de12a87fa05f5550ecc188b8cd7fa19f`
+- BLEND SHA-256: `516f664bd6d4cc486d0606e57f2b1def9a3087b42c02eeb2bcbc353ac0b7ed68`
+- Archive SHA-256: `cd055f266251e839ec3ca863edcf67e15aff8332544f175600d799de61204634`
+
+All 281 archived payload hashes and sizes were independently verified. The
+archived correction source matches its pinned Git tree. The Lab published
+only the failure-evidence archive: no primary model was published or selected,
+and no further native attempt or downstream stage was started.
