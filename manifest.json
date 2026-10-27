@@ -2,9 +2,9 @@
   "SPDX-License-Identifier": "GPL-3.0-or-later",
   "SPDX-FileCopyrightText": "2026 Head Workflow contributors",
   "name": "head-workflow",
-  "version": "0.1.4",
+  "version": "0.1.5-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Blender5.2 clean rebuild verified; Blender4.2 Lab reproduction in VERIFICATION.md; canvas driver 0.2.59 included; eyes-and-gaze limit recorded in docs/GAZE-LIMITS.md",
+  "status": "Stationary-blink failure reproduced; measured constructor and continuous morph checks verified numerically; native appearance, lash/skin attachment and export acceptance pending; earlier verification retained in VERIFICATION.md",
   "files": [
     {
       "path": ".gitattributes",
@@ -57,6 +57,11 @@
       "sha256": "d8893e144a46ef4b7e2390fbfcf2d8e9eac37226ec21fd56b390520ee9cccb6b"
     },
     {
+      "path": "canvas-chain/head-eyes-blink.prompt.md",
+      "bytes": 5044,
+      "sha256": "142eb941f7bb990a43ca076c49f0f7460957ef21ea31ed61ee84e30791de99cd"
+    },
+    {
       "path": "canvas-chain/head-fit.prompt.md",
       "bytes": 1922,
       "sha256": "84565bf6e936760871d0388b0afeed16fdb277a566ce679545b57d0dab941aed"
@@ -98,8 +103,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3362,
-      "sha256": "026c1239720449612bf098231d49227bff328acdf7a7e6b98888e3750a568808"
+      "bytes": 4372,
+      "sha256": "97a578aa806f1c4dbfa34221553fddcb5c138ab376ae3e285fa33c2b11a4dcc6"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
@@ -130,6 +135,16 @@
       "path": "docs/RESEARCH-STAGES.md",
       "bytes": 1949,
       "sha256": "57961748b2e1b07ccdbcdc17a0c6ae1c5fa4a7d7b6e942cdec4b44d4a6123827"
+    },
+    {
+      "path": "docs/STATIONARY-BLINK-CONSTRUCTION.md",
+      "bytes": 4883,
+      "sha256": "bdb42dd2e4bf75f3a21a58ca8f582d7b3a00ceaaf2a4d9588c93ba1e5eb8e2b1"
+    },
+    {
+      "path": "docs/STATIONARY-BLINK-DIAGNOSIS.md",
+      "bytes": 6124,
+      "sha256": "1725970d697da6ef19728484b59e1c65a066175faccf4a84c4ec32faa4c2c841"
     },
     {
       "path": "docs/TRIPO-LAB.md",
@@ -523,8 +538,8 @@
     },
     {
       "path": "head_workflow/stages/fit_lids_and_blink.py",
-      "bytes": 4906,
-      "sha256": "3c035fae6e74c24a58f2a2cb33fe613033e51fbd8308aff769e248d8ab7fd042"
+      "bytes": 5015,
+      "sha256": "fd7d13219a73ae7f6c98452b30fd195102a81613502a178f158f8f630a978239"
     },
     {
       "path": "head_workflow/stages/head_helpers.py",
@@ -547,9 +562,24 @@
       "sha256": "1eb212f8548cf05eef60d0a170c75980601b91606ad2cd86cb51befe63b672c3"
     },
     {
+      "path": "lab_recipes/aperture_contract.py",
+      "bytes": 8571,
+      "sha256": "648d2eb2ff96e9b85a5dbf4aeaeecec92bf41a0828f27bf92fce55993f4413b4"
+    },
+    {
+      "path": "lab_recipes/blink_handoff.py",
+      "bytes": 12329,
+      "sha256": "85d3facc83a8509fb828317beb526c79bd2b77f200f0261665d325b3130bbf3c"
+    },
+    {
       "path": "lab_recipes/lid_surface.py",
-      "bytes": 3618,
-      "sha256": "5d35a00731109d2735e68b3f5cda949d5fd919b92ab8a1d4b5e3f6e18449dce1"
+      "bytes": 5903,
+      "sha256": "9a9a2e6ad0661f5ca298660e3a9d6451003912c47ed1d735e1a2a8beaa092207"
+    },
+    {
+      "path": "lab_recipes/triangle_depth_bound.py",
+      "bytes": 1753,
+      "sha256": "897509e050cce7690492da81d2c827567bf04fa75883a20a47901739fd46299d"
     },
     {
       "path": "LICENSE",
@@ -568,8 +598,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7437,
-      "sha256": "ba9e87c2adfd35d530dfc4067df6203a2f2967e3f9e4cdbb7ed4f6258509d910"
+      "bytes": 8240,
+      "sha256": "834b9b80766f15562c1a8e338daae560236f3e3645e5a10912222758bcd17f02"
     },
     {
       "path": "repair.py",
@@ -737,9 +767,29 @@
       "sha256": "170284d62b17d81ef41e146faaccc74fe26847ac1585395ae8a619c3a8f5e34d"
     },
     {
+      "path": "tests/test_blink_handoff.py",
+      "bytes": 9330,
+      "sha256": "db0f1fe8f03fa5b1f8054db46b0a3d9587d8b908c6ebda7a6d3b756bd664e0c1"
+    },
+    {
       "path": "tests/test_config.py",
       "bytes": 1968,
       "sha256": "efdb7087c5295a5298ebf26fb6d06c6e47de3bdd947994026f740e7179ac6985"
+    },
+    {
+      "path": "tests/test_lid_recipe_contract.py",
+      "bytes": 8133,
+      "sha256": "7c165e548a80984a3096cbac4b90ee89594509b10190f3fa4ec77c25d8ad796a"
+    },
+    {
+      "path": "tests/test_lid_surface_obstacle.py",
+      "bytes": 4785,
+      "sha256": "2fe8b576bce69c89c14d42bb2d234e2043f69b278863220602a7c32c7eb6b458"
+    },
+    {
+      "path": "tests/test_triangle_depth_bound.py",
+      "bytes": 1187,
+      "sha256": "7b9f46eeda5658509a1b15404a28339f2ce61fe1a90236e012fb79cb758abd04"
     },
     {
       "path": "tests/verify-glb.test.cjs",
@@ -758,8 +808,8 @@
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 2999,
-      "sha256": "7122261720c8f188ed6a391488f76000477cc1ef3d9c5fe3b9e124b54b48ae03"
+      "bytes": 3065,
+      "sha256": "040c53a4bb1af687d2d14e560f295d5831f975cacf94f6d9aa2ad54178bc9051"
     },
     {
       "path": "tools/review-server.cjs",

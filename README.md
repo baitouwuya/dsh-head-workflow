@@ -10,6 +10,14 @@ A reusable Blender command for targeted reconstruction of a rigged character's e
 
 Version 0.1.4 adds the canvas driver (`driver/`) that operates a Tripo Studio canvas from outside the UI, and records the measured eyes-and-gaze limit in `docs/GAZE-LIMITS.md`: the v0.1.2 recipe delivers stationary eyeballs plus blink, and gaze is not a supported stage.
 
+The stationary-blink development correction adds validated contour construction,
+conservative measured-eye depth bounds and continuous exported-morph audits.
+See [the reproduced causes](docs/STATIONARY-BLINK-DIAGNOSIS.md),
+[the construction API](docs/STATIONARY-BLINK-CONSTRUCTION.md), and the
+[reusable head-only Lab prompt](canvas-chain/head-eyes-blink.prompt.md).
+Numerical construction checks pass on the diagnosed input; native appearance,
+lash/skin attachment and export verification remain separate acceptance checks.
+
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 
 ## Requirements
@@ -81,4 +89,9 @@ node --test tests/verify-glb.test.cjs
 ```
 
 These tests catch configuration and file-format errors; they do not replace the Blender build, anatomy checks, actual browser deformation test or visual review.
+
+The added source-only geometry regressions require NumPy in the Python test
+environment. They need neither Blender nor private model assets. They cover
+invalid contours, neutral projection, measured swept bounds, lash masks and
+seams, and collapse between LINEAR morph knots.
 

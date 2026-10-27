@@ -1,6 +1,22 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <!-- SPDX-FileCopyrightText: 2026 Head Workflow contributors -->
 
+## Unreleased: stationary-blink diagnosis and construction correction
+
+- Reproduce the rejected input's closure failure outside the Lab and distinguish
+  the unweighted depth clamp, split lash masks and between-keyframe collapse.
+- Validate simple ordered aperture contours; explicitly construct conservative
+  envelopes from measured samples without relabeling them anatomical rims.
+- Add static, local swept-triangle bounds from actual stationary eye geometry;
+  preserve fixed anchors and avoid point-depth interpolation underestimation.
+- Add original-lash component/seam, neutral/near-neutral and continuous LINEAR
+  morph checks, with explicit runtime thresholds and no empty-data passes.
+- Make the legacy clearance projection weight-dependent; this change alone is
+  not a complete closure repair.
+- Add a generic head-only Lab prompt and document numerical proof separately
+  from native appearance, attachment and export acceptance. Existing tags and
+  historical failed evidence remain unchanged.
+
 ## v0.1.4
 
 Canvas driver published, and the eyes-and-gaze limit documented from a measured run.
