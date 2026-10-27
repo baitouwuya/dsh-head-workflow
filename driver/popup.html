@@ -1,0 +1,13 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- SPDX-FileCopyrightText: 2026 Head Workflow contributors -->
+
+<!doctype html><html lang="en"><meta charset="utf-8"><title>DSH Canvas Driver</title><link rel="stylesheet" href="popup.css"><body>
+<header><strong>DSH Canvas Driver</strong><span>0.2.59</span></header>
+<p id="status" role="status">Connecting to the active Studio tab…</p>
+<nav><button data-action="capture">Capture</button><button data-action="read">Read canvas</button><button data-action="run">Run plan</button><button data-action="export">Export evidence</button><button data-action="createCanvas">createCanvas</button><button data-action="uploadAsset">uploadAsset</button><button data-action="createNode">createNode</button><button data-action="connectNodes">connectNodes</button><button data-action="generate">generate</button><button data-action="waitTask">waitTask</button><button data-action="saveCanvas">saveCanvas</button><button data-action="autoLayout">Auto-layout</button><button data-action="selectNode">Select node</button><button data-action="labExportDialog">Lab export dialog</button><button data-action="stop" id="stop">STOP</button></nav>
+<nav><button data-action="labExport">Lab export and download</button><button data-action="labDownloadArtifact">Download original Lab artifact</button><button data-action="publishLabArtifact">Publish Lab artifact</button><button data-action="listCanvasAssets">List canvas assets</button><button data-action="listLabArtifacts">List Lab jobs/artifacts</button><button data-action="setLabInput">Set Lab input</button></nav>
+<label><input type="checkbox" id="dry" checked> Dry-run (no changes)</label>
+<label for="plan">Action arguments JSON (plan JSON for Run plan)</label><textarea id="plan" spellcheck="false" placeholder='{"version":1,"projectId":"…","canvasId":"…","maxCredits":0,"steps":[{"id":"state","kind":"capture"}]}'></textarea>
+<p>uploadAsset: temporary storage ticket → signed PUT → ImportInputAssets.</p><p id="path"></p><pre id="result"></pre><ol id="history"></ol>
+<footer>Agent API: <code>dsh-shortcut-request / dsh-shortcut-response</code><br>Actions: capture · read · run · export · stop · createCanvas · uploadAsset · createNode · connectNodes · generate · waitTask · saveCanvas · autoLayout · selectNode · labExportDialog<br>Any script on Studio can call this API. Credentials remain in memory.</footer>
+<script src="popup.js"></script></body></html>

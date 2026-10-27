@@ -1,0 +1,49 @@
+{
+ "_spdx": "SPDX-License-Identifier: GPL-3.0-or-later",
+ "_copyright": "SPDX-FileCopyrightText: 2026 Head Workflow contributors",
+ "version": "0.2.59",
+ "status": "implemented-and-synced-awaiting-browser-reload",
+ "focusedTests": {
+  "passed": 35,
+  "failed": 0
+ },
+ "publicContractTests": {
+  "passed": 33,
+  "failed": 0
+ },
+ "liveValidation": false,
+ "source": "<SHARE_ROOT>/ext",
+ "installed": "<EXT_DIR>",
+ "runtimeFilesHashMatched": true,
+ "writer": "Running 0.2.59; artifact-chunks capability confirmed",
+ "browser": {
+  "observedVersion": "0.2.58",
+  "reloadRequired": true
+ },
+ "actions": [
+  "labExport",
+  "listLabArtifacts",
+  "labDownloadArtifact",
+  "publishLabArtifact",
+  "listCanvasAssets",
+  "setLabInput",
+  "connectNodes"
+ ],
+ "preserved": [
+  "Public action and DOM-event contracts",
+  "Dry-run defaults",
+  "Existing uploadAsset PNG contract",
+  "labExportDialog never submits",
+  "Existing flow.js bytes",
+  "Current canvas nodes and failed evidence"
+ ],
+ "limitations": [
+  "New actions tested with mock native transport and real filesystem writer; no live canvas mutation validation claimed.",
+  "Native export interception supports matching anchor downloads. Other save mechanisms report an unknown outcome without retry.",
+  "Imported bytes are unchanged, but Studio may process model representations.",
+  "Imported asset reference creation does not certify downstream asset processing readiness.",
+  "Extension reload and Studio reload must be completed before live validation or pipeline continuation."
+ ],
+ "nextAction": "Reload DSH Canvas Driver, then reload the existing Studio tab. Continue with live validation before model work.",
+ "promptPolicy": "Future Lab prompts and node descriptions use generic inputs and runtime-read configuration/provenance. Historical submitted prompts remain evidence."
+}

@@ -2,9 +2,9 @@
   "SPDX-License-Identifier": "GPL-3.0-or-later",
   "SPDX-FileCopyrightText": "2026 Head Workflow contributors",
   "name": "head-workflow",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "license": "GPL-3.0-or-later",
-  "status": "Blender5.2 clean rebuild verified; Blender4.2 Lab reproduction recorded in VERIFICATION.md",
+  "status": "Blender5.2 clean rebuild verified; Blender4.2 Lab reproduction in VERIFICATION.md; canvas driver 0.2.59 included; eyes-and-gaze limit recorded in docs/GAZE-LIMITS.md",
   "files": [
     {
       "path": ".gitattributes",
@@ -13,8 +13,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 241,
-      "sha256": "78098c6588973d3b0e1d75579c121b537bce898b6fed11344d828c1330f56ddd"
+      "bytes": 277,
+      "sha256": "75da26ef22bfa2e6c407a38ff0aff9ab72e3d38ca000cb061d9473aa8a3b3716"
     },
     {
       "path": "audit-observability-tests.py",
@@ -98,8 +98,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2231,
-      "sha256": "22d9e53c77a1467d80f29c732e4c77c83162ea926a60f63668d57f68ce71b546"
+      "bytes": 3362,
+      "sha256": "026c1239720449612bf098231d49227bff328acdf7a7e6b98888e3750a568808"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
@@ -110,6 +110,16 @@
       "path": "docs/CANVAS-CHAIN.md",
       "bytes": 2520,
       "sha256": "1b12e9b5ed6c8d6d00b95fb080135de37b415911d7373a617fa24a40382c5e73"
+    },
+    {
+      "path": "docs/CANVAS-DRIVER.md",
+      "bytes": 3442,
+      "sha256": "bdae1bbda241d6c1f101915f874ebd9997381a7a35894659b056efb3b82715da"
+    },
+    {
+      "path": "docs/GAZE-LIMITS.md",
+      "bytes": 2265,
+      "sha256": "ec9126f2264fb6516c8890c6d8882ff22b1031a1f33a6e4c2b48f696e55d7d95"
     },
     {
       "path": "docs/REPAIR-PIPELINE.md",
@@ -125,6 +135,256 @@
       "path": "docs/TRIPO-LAB.md",
       "bytes": 3135,
       "sha256": "36040439d51e2006d1c096630bd6caab58e17b0ec33bedfa398973e8a0186648"
+    },
+    {
+      "path": "driver/artifact-download.js",
+      "bytes": 11756,
+      "sha256": "5397e92e16d273b605f6f2de8843e910a9c2f9fc3c1b78fd24391b8222464ba3"
+    },
+    {
+      "path": "driver/auto-layout.js",
+      "bytes": 7680,
+      "sha256": "138ecdf897a057adee705a41fcafb7f3f898839f864d88542fa4b37fcc84970c"
+    },
+    {
+      "path": "driver/canvas-assets.js",
+      "bytes": 6403,
+      "sha256": "8d10eb4d9edcb7c7278cd7144100c7fdb64b41ed095092dc46c7e77d85203647"
+    },
+    {
+      "path": "driver/CHANGELOG.md",
+      "bytes": 7611,
+      "sha256": "2b4ae3384545b59d4b8ccfb7b10044751aa4cd39641bdf61275d80dec55ddbb5"
+    },
+    {
+      "path": "driver/DRIVER-USAGE-v021.md",
+      "bytes": 10026,
+      "sha256": "24ef635a0540a147943b2784cf3320f5e483c2a2539c8aacde37b0b716c1aefc"
+    },
+    {
+      "path": "driver/DRIVER-USAGE.md",
+      "bytes": 28683,
+      "sha256": "3cbd054c8597e2d06c0851f8c92959e6007a34319f4e9d35019b2971b1a79883"
+    },
+    {
+      "path": "driver/driver.js",
+      "bytes": 36608,
+      "sha256": "e6c8c1f86b0f6a5ef1596f32b07803f8bc87d8b1c95133289521393fde7c60eb"
+    },
+    {
+      "path": "driver/durable-state.js",
+      "bytes": 11715,
+      "sha256": "0882f39c8b42660e42410770178092c1d6af53ebe7c1e5326ec80e799e2f569b"
+    },
+    {
+      "path": "driver/evidence/report.json",
+      "bytes": 1836,
+      "sha256": "7577eb5badbf5bc3e78e6f771996bc67c045a25f3c22d83eec4fc061ca05c36e"
+    },
+    {
+      "path": "driver/evidence/tests.json",
+      "bytes": 4255,
+      "sha256": "8c85372efaae8e21e47268638fb41e5dec5c7ccdbbd5018f5c2ef6d605297d53"
+    },
+    {
+      "path": "driver/flow.js",
+      "bytes": 32378,
+      "sha256": "df04739554ee45ea3af86e06b439af6adafa801ae2a202c816c8a66f845a5188"
+    },
+    {
+      "path": "driver/lab-operations.js",
+      "bytes": 9847,
+      "sha256": "0d15efa3cf7eee4cd3e2ea8ced46062fd48a29a32c714f188e404b25b9614593"
+    },
+    {
+      "path": "driver/lifecycle.js",
+      "bytes": 2105,
+      "sha256": "f06c5bcba6b69897c83af23aec821210b28a44f919cff6c790914aea900cc40e"
+    },
+    {
+      "path": "driver/local-writer.cjs",
+      "bytes": 5648,
+      "sha256": "0232c6aa538ca397e26be216e870da5628f5b9c800b5e059e7274e37fe843d0e"
+    },
+    {
+      "path": "driver/manifest.json",
+      "bytes": 1477,
+      "sha256": "f097ac8d5d8c02ec1d3a2a8878c2fa4dd1baf0d0166858eea9614e198e455ef8"
+    },
+    {
+      "path": "driver/native-contracts.js",
+      "bytes": 1319,
+      "sha256": "25b0b43db3993a5292f723b1afa4b0d1149111d56d1e0485e660aa01ab42755d"
+    },
+    {
+      "path": "driver/observer.js",
+      "bytes": 11427,
+      "sha256": "6b33b0754fb488b38abf9182785857bb98b8fff3fded4f54a9124f07c6a547c7"
+    },
+    {
+      "path": "driver/popup.css",
+      "bytes": 1100,
+      "sha256": "8437b6164127e4a5d5b5fbbea73a91023be4f6048f0bc71c97a72cd83ae1d51a"
+    },
+    {
+      "path": "driver/popup.html",
+      "bytes": 2469,
+      "sha256": "8e72f1c7665ef671a1f122015fc529f4d3b5eb5e54c56ea4db69b2a5d8042c92"
+    },
+    {
+      "path": "driver/popup.js",
+      "bytes": 1656,
+      "sha256": "2f78dfab92a9aa7f48c0e50ce02c24d280360976cc0def2f70a6b306a9977843"
+    },
+    {
+      "path": "driver/proof.md",
+      "bytes": 4304,
+      "sha256": "be306b9318e93e4d20956212939b95ff2992c5cc1171653bcfee76c824859f9b"
+    },
+    {
+      "path": "driver/README.md",
+      "bytes": 10912,
+      "sha256": "feef8db91cf1c92121c10a634d850edf37e983aeb02830f6ff0ba0e7d0a59de6"
+    },
+    {
+      "path": "driver/review-bridge.js",
+      "bytes": 1887,
+      "sha256": "886e9e545663d4214f64c52a8eb201a2c56cfde65b3bf23d9322ba284a934611"
+    },
+    {
+      "path": "driver/rollback-sections.cjs",
+      "bytes": 766,
+      "sha256": "81661dbb8dcdc3f0c49438bf8f553b4d256126e2cc6557e117b49c9178bc8097"
+    },
+    {
+      "path": "driver/sanitize.js",
+      "bytes": 6301,
+      "sha256": "4ff92317a958a6f2b57482ff2bd54df48a239c31081cb0ae148fcae9d406edbd"
+    },
+    {
+      "path": "driver/serve-review-companion.cjs",
+      "bytes": 2072,
+      "sha256": "0d101ed11d0e846255e73274af594778d574daaf43bc6f1a37cbcaa9777d9fa7"
+    },
+    {
+      "path": "driver/shortcut-core.js",
+      "bytes": 1978,
+      "sha256": "36cc830cfef875f18de32a90b34dcf4f6d1d0a37ba9b4a9206b655d7e1a102f4"
+    },
+    {
+      "path": "driver/start-writer.ps1",
+      "bytes": 2690,
+      "sha256": "92a12e62838dfd940720e5469dade8358dfb2d9c1726325187f7e3fff5636537"
+    },
+    {
+      "path": "driver/storage-sign.js",
+      "bytes": 2722,
+      "sha256": "26be91c26946641231cdeef43d2cdbe33d2593fdf1de70ce23926c52c9b8968b"
+    },
+    {
+      "path": "driver/sync.ps1",
+      "bytes": 972,
+      "sha256": "a2ebfe57defa3fae9f1e7a4f00e5e92c2f61bf3c168a4ecebaf8be4389eb6385"
+    },
+    {
+      "path": "driver/tests/artifact-download-v059.test.cjs",
+      "bytes": 6438,
+      "sha256": "5980848a4074733822ea7f02f2cb43127a72526297fc59c45ac0b1b4eaa64a7b"
+    },
+    {
+      "path": "driver/tests/auto-layout.test.cjs",
+      "bytes": 4461,
+      "sha256": "693c3ceb1701f5b25a88a0acc291e4854ee49820e84fd3d003138e1ddb8acc87"
+    },
+    {
+      "path": "driver/tests/canvas-assets-v059.test.cjs",
+      "bytes": 4673,
+      "sha256": "53b74d83a8882d2bef4343f1bca41057d482c59846133ece5f36875579610f4e"
+    },
+    {
+      "path": "driver/tests/destination-append.test.cjs",
+      "bytes": 5016,
+      "sha256": "a5e30e0c39afcfc8aacc0e41589c410ac10d89a0723af6f27676ea5eda3d3a19"
+    },
+    {
+      "path": "driver/tests/details.test.cjs",
+      "bytes": 1145,
+      "sha256": "c94f01436e106bf848ea3471dc0114d474c8311d49d5c67fb2ffdb9f58f1150f"
+    },
+    {
+      "path": "driver/tests/driver-runtime.test.cjs",
+      "bytes": 4059,
+      "sha256": "319ac4d04efa16fcd7e438de34fc7af0e6ee86b8d81aa566a40849756c079f1f"
+    },
+    {
+      "path": "driver/tests/driver.test.cjs",
+      "bytes": 4143,
+      "sha256": "36495571643afcbf957e029b3db6a559c1a82786538104c935402a35aeabf8ee"
+    },
+    {
+      "path": "driver/tests/lab-operations-v059.test.cjs",
+      "bytes": 6780,
+      "sha256": "3c3ccf1467b24d5e644e899950c469c02b682e38b955eb2d4931168858f7a493"
+    },
+    {
+      "path": "driver/tests/observer.test.cjs",
+      "bytes": 6044,
+      "sha256": "862e0f2a6235db7bcdddd1a1f90b2b831ff321e5c4092209a01ad310b8ff3ca4"
+    },
+    {
+      "path": "driver/tests/representative-recovery.test.cjs",
+      "bytes": 3000,
+      "sha256": "41b12d26b59b59f8532a899330802db5e78fd1aa237709dc744bdd2b7b95b475"
+    },
+    {
+      "path": "driver/tests/runtime-v059.test.cjs",
+      "bytes": 21515,
+      "sha256": "53dfcdb4c7484968fa5c37bbfa94888f9f5198e1c46b5be3cbdda836c7f9f0ce"
+    },
+    {
+      "path": "driver/tests/ui-export-v059.test.cjs",
+      "bytes": 4768,
+      "sha256": "138110a12ad9842d7f76b37d6db9c57177c71822979ad0e3c5cf7a1e9fc42026"
+    },
+    {
+      "path": "driver/tests/ui.test.cjs",
+      "bytes": 5713,
+      "sha256": "d4ec47a718329d6b0627e0803c1bedbd3f0032710a8be277c844a20d72467bb9"
+    },
+    {
+      "path": "driver/tests/writer-artifacts-v059.test.cjs",
+      "bytes": 3455,
+      "sha256": "a0659b0ea0a57ad8df55b764336f8e93aa0b9f09ef3086bd3a5501b2d4ca002a"
+    },
+    {
+      "path": "driver/tests/writer-worker-v059.test.cjs",
+      "bytes": 1200,
+      "sha256": "a7ce2496bea222f92789117031d4b6b6c67da3ea556a8d8b718f0fa5da761ffe"
+    },
+    {
+      "path": "driver/ui-actions.js",
+      "bytes": 13147,
+      "sha256": "0ac8292bdd10c0913a40f76b2e2861e954ad2c173747856e3063159ee1afef55"
+    },
+    {
+      "path": "driver/ui-hot-runtime.js",
+      "bytes": 2874,
+      "sha256": "52e2672415be89b097014e9195c5e6e568b938d00f0c6a9ad66ecbab83fb99f5"
+    },
+    {
+      "path": "driver/writer-bridge.js",
+      "bytes": 1272,
+      "sha256": "15801d5835feffda10b766ccbce1f5d5ddaab11e404fa449355b55f678263421"
+    },
+    {
+      "path": "driver/writer-contract.js",
+      "bytes": 1152,
+      "sha256": "9e95b38239e9e236d05d7a62d23b02d42fa51944602af83fbbdcde2aeaf95538"
+    },
+    {
+      "path": "driver/writer-worker.js",
+      "bytes": 978,
+      "sha256": "1d5007b758016917d1ac0ebab64066042bb3d5708a245a830cf40d576d4a65da"
     },
     {
       "path": "head_repair/__init__.py",
@@ -308,8 +568,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7165,
-      "sha256": "e0a266cfd7ee5bd2494bfdd618875dce3536c2c76c0554ff7f524d9f4015dfec"
+      "bytes": 7437,
+      "sha256": "ba9e87c2adfd35d530dfc4067df6203a2f2967e3f9e4cdbb7ed4f6258509d910"
     },
     {
       "path": "repair.py",
@@ -498,8 +758,8 @@
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 2924,
-      "sha256": "f8974846bc14e8d77978da0e0b0208283f776516354678d80ebbaab5ec96b3b9"
+      "bytes": 2999,
+      "sha256": "7122261720c8f188ed6a391488f76000477cc1ef3d9c5fe3b9e124b54b48ae03"
     },
     {
       "path": "tools/review-server.cjs",

@@ -15,3 +15,6 @@ private-inputs/
 *.jpg
 *.jpeg
 node_modules/
+
+# local test output
+test-results*/

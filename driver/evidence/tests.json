@@ -1,0 +1,168 @@
+{
+ "_spdx": "SPDX-License-Identifier: GPL-3.0-or-later",
+ "_copyright": "SPDX-FileCopyrightText: 2026 Head Workflow contributors",
+ "version": "0.2.59",
+ "passed": 33,
+ "actions": [
+  "capture",
+  "read",
+  "run",
+  "export",
+  "stop",
+  "createCanvas",
+  "uploadAsset",
+  "createNode",
+  "connectNodes",
+  "generate",
+  "waitTask",
+  "saveCanvas",
+  "autoLayout",
+  "selectNode",
+  "labExportDialog",
+  "labExport",
+  "listCanvasAssets",
+  "listLabArtifacts",
+  "setLabInput",
+  "publishLabArtifact",
+  "labDownloadArtifact"
+ ],
+ "tests": [
+  {
+   "name": "MAIN actions, page DOM events, and popup adapter expose the same registry",
+   "passed": true
+  },
+  {
+   "name": "First autoLayout click waits for native startup without Capture or reload",
+   "passed": true
+  },
+  {
+   "name": "STOP cancels startup waiting before any request",
+   "passed": true
+  },
+  {
+   "name": "Route changes during startup cannot retarget the action",
+   "passed": true
+  },
+  {
+   "name": "Auto-layout dry-run reads once, never saves and returns an inverse",
+   "passed": true
+  },
+  {
+   "name": "Auto-layout saves only geometry, is idempotent and inverse restores positions",
+   "passed": true
+  },
+  {
+   "name": "Wrong-target inverse is rejected before dispatch",
+   "passed": true
+  },
+  {
+   "name": "STOP interrupts layout before SaveCanvas",
+   "passed": true
+  },
+  {
+   "name": "Upload dry-run makes zero calls",
+   "passed": true
+  },
+  {
+   "name": "Upload executes ticket, signed PUT, import in order and accounts",
+   "passed": true
+  },
+  {
+   "name": "Public RPC cannot replace authenticated replay headers",
+   "passed": true
+  },
+  {
+   "name": "CreateCanvas defaults to dry-run with zero requests",
+   "passed": true
+  },
+  {
+   "name": "Creation replays observed empty CreateProject body, then separate rename",
+   "passed": true
+  },
+  {
+   "name": "Wrong canvas rejected before any dispatch",
+   "passed": true
+  },
+  {
+   "name": "CreateNode dry-run leaves native body unchanged and sends nothing",
+   "passed": true
+  },
+  {
+   "name": "CreateNode appends using captured node and save envelope; one save and one revision read",
+   "passed": true
+  },
+  {
+   "name": "ConnectNodes uses observed source/target/port shape",
+   "passed": true
+  },
+  {
+   "name": "Generate dry-run contains recipe and captured run constants with zero requests",
+   "passed": true
+  },
+  {
+   "name": "Generate saves parameters, submits once, and records balance",
+   "passed": true
+  },
+  {
+   "name": "Submitted task remains tracked; a second generation is rejected",
+   "passed": true
+  },
+  {
+   "name": "WaitTask polls terminal state and returns redacted output plus final accounting",
+   "passed": true
+  },
+  {
+   "name": "Fixed model, texture, rig and UV types use captured CreateRun without changing their recipes",
+   "passed": true
+  },
+  {
+   "name": "Final save retains outputs returned by the latest read",
+   "passed": true
+  },
+  {
+   "name": "STOP aborts pending transport immediately",
+   "passed": true
+  },
+  {
+   "name": "Evidence does not persist auth or signed URL query values",
+   "passed": true
+  },
+  {
+   "name": "Popup has all buttons and parses arguments for named actions",
+   "passed": true
+  },
+  {
+   "name": "Fresh canvas needs no prior native SaveCanvas or CreateRun template",
+   "passed": true
+  },
+  {
+   "name": "Lab template creates a fresh native Lab without a supplied template",
+   "passed": true
+  },
+  {
+   "name": "Existing canvas asset binding uses real public action and native inputMount",
+   "passed": true
+  },
+  {
+   "name": "Non-image Lab output/input ports survive native save and revision read",
+   "passed": true
+  },
+  {
+   "name": "Lab job/artifact discovery uses ownership-scoped read contracts",
+   "passed": true
+  },
+  {
+   "name": "Unpublished GLB artifact uploads/imports once and appends native reference",
+   "passed": true
+  },
+  {
+   "name": "Original artifact download traverses writer bridge and returns verified receipt",
+   "passed": true
+  }
+ ],
+ "liveBrowser": false,
+ "scope": "Actual source, MAIN/isolated/page-event bridge, mocked transport; no Tripo requests",
+ "limitations": [
+  "Offline transport tests only; the new actions still require live verification after extension reload."
+ ]
+}

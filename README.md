@@ -8,6 +8,8 @@ A reusable Blender command for targeted reconstruction of a rigged character's e
 
 **Status:** version 0.1.1 reproduced the head in clean Blender 5.2 and native Tripo Lab Blender 4.2 using a renderer-only compatibility patch. The actual Lab-exported GLB passed all 37 independent WebGL2 views. Close-up mouth edges and lid creasing remain visible; see VERIFICATION.md for the exact scope and limits.
 
+Version 0.1.4 adds the canvas driver (`driver/`) that operates a Tripo Studio canvas from outside the UI, and records the measured eyes-and-gaze limit in `docs/GAZE-LIMITS.md`: the v0.1.2 recipe delivers stationary eyeballs plus blink, and gaze is not a supported stage.
+
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 
 ## Requirements

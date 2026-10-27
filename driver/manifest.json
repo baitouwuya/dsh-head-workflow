@@ -1,0 +1,65 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- SPDX-FileCopyrightText: 2026 Head Workflow contributors -->
+{
+  "manifest_version": 3,
+  "name": "DSH Canvas Driver",
+  "version": "0.2.59",
+  "permissions": [],
+  "host_permissions": [
+    "http://127.0.0.1:43127/*"
+  ],
+  "background": {
+    "service_worker": "writer-worker.js"
+  },
+  "description": "Reload-triggered canvas flow with direct MAIN API, accounting and STOP.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://studio.tripo3d.ai/projects*"
+      ],
+      "js": [
+        "sanitize.js",
+        "observer.js",
+        "shortcut-core.js",
+        "native-contracts.js",
+        "storage-sign.js",
+        "auto-layout.js",
+        "durable-state.js",
+        "canvas-assets.js",
+        "artifact-download.js",
+        "lab-operations.js",
+        "ui-actions.js",
+        "driver.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://studio.tripo3d.ai/projects*"
+      ],
+      "js": [
+        "lifecycle.js",
+        "writer-contract.js",
+        "writer-bridge.js"
+      ],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    }
+  ],
+  "action": {
+    "default_title": "DSH Canvas Driver",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "flow.js",
+        "input.png"
+      ],
+      "matches": [
+        "https://studio.tripo3d.ai/*"
+      ]
+    }
+  ]
+}

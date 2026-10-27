@@ -1,6 +1,24 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <!-- SPDX-FileCopyrightText: 2026 Head Workflow contributors -->
 
+## v0.1.4
+
+Canvas driver published, and the eyes-and-gaze limit documented from a measured run.
+
+- driver/ - the MV3 extension that operates a Studio canvas over its page-world API, with
+  the 0.2.59 additions: `labExport`, `labDownloadArtifact`, `publishLabArtifact`,
+  `listCanvasAssets`, `listLabArtifacts`, `setLabInput`. Every mutating action defaults
+  to dry-run; results carry what was actually written and never a signed URL.
+- driver/tests/ - the offline test suite shipped with the extension.
+- docs/CANVAS-DRIVER.md - install and activation steps, the full action surface, and the
+  operations that are deliberately still not actions (Lab submission, job monitoring, node
+  deletion, panel toggles).
+- docs/GAZE-LIMITS.md - the measured failure of an eyes-and-gaze stage on a shallow-socket
+  Smart Mesh head: worst aperture coverage 66.12 % over 18 gaze samples, one degenerate iris
+  triangle, protected-face movement and reset error both zero, primary model withheld. The
+  v0.1.2 recipe covers stationary eyeballs and blink only; no gaze stage exists.
+- No model, texture or rig asset is included in this release.
+
 ## v0.1.3
 
 Canvas chain published: the recipe that reproduced the head pipeline end to end on
