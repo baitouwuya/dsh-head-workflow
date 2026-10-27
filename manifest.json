@@ -4,7 +4,7 @@
   "name": "head-workflow",
   "version": "0.1.5-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Direct Smart Mesh native attachment failure preserved; exterior-boundary correction constructed and verified in host Blender; one native appearance/export pass pending; no replacement primary approved",
+  "status": "Exterior boundary continuity verified in host and native runs; native follow-up stopped at original-lash contact; primary GLB withheld and no second construction; previous failures preserved",
   "files": [
     {
       "path": ".gitattributes",
@@ -123,8 +123,8 @@
     },
     {
       "path": "docs/EXTERIOR-SKIN-CONTINUITY.md",
-      "bytes": 4924,
-      "sha256": "162cb250c40923ee71bac6c6e252e0b01313848fe6ec846ba56089eb01570e0c"
+      "bytes": 6394,
+      "sha256": "066f3926c29c1ca13fc2e01dd8b9f7683160c98cf38d447975c65c3b2f4dcfd7"
     },
     {
       "path": "docs/GAZE-LIMITS.md",
@@ -693,8 +693,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8893,
-      "sha256": "c1b16ec20ab43ca061af003bf80e879fdeb6a3528a03e96c40c0a37d8831a871"
+      "bytes": 8973,
+      "sha256": "0ab7dac1dff80e38b680a4df23baec49326c8785400406d0e55aa91f0f843b63"
     },
     {
       "path": "repair.py",
@@ -983,8 +983,8 @@
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 3038,
-      "sha256": "49a88196e4988f8b00a27a85beb3048a6580fd1124c766c4d0d887248d8a04e2"
+      "bytes": 3028,
+      "sha256": "6239928d99fbd8ec1d15b787a96a808e5205a65059866116b05ada709bb3d1f7"
     },
     {
       "path": "tools/review-server.cjs",

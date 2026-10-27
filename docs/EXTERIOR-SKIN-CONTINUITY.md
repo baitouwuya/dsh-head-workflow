@@ -81,3 +81,28 @@ Corner normals differed by at most 1.23e-7 in vector length between the provided
 native and host Blender versions; the inherited zero normal remained present.
 This diagnostic conversion must not be presented as byte-identical normal
 serialization. Original source data and prior failed assets remain preserved.
+
+## Native confirmation and the next blocked gate
+
+The single native follow-up used construction revision
+`70c685c381c9d90667d96d6b7f3077db54db7a7d`. Its independently sampled input
+produced 103, 107, 104 and 109 certified boundary segments: all 423 passed.
+Core-strip contact and continuous-interval checks passed, and sampled eye
+clearance required zero displacement. The original source and encoded image
+payload remained unchanged. Corrected-repository and adapter suites passed
+159 Python tests and four Node tests.
+
+The pass then stopped at original right-lash contact classification. Only one
+of 379 band vertices lay within the configured 0.001605491423 contact distance,
+before static-root exclusion. Its eligible lateral span was zero against the
+required 0.07462235882. No threshold was relaxed and no second construction ran.
+
+The native editable scene and diagnostic renders retain amber lids and
+stationary source lashes. Final lash deformation, skin appearance, normal work
+and sealed-GLB handoff are incomplete. No primary GLB was created or published.
+The evidence archive has 88 independently verified payload files at SHA-256
+`a20c040b8d19c695912a19dbfc5d0c887549bced86b1dcc5f07ded03fe358097`;
+the separately published editable matches its archived copy at
+`dd9a4f710c9ed539b351d130e89a9148e1bec0749be989be6afc16211d7b257f`.
+This confirms the exterior-continuity correction while preserving the failed
+overall handoff and its next measurable blocker.

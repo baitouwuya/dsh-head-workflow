@@ -24,7 +24,8 @@ successfully using the Lab's supplied Blender, but failed complete skin-boundary
 attachment before a full candidate. No primary model was approved or retried.
 The subsequent [exterior continuity correction](docs/EXTERIOR-SKIN-CONTINUITY.md)
 was reproduced and constructed in bridged host Blender. All four boundaries pass
-their whole-segment checks; native final appearance/export acceptance is pending.
+their whole-segment checks in host and native runs. The native follow-up stopped
+at original-lash contact; final appearance/export acceptance remains incomplete.
 
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 
