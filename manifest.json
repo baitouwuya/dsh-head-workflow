@@ -4,7 +4,7 @@
   "name": "head-workflow",
   "version": "0.1.5-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Previous native handoff failed appearance, skin attachment and lash transfer; measured corrections reproduced outside Lab; one native visual/export verification pending; no primary model approved; historical verification retained",
+  "status": "Measured corrections reproduced outside Lab; direct Smart Mesh native render succeeded but continuous skin-boundary attachment failed; primary model withheld, no retry; historical verification retained",
   "files": [
     {
       "path": ".gitattributes",
@@ -158,8 +158,8 @@
     },
     {
       "path": "docs/STATIONARY-BLINK-VISUAL-DIAGNOSIS.md",
-      "bytes": 5238,
-      "sha256": "a776a2019e4a94b067cbf575d8b9ed995de7a3fb975088a48637f116d4c00287"
+      "bytes": 7247,
+      "sha256": "82d3dd8aef442d70b0eeb68fd3865be18b5c2998902d08cec535504386848990"
     },
     {
       "path": "docs/TRIPO-LAB.md",
@@ -663,8 +663,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8567,
-      "sha256": "5173293b42c0f63e86a1773fab6f15cdb56bc3ca7fa2f8a1ec926f1a51c5d2ac"
+      "bytes": 8648,
+      "sha256": "ff0f7bca99a35b4cb7c2cf37c0c576f00488ff722cb2b1124fb80fb232929dcb"
     },
     {
       "path": "repair.py",
@@ -928,8 +928,8 @@
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 3067,
-      "sha256": "731c5843162b83b95464ea9c14feef86507f4c979b2733af77ec3fd88ae2f52f"
+      "bytes": 3039,
+      "sha256": "159082aab70a412b91e234d20f16a6d94582864c70510d6c82fbd5c9595c5538"
     },
     {
       "path": "tools/review-server.cjs",

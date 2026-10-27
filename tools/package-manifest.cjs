@@ -24,7 +24,7 @@ for (const full of walk(root)) {
   files.push({path: relative, bytes: data.length, sha256: crypto.createHash('sha256').update(data).digest('hex')});
 }
 files.sort((a, b) => a.path.localeCompare(b.path));
-const manifest = {'SPDX-License-Identifier': 'GPL-3.0-or-later', 'SPDX-FileCopyrightText': '2026 Head Workflow contributors', name: 'head-workflow', version: '0.1.5-dev', license: 'GPL-3.0-or-later', status: 'Previous native handoff failed appearance, skin attachment and lash transfer; measured corrections reproduced outside Lab; one native visual/export verification pending; no primary model approved; historical verification retained', files};
+const manifest = {'SPDX-License-Identifier': 'GPL-3.0-or-later', 'SPDX-FileCopyrightText': '2026 Head Workflow contributors', name: 'head-workflow', version: '0.1.5-dev', license: 'GPL-3.0-or-later', status: 'Measured corrections reproduced outside Lab; direct Smart Mesh native render succeeded but continuous skin-boundary attachment failed; primary model withheld, no retry; historical verification retained', files};
 fs.writeFileSync(path.join(root, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 const hash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'manifest.json'))).digest('hex');
 const header = '# SPDX-License-Identifier: GPL-3.0-or-later\n# SPDX-FileCopyrightText: 2026 Head Workflow contributors\n';

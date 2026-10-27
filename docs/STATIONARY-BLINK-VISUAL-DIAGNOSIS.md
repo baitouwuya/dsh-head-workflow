@@ -85,3 +85,37 @@ See [the native verification contract](NATIVE-BLINK-VERIFICATION.md). Exactly on
 fresh native construction pass follows this diagnosis. Local diagnostic meshes
 are evidence only and are never uploaded as pipeline outputs. Gaze remains a
 known unsupported capability.
+
+## Direct Smart Mesh native outcome
+
+The single follow-up native pass cloned the original base tag, verified its
+commit and ancestry, checked out correction commit
+`c647e632a0a25a3b6c5fdddf432be822801da7d2`, and ran the configured suites.
+Base tests passed (6 Python, 4 Node); corrected and adapter suites passed
+(143 Python, 4 Node). The Lab supplied Blender 4.2.9 LTS and Python 3.11.7.
+Native EEVEE rendering succeeded. No external Blender installation was used.
+
+Construction stopped at the first upper lid's complete-attachment gate.
+After float32 conversion, 14 of 96 boundary segments lacked continuous source
+skin coverage even though the maximum vertex-to-skin gap was only
+1.4347545032405242e-8. The bounded source-surface route could not be certified.
+This confirms why vertex contact must not replace a complete-edge certificate.
+
+The editable diagnostic contains one partial upper core shown in amber, with
+visible faceting. It is not a completed blink rig or an appearance-transfer
+result. Remaining lids, lash transfer, final normals, head binding, sealed GLB
+verification and full visual handoff were not completed. No primary GLB was
+sealed or published, and no retry was submitted.
+
+The failure archive contains 82 independently hash-verified payload files,
+including native renders and the unchanged direct source. Its SHA-256 is
+`1dd66686b1a4d829dcf8111f7de9cad10e287a1ff16c5136db5ac0517ac6d8bb`;
+the separately published editable diagnostic matches its archived copy at
+`676b6676e94b76427406ec0c8cf596370838c6f51a2938204f664335a11e3872`.
+The original encoded image payload is present byte-for-byte in both the source
+and editable scene. The earlier numerical reproduction remains evidence for
+its fitted input and adapter; it does not certify this different native fit.
+
+A future construction needs a validated direct-input skin-region and continuous
+boundary-route fit before the remaining appearance and lash stages can proceed.
+No further attempt is authorized by this result record.
