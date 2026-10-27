@@ -22,14 +22,94 @@
       "sha256": "2869a520c6b9d9f709766eb2fdf7959d42dca49eb3a907a5b17c139448707a70"
     },
     {
+      "path": "canvas-chain/body-prepare.prompt.md",
+      "bytes": 1905,
+      "sha256": "4d5b0fa7dd0d6e33f50073e5f1459bf581ae77fe6c00a67d3df14d3eb20f8ed8"
+    },
+    {
+      "path": "canvas-chain/clothes-fit.prompt.md",
+      "bytes": 1932,
+      "sha256": "886ec5ca65f3b243411b2a8e38119285fa904a21256904b91c3d62ef92082261"
+    },
+    {
+      "path": "canvas-chain/export-character.prompt.md",
+      "bytes": 2052,
+      "sha256": "62e1a791fe79535f49c2847bc5bb0e57bb9f7495f8dcf960b4135797f20ff6d8"
+    },
+    {
+      "path": "canvas-chain/expression-controls.prompt.md",
+      "bytes": 2055,
+      "sha256": "b474d1a2b465198f05f622590da4a807241a9c6fc10cf00efffed53cff7a6300"
+    },
+    {
+      "path": "canvas-chain/eyes-blink.prompt.md",
+      "bytes": 2136,
+      "sha256": "5c3df8184235ecb6c98cc24897829e1e70383e0b3323cb1e1f193720a5732cdc"
+    },
+    {
+      "path": "canvas-chain/flow-config.json",
+      "bytes": 25464,
+      "sha256": "e099e5f060dc6ffff5363ce556432fff43c316b2a9e2441f1faf541b50e528df"
+    },
+    {
+      "path": "canvas-chain/hair-fit.prompt.md",
+      "bytes": 1870,
+      "sha256": "d8893e144a46ef4b7e2390fbfcf2d8e9eac37226ec21fd56b390520ee9cccb6b"
+    },
+    {
+      "path": "canvas-chain/head-fit.prompt.md",
+      "bytes": 1922,
+      "sha256": "84565bf6e936760871d0388b0afeed16fdb277a566ce679545b57d0dab941aed"
+    },
+    {
+      "path": "canvas-chain/jaw-controls.prompt.md",
+      "bytes": 2081,
+      "sha256": "be8642fc8d77b7bfe4724bad8407ee9ef28de07fbf6b7a95fc4c9c5ae0d02832"
+    },
+    {
+      "path": "canvas-chain/lineage.json",
+      "bytes": 8556,
+      "sha256": "42d45001e89ccad8290f37a0bc84d5930921748f2a60b7e474bb654b231aea1f"
+    },
+    {
+      "path": "canvas-chain/manifest.json",
+      "bytes": 10590,
+      "sha256": "7e30b3f13031ec0f8b9fbacd051beabe0ee2c41ac84ba3b22e9909f7765504f1"
+    },
+    {
+      "path": "canvas-chain/polish-attempt-PLAN.md",
+      "bytes": 2731,
+      "sha256": "057c1755eb27bde27eda55d33bbac99a7c37aab2b10df3e5ef1992e4ae1d69d3"
+    },
+    {
+      "path": "canvas-chain/polish-attempt-profile.json",
+      "bytes": 1501,
+      "sha256": "635aee8198cb931127c611dae8f8ea9f86fa16522e608f37df64583b0fd1c529"
+    },
+    {
+      "path": "canvas-chain/status.json",
+      "bytes": 5438,
+      "sha256": "da322295ffed9b397a520298fe38f0618231f2cd6dee6651d95bdc43aefe3679"
+    },
+    {
+      "path": "canvas-chain/texture-consolidate.prompt.md",
+      "bytes": 1997,
+      "sha256": "4236ff33eaafc42e91a1eae2bc4dddc470db4421ea7bd3abf8e18336b8a054fe"
+    },
+    {
       "path": "CHANGELOG.md",
-      "bytes": 1299,
-      "sha256": "e010ad80481e6bd6efacd6cdf97cb744a7a5e3df0bd267e93c2e6c3f745c791a"
+      "bytes": 2231,
+      "sha256": "22d9e53c77a1467d80f29c732e4c77c83162ea926a60f63668d57f68ce71b546"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
       "bytes": 2491,
       "sha256": "adad7e9d070aedd03f080b71da5bc0f3c8eca008b807a99fd7adec6b3d8e968a"
+    },
+    {
+      "path": "docs/CANVAS-CHAIN.md",
+      "bytes": 2520,
+      "sha256": "1b12e9b5ed6c8d6d00b95fb080135de37b415911d7373a617fa24a40382c5e73"
     },
     {
       "path": "docs/REPAIR-PIPELINE.md",
@@ -410,6 +490,11 @@
       "path": "THIRD-PARTY-NOTICES.md",
       "bytes": 1932,
       "sha256": "f4b10d0802e40878003932535807484fbe2f35a4408ded64395a733b7e033521"
+    },
+    {
+      "path": "tools/matched-viewer-baseline.js",
+      "bytes": 9884,
+      "sha256": "2cf831caed3013b849e91263da5e6b7fb8a6813cf829de1453463c6972accdb7"
     },
     {
       "path": "tools/package-manifest.cjs",

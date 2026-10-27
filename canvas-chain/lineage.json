@@ -1,0 +1,311 @@
+{
+ "_spdx": "SPDX-License-Identifier: GPL-3.0-or-later",
+ "_items": [
+  {
+   "step": "body-prepare",
+   "kind": "lab",
+   "nodeId": "fd994853-efb8-4bec-a074-97f81b177235",
+   "jobId": "01a17896-a370-7af2-bbe4-1ab2f792cd5b",
+   "runId": null,
+   "inputAssetIds": [
+    "01a1788e-c82f-732a-88fd-ccf8a75bcecb"
+   ],
+   "outputAssetIds": [
+    "01a17899-991e-7634-928e-fc981d303630"
+   ],
+   "startedAt": "2026-10-26T14:21:25.385Z",
+   "finishedAt": "2026-10-26T14:24:33.420Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "body-reference",
+   "kind": "fixed",
+   "nodeId": "c02a9ca7-7eef-4219-b4c1-a82f9ac30d02",
+   "jobId": null,
+   "runId": "01a1788d-5749-7e68-887b-cdd1d9246007",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a1788d-bb69-7be1-b51a-2abb3044bcf5"
+   ],
+   "startedAt": "2026-10-26T14:11:03.636Z",
+   "finishedAt": "2026-10-26T14:11:37.201Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "body-sm",
+   "kind": "fixed",
+   "nodeId": "5e8ccae1-4851-45fd-8827-04ba0f8f05d6",
+   "jobId": null,
+   "runId": "01a1788d-ee8d-74ea-b75b-fdf1a31872d6",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a1788e-c82f-732a-88fd-ccf8a75bcecb"
+   ],
+   "startedAt": "2026-10-26T14:11:42.746Z",
+   "finishedAt": "2026-10-26T14:12:50.403Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "clothes-fit",
+   "kind": "lab",
+   "nodeId": "854d849a-b74d-4963-9f1b-dd9af8da7c79",
+   "jobId": "01a1789a-002f-73a6-9723-973c771593b9",
+   "runId": null,
+   "inputAssetIds": [
+    "01a17899-991e-7634-928e-fc981d303630",
+    "01a17891-12ea-7652-8486-7004b8d421b0"
+   ],
+   "outputAssetIds": [
+    "01a1789e-63a5-7a7a-8903-389a6be718ff"
+   ],
+   "startedAt": "2026-10-26T14:24:42.441Z",
+   "finishedAt": "2026-10-26T14:30:00.024Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "clothes-reference",
+   "kind": "fixed",
+   "nodeId": "7c6e41c3-a1a8-46c5-b19e-28e37ef56a31",
+   "jobId": null,
+   "runId": "01a1788f-03c4-796e-aabc-64014e384e19",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a1788f-8937-7251-a612-599f0023eacd"
+   ],
+   "startedAt": "2026-10-26T14:12:56.080Z",
+   "finishedAt": "2026-10-26T14:13:39.835Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "clothes-sm",
+   "kind": "fixed",
+   "nodeId": "16295843-6c0a-48a6-8f86-c04f1553ca35",
+   "jobId": null,
+   "runId": "01a1788f-c2c6-7b4b-8128-d40fd1c9423a",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a17891-12ea-7652-8486-7004b8d421b0"
+   ],
+   "startedAt": "2026-10-26T14:13:44.960Z",
+   "finishedAt": "2026-10-26T14:15:21.099Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "export-character",
+   "kind": "lab",
+   "nodeId": "93443dac-9a2d-4352-a79f-d66b92311e84",
+   "jobId": "01a178ca-8f00-7ead-81df-a335c2ead7cd",
+   "runId": null,
+   "inputAssetIds": [
+    "01a178ca-4d17-71df-aa9e-b72795b09cdc"
+   ],
+   "outputAssetIds": [
+    "01a178ce-db9e-7a42-a77e-1fcc7e0c7dec"
+   ],
+   "startedAt": "2026-10-26T15:18:02.142Z",
+   "finishedAt": "2026-10-26T15:23:07.381Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "expression-controls",
+   "kind": "lab",
+   "nodeId": "9eca0e9c-88cf-42ec-8904-683739fd7a99",
+   "jobId": "01a178c0-a023-76e5-8b95-ce6b6af0611e",
+   "runId": null,
+   "inputAssetIds": [
+    "01a178c0-3abe-7c6d-8397-fc499e73285a"
+   ],
+   "outputAssetIds": [
+    "01a178c6-007c-7f0b-94f0-4e71fea04fc4"
+   ],
+   "startedAt": "2026-10-26T15:07:21.693Z",
+   "finishedAt": "2026-10-26T15:13:02.053Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "eyes-blink",
+   "kind": "lab",
+   "nodeId": "3b108651-0386-46a2-9c2d-3be7e8063da9",
+   "jobId": "01a178aa-53e7-7dcc-b941-1b7162299cb5",
+   "runId": null,
+   "inputAssetIds": [
+    "01a178aa-18c5-7a8e-aba4-6295fa9db39c"
+   ],
+   "outputAssetIds": [
+    "01a178b8-c163-718d-8daf-1bb440e7cbc6"
+   ],
+   "startedAt": "2026-10-26T14:42:49.319Z",
+   "finishedAt": "2026-10-26T14:59:14.241Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "hair-fit",
+   "kind": "lab",
+   "nodeId": "49076635-6f4f-46cb-8396-2908ba270324",
+   "jobId": "01a178a2-dd86-7e37-a962-0481941723a6",
+   "runId": null,
+   "inputAssetIds": [
+    "01a178a2-5165-7b37-93ea-aeeaf7069877",
+    "01a17896-79ce-735e-875f-94bc8593b5ba"
+   ],
+   "outputAssetIds": [
+    "01a178a7-c026-798e-8e35-bdd0d40e3f59"
+   ],
+   "startedAt": "2026-10-26T14:34:45.852Z",
+   "finishedAt": "2026-10-26T14:40:10.716Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "hairless-head-reference",
+   "kind": "fixed",
+   "nodeId": "32c9e81f-e869-47c6-ab4a-57eda0878fc0",
+   "jobId": null,
+   "runId": "01a17891-4eed-77a8-b45d-45117866706e",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a17891-96ec-77de-84e1-ea686f7205b5"
+   ],
+   "startedAt": "2026-10-26T14:15:26.505Z",
+   "finishedAt": "2026-10-26T14:16:03.368Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "hairless-head-sm",
+   "kind": "fixed",
+   "nodeId": "fae5fa1a-dc5d-416e-9572-91e68cbadef8",
+   "jobId": null,
+   "runId": "01a17891-cd3b-7e86-92e1-a8da7583d264",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a17893-c291-7ef3-90ce-7f5d90f261ce"
+   ],
+   "startedAt": "2026-10-26T14:16:08.723Z",
+   "finishedAt": "2026-10-26T14:18:33.092Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "head-fit",
+   "kind": "lab",
+   "nodeId": "ba989e43-82c4-4520-95dd-d3d764813276",
+   "jobId": "01a1789e-c743-78a6-a9e4-260b61cb83f0",
+   "runId": null,
+   "inputAssetIds": [
+    "01a1789e-63a5-7a7a-8903-389a6be718ff",
+    "01a17893-c291-7ef3-90ce-7f5d90f261ce"
+   ],
+   "outputAssetIds": [
+    "01a178a2-5165-7b37-93ea-aeeaf7069877"
+   ],
+   "startedAt": "2026-10-26T14:30:10.181Z",
+   "finishedAt": "2026-10-26T14:34:35.957Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "humanoid-rig",
+   "kind": "fixed",
+   "nodeId": "808f9374-cd35-4873-9f86-7588ff9c5340",
+   "jobId": null,
+   "runId": "01a178a8-1a2c-7932-8bdb-5befc6ba4c68",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a178aa-18c5-7a8e-aba4-6295fa9db39c"
+   ],
+   "startedAt": "2026-10-26T14:40:17.121Z",
+   "finishedAt": "2026-10-26T14:42:24.472Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "jaw-controls",
+   "kind": "lab",
+   "nodeId": "aa6970a7-c8f7-41d0-b34e-4341a5615a94",
+   "jobId": "01a178b9-8c66-7e37-a749-0be37ec0771e",
+   "runId": null,
+   "inputAssetIds": [
+    "01a178b8-c163-718d-8daf-1bb440e7cbc6"
+   ],
+   "outputAssetIds": [
+    "01a178c0-3abe-7c6d-8397-fc499e73285a"
+   ],
+   "startedAt": "2026-10-26T14:59:19.406Z",
+   "finishedAt": "2026-10-26T15:07:16.241Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "texture-consolidate",
+   "kind": "lab",
+   "nodeId": "0db51d06-bedd-4f68-8513-5c735210506a",
+   "jobId": "01a178c6-42ad-7539-ad69-7e7ee1b235a4",
+   "runId": null,
+   "inputAssetIds": [
+    "01a178c6-007c-7f0b-94f0-4e71fea04fc4"
+   ],
+   "outputAssetIds": [
+    "01a178ca-4d17-71df-aa9e-b72795b09cdc"
+   ],
+   "startedAt": "2026-10-26T15:13:08.350Z",
+   "finishedAt": "2026-10-26T15:17:55.552Z",
+   "handoff": "primary_glb_published_quality_pending",
+   "done": true
+  },
+  {
+   "step": "tpose",
+   "kind": "fixed",
+   "nodeId": "918d70e8-45e4-4a58-834a-4127f2f500b2",
+   "jobId": null,
+   "runId": "01a1788c-c170-74cd-ab40-1bd7ed6afb5c",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a1788d-26f9-7c1e-a117-6f2e873780c1"
+   ],
+   "startedAt": "2026-10-26T14:10:12.577Z",
+   "finishedAt": "2026-10-26T14:10:58.837Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "wig-reference",
+   "kind": "fixed",
+   "nodeId": "ee649153-8449-4265-a5d2-164d10a842c3",
+   "jobId": null,
+   "runId": "01a17894-0358-7385-b7ab-a11ee4968b87",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a17894-48d8-7427-a5c1-edc8660ce303"
+   ],
+   "startedAt": "2026-10-26T14:18:39.308Z",
+   "finishedAt": "2026-10-26T14:19:06.299Z",
+   "handoff": null,
+   "done": true
+  },
+  {
+   "step": "wig-sm",
+   "kind": "fixed",
+   "nodeId": "e62c1c95-e7ca-429e-97db-885651eb9fe3",
+   "jobId": null,
+   "runId": "01a17894-88bf-7aca-94f3-a7c57ac3708b",
+   "inputAssetIds": null,
+   "outputAssetIds": [
+    "01a17896-79ce-735e-875f-94bc8593b5ba"
+   ],
+   "startedAt": "2026-10-26T14:19:12.820Z",
+   "finishedAt": "2026-10-26T14:21:20.253Z",
+   "handoff": null,
+   "done": true
+  }
+ ]
+}

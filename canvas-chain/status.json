@@ -1,0 +1,207 @@
+{
+ "_spdx": "SPDX-License-Identifier: GPL-3.0-or-later",
+ "_copyright": "SPDX-FileCopyrightText: 2026 Head Workflow contributors",
+ "phase": "done",
+ "error": null,
+ "project": {
+  "canvasId": "01a1788c-2397-711f-adfc-526126a77948",
+  "projectId": "01a1788c-2397-711a-87e8-e05d36a211d0",
+  "url": "https://studio.tripo3d.ai/projects/01a1788c-2397-711a-87e8-e05d36a211d0"
+ },
+ "completed": [
+  {
+   "step": "body-prepare",
+   "kind": "lab",
+   "nodeId": "fd994853-efb8-4bec-a074-97f81b177235",
+   "runId": null,
+   "jobId": "01a17896-a370-7af2-bbe4-1ab2f792cd5b",
+   "balanceBefore": 276934,
+   "balanceAfter": 276934,
+   "observedDebit": 0
+  },
+  {
+   "step": "body-reference",
+   "kind": "fixed",
+   "nodeId": "c02a9ca7-7eef-4219-b4c1-a82f9ac30d02",
+   "runId": "01a1788d-5749-7e68-887b-cdd1d9246007",
+   "jobId": null,
+   "balanceBefore": 277414,
+   "balanceAfter": 277414,
+   "observedDebit": 0
+  },
+  {
+   "step": "body-sm",
+   "kind": "fixed",
+   "nodeId": "5e8ccae1-4851-45fd-8827-04ba0f8f05d6",
+   "runId": "01a1788d-ee8d-74ea-b75b-fdf1a31872d6",
+   "jobId": null,
+   "balanceBefore": 277414,
+   "balanceAfter": 277294,
+   "observedDebit": 120
+  },
+  {
+   "step": "clothes-fit",
+   "kind": "lab",
+   "nodeId": "854d849a-b74d-4963-9f1b-dd9af8da7c79",
+   "runId": null,
+   "jobId": "01a1789a-002f-73a6-9723-973c771593b9",
+   "balanceBefore": 276934,
+   "balanceAfter": 276934,
+   "observedDebit": 0
+  },
+  {
+   "step": "clothes-reference",
+   "kind": "fixed",
+   "nodeId": "7c6e41c3-a1a8-46c5-b19e-28e37ef56a31",
+   "runId": "01a1788f-03c4-796e-aabc-64014e384e19",
+   "jobId": null,
+   "balanceBefore": 277294,
+   "balanceAfter": 277294,
+   "observedDebit": 0
+  },
+  {
+   "step": "clothes-sm",
+   "kind": "fixed",
+   "nodeId": "16295843-6c0a-48a6-8f86-c04f1553ca35",
+   "runId": "01a1788f-c2c6-7b4b-8128-d40fd1c9423a",
+   "jobId": null,
+   "balanceBefore": 277294,
+   "balanceAfter": 277174,
+   "observedDebit": 120
+  },
+  {
+   "step": "export-character",
+   "kind": "lab",
+   "nodeId": "93443dac-9a2d-4352-a79f-d66b92311e84",
+   "runId": null,
+   "jobId": "01a178ca-8f00-7ead-81df-a335c2ead7cd",
+   "balanceBefore": 276914,
+   "balanceAfter": 276914,
+   "observedDebit": 0
+  },
+  {
+   "step": "expression-controls",
+   "kind": "lab",
+   "nodeId": "9eca0e9c-88cf-42ec-8904-683739fd7a99",
+   "runId": null,
+   "jobId": "01a178c0-a023-76e5-8b95-ce6b6af0611e",
+   "balanceBefore": 276914,
+   "balanceAfter": 276914,
+   "observedDebit": 0
+  },
+  {
+   "step": "eyes-blink",
+   "kind": "lab",
+   "nodeId": "3b108651-0386-46a2-9c2d-3be7e8063da9",
+   "runId": null,
+   "jobId": "01a178aa-53e7-7dcc-b941-1b7162299cb5",
+   "balanceBefore": 276914,
+   "balanceAfter": 276914,
+   "observedDebit": 0
+  },
+  {
+   "step": "hair-fit",
+   "kind": "lab",
+   "nodeId": "49076635-6f4f-46cb-8396-2908ba270324",
+   "runId": null,
+   "jobId": "01a178a2-dd86-7e37-a962-0481941723a6",
+   "balanceBefore": 276934,
+   "balanceAfter": 276934,
+   "observedDebit": 0
+  },
+  {
+   "step": "hairless-head-reference",
+   "kind": "fixed",
+   "nodeId": "32c9e81f-e869-47c6-ab4a-57eda0878fc0",
+   "runId": "01a17891-4eed-77a8-b45d-45117866706e",
+   "jobId": null,
+   "balanceBefore": 277174,
+   "balanceAfter": 277174,
+   "observedDebit": 0
+  },
+  {
+   "step": "hairless-head-sm",
+   "kind": "fixed",
+   "nodeId": "fae5fa1a-dc5d-416e-9572-91e68cbadef8",
+   "runId": "01a17891-cd3b-7e86-92e1-a8da7583d264",
+   "jobId": null,
+   "balanceBefore": 277174,
+   "balanceAfter": 277054,
+   "observedDebit": 120
+  },
+  {
+   "step": "head-fit",
+   "kind": "lab",
+   "nodeId": "ba989e43-82c4-4520-95dd-d3d764813276",
+   "runId": null,
+   "jobId": "01a1789e-c743-78a6-a9e4-260b61cb83f0",
+   "balanceBefore": 276934,
+   "balanceAfter": 276934,
+   "observedDebit": 0
+  },
+  {
+   "step": "humanoid-rig",
+   "kind": "fixed",
+   "nodeId": "808f9374-cd35-4873-9f86-7588ff9c5340",
+   "runId": "01a178a8-1a2c-7932-8bdb-5befc6ba4c68",
+   "jobId": null,
+   "balanceBefore": 276934,
+   "balanceAfter": 276914,
+   "observedDebit": 20
+  },
+  {
+   "step": "jaw-controls",
+   "kind": "lab",
+   "nodeId": "aa6970a7-c8f7-41d0-b34e-4341a5615a94",
+   "runId": null,
+   "jobId": "01a178b9-8c66-7e37-a749-0be37ec0771e",
+   "balanceBefore": 276914,
+   "balanceAfter": 276914,
+   "observedDebit": 0
+  },
+  {
+   "step": "texture-consolidate",
+   "kind": "lab",
+   "nodeId": "0db51d06-bedd-4f68-8513-5c735210506a",
+   "runId": null,
+   "jobId": "01a178c6-42ad-7539-ad69-7e7ee1b235a4",
+   "balanceBefore": 276914,
+   "balanceAfter": 276914,
+   "observedDebit": 0
+  },
+  {
+   "step": "tpose",
+   "kind": "fixed",
+   "nodeId": "918d70e8-45e4-4a58-834a-4127f2f500b2",
+   "runId": "01a1788c-c170-74cd-ab40-1bd7ed6afb5c",
+   "jobId": null,
+   "balanceBefore": 277414,
+   "balanceAfter": 277414,
+   "observedDebit": 0
+  },
+  {
+   "step": "wig-reference",
+   "kind": "fixed",
+   "nodeId": "ee649153-8449-4265-a5d2-164d10a842c3",
+   "runId": "01a17894-0358-7385-b7ab-a11ee4968b87",
+   "jobId": null,
+   "balanceBefore": 277054,
+   "balanceAfter": 277054,
+   "observedDebit": 0
+  },
+  {
+   "step": "wig-sm",
+   "kind": "fixed",
+   "nodeId": "e62c1c95-e7ca-429e-97db-885651eb9fe3",
+   "runId": "01a17894-88bf-7aca-94f3-a7c57ac3708b",
+   "jobId": null,
+   "balanceBefore": 277054,
+   "balanceAfter": 276934,
+   "observedDebit": 120
+  }
+ ],
+ "existingProjectChanges": 0,
+ "qualityAcceptance": "pending_after_end_to_end_flow",
+ "repositoryTag": "v0.1.2",
+ "repositoryCommit": "d426943ec20fb224dc0f2e2052019049c0a7196f"
+}

@@ -1,3 +1,23 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- SPDX-FileCopyrightText: 2026 Head Workflow contributors -->
+
+## v0.1.3
+
+Canvas chain published: the recipe that reproduced the head pipeline end to end on
+Tripo Studio canvases.
+
+- canvas-chain/ - flow-config.json with every per-step prompt, the exact prompt files,
+  lineage, run status and artifact manifest of the measured run (19 steps, 20 nodes,
+  22 edges, one fresh Lab per geometry step).
+- canvas-chain/polish-attempt-* - the bounded eyelid-collar, lash-tracking and
+  faceting polish that was attempted on the frozen head, including the fact that both
+  builds failed their own geometry safety gates.
+- tools/matched-viewer-baseline.js - matched camera/lighting baseline for before/after
+  renders.
+- docs/CANVAS-CHAIN.md - how the chain is shaped and what the accepted face does and
+  does not certify.
+- No model, texture or rig asset is included in this release.
+
 ## v0.1.2
 
 Repair side published: the eye/mouth repair modules and the research stages behind them.

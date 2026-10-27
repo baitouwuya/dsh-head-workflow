@@ -1,0 +1,45 @@
+{
+ "_spdx": "SPDX-License-Identifier: GPL-3.0-or-later",
+ "_copyright": "SPDX-FileCopyrightText: 2026 Head Workflow contributors",
+ "status": "prepared_not_submitted_requires_direct_operator_confirmation",
+ "sourceAssetId": "01a17814-8b68-7d06-9a65-d2ec3be402f7",
+ "sourceGlbSha256": "d35d22242bfa59c552af8fce5752751b6d4e9c0c436bda56e607ca9f59a168a6",
+ "repositoryTag": "v0.1.2",
+ "repositoryCommit": "d426943ec20fb224dc0f2e2052019049c0a7196f",
+ "jointCount": 68,
+ "uniqueMorphCount": 18,
+ "embeddedImages": [
+  {
+   "index": 0,
+   "name": "tripo_rgb_6929337f-3990-4208-847f-684c0338b9ee",
+   "bytes": 8844370,
+   "sha256": "178f3dbf1ccab16515974bc60896fc67bf0d3a7f66cc511710b580997400e14d"
+  },
+  {
+   "index": 1,
+   "name": "Localized_Neck_Seam_Only",
+   "bytes": 4591,
+   "sha256": "5ed89ce3d63f46d2f676bea4f1d7fca3eb57aac0f53ada4b35d4b41e50e9e904"
+  },
+  {
+   "index": 2,
+   "name": "dsh-left-original-eye-appearance",
+   "bytes": 25870,
+   "sha256": "5558e002c8e2719d4c5f0ab2bf33b91401ef0f7a76fe715462f400a8e757076a"
+  },
+  {
+   "index": 3,
+   "name": "dsh-right-original-eye-appearance",
+   "bytes": 26203,
+   "sha256": "0fe3c5feb0506a9cc3258e522b7e2e90c872fc86c92350773392089de3914949"
+  }
+ ],
+ "jawMaximumDegrees": 8,
+ "preserveMouth": true,
+ "matchedViewerSha256": "d228be72bf9ba60e85846a4794e4c56af6eb472596a5b4f93e98a9a38441309e",
+ "jobBound": {
+  "freshLabJobs": 1,
+  "buildsMaximum": 2,
+  "correctionPolicy": "At most one parameter-only correction and rerun; preserve all attempts."
+ }
+}
