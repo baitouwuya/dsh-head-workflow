@@ -4,7 +4,7 @@
   "name": "head-workflow",
   "version": "0.1.5-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Measured corrections reproduced outside Lab; direct Smart Mesh native render succeeded but continuous skin-boundary attachment failed; primary model withheld, no retry; historical verification retained",
+  "status": "Direct Smart Mesh native attachment failure preserved; exterior-boundary correction constructed and verified in host Blender; one native appearance/export pass pending; no replacement primary approved",
   "files": [
     {
       "path": ".gitattributes",
@@ -58,8 +58,8 @@
     },
     {
       "path": "canvas-chain/head-eyes-blink.prompt.md",
-      "bytes": 13459,
-      "sha256": "fe81735349994eab53072704c5fb229f701d1462005b7d911aac35e4aa54dcb0"
+      "bytes": 14118,
+      "sha256": "13ea539fceeb363f74dc72ee7305072ed580a1aa422105a280d7aee233a5424b"
     },
     {
       "path": "canvas-chain/head-fit.prompt.md",
@@ -103,8 +103,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 4992,
-      "sha256": "124061d30d34cb6fb9bf92ccc1f68ee0f9f3f45f38a4f27c747156a16996f7f4"
+      "bytes": 5379,
+      "sha256": "6921a698052071e943ead2b981757eea1b87a75e321d507e749d855a7763db1f"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
@@ -120,6 +120,11 @@
       "path": "docs/CANVAS-DRIVER.md",
       "bytes": 3442,
       "sha256": "bdae1bbda241d6c1f101915f874ebd9997381a7a35894659b056efb3b82715da"
+    },
+    {
+      "path": "docs/EXTERIOR-SKIN-CONTINUITY.md",
+      "bytes": 4924,
+      "sha256": "162cb250c40923ee71bac6c6e252e0b01313848fe6ec846ba56089eb01570e0c"
     },
     {
       "path": "docs/GAZE-LIMITS.md",
@@ -592,9 +597,24 @@
       "sha256": "85d3facc83a8509fb828317beb526c79bd2b77f200f0261665d325b3130bbf3c"
     },
     {
+      "path": "lab_recipes/exterior_skin_boundary.py",
+      "bytes": 8101,
+      "sha256": "6e8940c3f9bf91be4105e524f747488e78bfad1e3c1f81d1d7d33b1bb4236095"
+    },
+    {
       "path": "lab_recipes/eye_clearance.py",
       "bytes": 4372,
       "sha256": "f487fbc20061beeb084eac6a91e0cac8887da1dbb21077509d7aeb4811aeb1c5"
+    },
+    {
+      "path": "lab_recipes/fixed_strip_contact.py",
+      "bytes": 5737,
+      "sha256": "6ded5814f91be66c92bd724b9ca32542db0f8b9f3d782bfb2cbf0e2bee9003a5"
+    },
+    {
+      "path": "lab_recipes/frontmost_skin.py",
+      "bytes": 8392,
+      "sha256": "54badbcbf679b2854057f052971e93b72588fbf4ba2789838248ef60a831baf9"
     },
     {
       "path": "lab_recipes/lash_contacts.py",
@@ -625,6 +645,16 @@
       "path": "lab_recipes/skin_attachment.py",
       "bytes": 8622,
       "sha256": "d7f242851744deadbbf577bba65adbd82b5167912d09679f3d749c2791455b7e"
+    },
+    {
+      "path": "lab_recipes/skin_route_preflight.py",
+      "bytes": 4437,
+      "sha256": "b55b1b276a264244e3692de0f639da5f4ab1d18bce6eb7403706b606437002d3"
+    },
+    {
+      "path": "lab_recipes/skin_transition_visible.py",
+      "bytes": 7452,
+      "sha256": "3e8933ee70c7d01ed7c6e6b7945aa43cd4a007da118307613d5f549fd07ef7ee"
     },
     {
       "path": "lab_recipes/skin_transition.py",
@@ -663,8 +693,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8648,
-      "sha256": "ff0f7bca99a35b4cb7c2cf37c0c576f00488ff722cb2b1124fb80fb232929dcb"
+      "bytes": 8893,
+      "sha256": "c1b16ec20ab43ca061af003bf80e879fdeb6a3528a03e96c40c0a37d8831a871"
     },
     {
       "path": "repair.py",
@@ -852,6 +882,21 @@
       "sha256": "efdb7087c5295a5298ebf26fb6d06c6e47de3bdd947994026f740e7179ac6985"
     },
     {
+      "path": "tests/test_exterior_boundary.py",
+      "bytes": 2658,
+      "sha256": "3931eb0af9273def958a67e38bbf002f2ee78c74a14a9adbf3eff603003b3948"
+    },
+    {
+      "path": "tests/test_fixed_strip_contact.py",
+      "bytes": 2249,
+      "sha256": "a87ba594a4947549970e97871c86b09bd012a700b3d101f273e44833ad4bca98"
+    },
+    {
+      "path": "tests/test_frontmost_skin.py",
+      "bytes": 2481,
+      "sha256": "c589a893771ae67548818b56e13fc075bdb10e7dd77bcdaa7a2e765160b523a5"
+    },
+    {
       "path": "tests/test_lash_contacts.py",
       "bytes": 2849,
       "sha256": "382c1539c9ef56e7427ac677c7bec535f8028f49300d00eef2f2aeb70d549d74"
@@ -892,6 +937,11 @@
       "sha256": "fc9cb32202a7f5045657c1175a752b26bb562726f189d4c4e51dd6314fa79a2b"
     },
     {
+      "path": "tests/test_skin_route_preflight.py",
+      "bytes": 2278,
+      "sha256": "1df2c101c1a0c91d1ba68bee242e26307c920e0ee61974a4850bed8313f1cfca"
+    },
+    {
       "path": "tests/test_skin_transition.py",
       "bytes": 2100,
       "sha256": "1c6eb0a8a4728649a9527436529d47f3600b769c62b3af1d083d280331f71d36"
@@ -917,19 +967,24 @@
       "sha256": "f4b10d0802e40878003932535807484fbe2f35a4408ded64395a733b7e033521"
     },
     {
+      "path": "tools/build_exterior_lid_boundaries.py",
+      "bytes": 6145,
+      "sha256": "9b859c35fb3d5f639df7d7e7ece683eeab001184f30fe3dd86d1cb2edf73aab7"
+    },
+    {
       "path": "tools/matched-viewer-baseline.js",
       "bytes": 9884,
       "sha256": "2cf831caed3013b849e91263da5e6b7fb8a6813cf829de1453463c6972accdb7"
     },
     {
       "path": "tools/native_render_verification.py",
-      "bytes": 11654,
-      "sha256": "3ee9dfd32ff667ada611ffdd81492dc2e673b2cb1527f2dcf5312fe78b1858a0"
+      "bytes": 11696,
+      "sha256": "24810695c4d53785c88f9278dfada2a7361a7c27159ac967890e79aa69871777"
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 3039,
-      "sha256": "159082aab70a412b91e234d20f16a6d94582864c70510d6c82fbd5c9595c5538"
+      "bytes": 3038,
+      "sha256": "49a88196e4988f8b00a27a85beb3048a6580fd1124c766c4d0d887248d8a04e2"
     },
     {
       "path": "tools/review-server.cjs",

@@ -129,7 +129,7 @@ def setup(request):
     scene.render.resolution_x=int(request.get('resolution',512));scene.render.resolution_y=int(request.get('resolution',512));scene.render.resolution_percentage=100
     if scene.render.engine=='CYCLES':scene.cycles.samples=int(request.get('samples',16));scene.cycles.seed=0
     scene.render.image_settings.file_format='PNG';scene.view_settings.view_transform='Standard'
-    world=bpy.data.worlds.new('matched-review-world');world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.35,.35,.35,1);scene.world=world
+    world=bpy.data.worlds.new('matched-review-world');world.use_nodes=True;next(n for n in world.node_tree.nodes if n.bl_idname=='ShaderNodeBackground').inputs[0].default_value=(.35,.35,.35,1);scene.world=world
     for spec in request['lights']:
         bpy.ops.object.light_add(type='AREA',location=spec['position']);light=bpy.context.object;light.data.energy=spec['energy'];light.data.size=spec['size'];light.rotation_euler=(Vector(spec['target'])-light.location).to_track_quat('-Z','Y').to_euler()
     bpy.ops.object.camera_add();camera=bpy.context.object;camera.data.type='ORTHO';scene.camera=camera

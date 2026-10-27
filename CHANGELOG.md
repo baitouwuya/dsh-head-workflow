@@ -3,6 +3,11 @@
 
 ## Unreleased: stationary-blink diagnosis and construction correction
 
+- Reproduce hidden-layer skin binding in host Blender; add required exterior
+  boundary fitting, complete visibility checks and fixed core-strip contact
+  certificates. Keep the original route caps and source geometry unchanged.
+- Provide a runtime-argument boundary entry point so native Labs execute the
+  tested four-lid path, with new output directories and input-hash preservation.
 - Reproduce native lid striping, detached fixed anchors and excessive lash
   stretch; add complete source-boundary certificates, measured skin colors,
   outward generated-core winding, normal targets and constrained lash contacts.
