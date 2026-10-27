@@ -6,6 +6,7 @@ import numpy as np
 from lab_recipes import lid_surface as surface
 from lab_recipes.triangle_depth_bound import TriangleDepthBound
 from lab_recipes.blink_handoff import audit_linear_morph_segments
+from lab_recipes.lid_normals import orient_closed_generated_mesh
 
 class SurfaceObstacleTests(unittest.TestCase):
     def setUp(self):
@@ -54,6 +55,14 @@ class SurfaceObstacleTests(unittest.TestCase):
         with self.assertRaises(ValueError):surface.build(self.eye,True,{**self.params,'cross_section_samples':14},triangle_depth_bound=self.obstacle)
     def test_flags_and_point_depth_shape_are_explicit(self):
         with self.assertRaises(ValueError):surface.build(self.eye,True,{**self.params,'linear_contour':'true'})
-        positions,_=surface.build(self.eye,True,self.params,front_depth=lambda y,z:np.zeros((len(y),1)) if np.ndim(y) else 0.)
-        with self.assertRaises(ValueError):positions(.5)
+        with self.assertRaises(ValueError):surface.build(self.eye,True,self.params,front_depth=lambda y,z:np.zeros((len(y),1)) if np.ndim(y) else 0.)
+    def test_both_lids_are_outward_at_all_knots_and_reorientation_is_idempotent(self):
+        for upper in [False,True]:
+            for bound in [None,self.obstacle]:
+                positions,faces=surface.build(self.eye,upper,self.params,triangle_depth_bound=bound)
+                for weight in [0,.25,.5,.75,1]:
+                    check=orient_closed_generated_mesh(positions(weight),faces)
+                    self.assertEqual(check['flipped_triangles'],0)
+                    np.testing.assert_array_equal(check['faces'],faces)
+                    self.assertTrue(all(c['signed_volume_before']>0 for c in check['components']))
 if __name__=='__main__':unittest.main()

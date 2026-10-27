@@ -17,6 +17,10 @@ See [the reproduced causes](docs/STATIONARY-BLINK-DIAGNOSIS.md),
 [reusable head-only Lab prompt](canvas-chain/head-eyes-blink.prompt.md).
 Numerical construction checks pass on the diagnosed input; native appearance,
 lash/skin attachment and export verification remain separate acceptance checks.
+The subsequent [visual failure reproduction](docs/STATIONARY-BLINK-VISUAL-DIAGNOSIS.md)
+adds measured source-skin boundary attachment, coherent color/normal transfer and
+constrained whole-lash deformation. Native shaded acceptance is still pending;
+the Lab's supplied Blender performs that check, without a VM Blender install.
 
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 

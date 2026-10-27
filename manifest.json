@@ -4,7 +4,7 @@
   "name": "head-workflow",
   "version": "0.1.5-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Stationary-blink numerical construction/export checks passed; fresh native handoff failed appearance, skin attachment and lash transfer; no primary model approved; earlier verification retained in VERIFICATION.md",
+  "status": "Previous native handoff failed appearance, skin attachment and lash transfer; measured corrections reproduced outside Lab; one native visual/export verification pending; no primary model approved; historical verification retained",
   "files": [
     {
       "path": ".gitattributes",
@@ -58,8 +58,8 @@
     },
     {
       "path": "canvas-chain/head-eyes-blink.prompt.md",
-      "bytes": 6263,
-      "sha256": "5c23a148e61bccc9ef46073425789e7a31c146051281c8eebd12ad952d54c6dd"
+      "bytes": 13459,
+      "sha256": "fe81735349994eab53072704c5fb229f701d1462005b7d911aac35e4aa54dcb0"
     },
     {
       "path": "canvas-chain/head-fit.prompt.md",
@@ -103,8 +103,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 4604,
-      "sha256": "61eb0afecbdfdd33fc7a8fa184bbb1bb07908ac6847894d02778966e3c20c34d"
+      "bytes": 4992,
+      "sha256": "124061d30d34cb6fb9bf92ccc1f68ee0f9f3f45f38a4f27c747156a16996f7f4"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
@@ -127,6 +127,16 @@
       "sha256": "ec9126f2264fb6516c8890c6d8882ff22b1031a1f33a6e4c2b48f696e55d7d95"
     },
     {
+      "path": "docs/NATIVE-BLINK-VERIFICATION.md",
+      "bytes": 6206,
+      "sha256": "86136557592aae5adcba4e47609bf3e89b2cde746840d6265256aef1c6b6d0bf"
+    },
+    {
+      "path": "docs/NATIVE-RENDER-CONTROLS.md",
+      "bytes": 2256,
+      "sha256": "a131292edee15438e73e77bdd7f0ef84a21df8a69f214540c013da4979267c09"
+    },
+    {
       "path": "docs/REPAIR-PIPELINE.md",
       "bytes": 1195,
       "sha256": "819709797ffba9d073779cfde373f7fc6104a1dfde84e401ed97bac45e7a625d"
@@ -138,13 +148,18 @@
     },
     {
       "path": "docs/STATIONARY-BLINK-CONSTRUCTION.md",
-      "bytes": 5861,
-      "sha256": "4999c9db9010a6ad97e1508ef489352c985905e7e0573521d7e4e9f6fade95db"
+      "bytes": 6202,
+      "sha256": "e57be57927645a81e557ab909bcd84d35491b651fec54117e50a9f490b747d76"
     },
     {
       "path": "docs/STATIONARY-BLINK-DIAGNOSIS.md",
       "bytes": 9887,
       "sha256": "bd0b046c50635456702a32fc651e182554b08acaaa4de6dc88c7211a002c0b41"
+    },
+    {
+      "path": "docs/STATIONARY-BLINK-VISUAL-DIAGNOSIS.md",
+      "bytes": 5238,
+      "sha256": "a776a2019e4a94b067cbf575d8b9ed995de7a3fb975088a48637f116d4c00287"
     },
     {
       "path": "docs/TRIPO-LAB.md",
@@ -562,6 +577,11 @@
       "sha256": "1eb212f8548cf05eef60d0a170c75980601b91606ad2cd86cb51befe63b672c3"
     },
     {
+      "path": "lab_recipes/anchored_lash.py",
+      "bytes": 6699,
+      "sha256": "eb29eeb0e6a4be0e47363e94e6cd5c9a21b976625b044e280597c24aefdbbae5"
+    },
+    {
       "path": "lab_recipes/aperture_contract.py",
       "bytes": 8571,
       "sha256": "648d2eb2ff96e9b85a5dbf4aeaeecec92bf41a0828f27bf92fce55993f4413b4"
@@ -572,9 +592,54 @@
       "sha256": "85d3facc83a8509fb828317beb526c79bd2b77f200f0261665d325b3130bbf3c"
     },
     {
+      "path": "lab_recipes/eye_clearance.py",
+      "bytes": 4372,
+      "sha256": "f487fbc20061beeb084eac6a91e0cac8887da1dbb21077509d7aeb4811aeb1c5"
+    },
+    {
+      "path": "lab_recipes/lash_contacts.py",
+      "bytes": 6307,
+      "sha256": "92aaff344a2a937824a503d64c8bf59e75bfa3d9b0e0d98962dc28336c3392ba"
+    },
+    {
+      "path": "lab_recipes/lash_transfer.py",
+      "bytes": 8360,
+      "sha256": "55b2166ea2a450cb931c484d3c40ffe65bb07ddec5636a45c5ca8dfdf800ae93"
+    },
+    {
+      "path": "lab_recipes/lid_normals.py",
+      "bytes": 10271,
+      "sha256": "2d13ca0475ea9e2975bda10504e9cc02209df43af635ac076ac763f467c17a51"
+    },
+    {
       "path": "lab_recipes/lid_surface.py",
-      "bytes": 5903,
-      "sha256": "9a9a2e6ad0661f5ca298660e3a9d6451003912c47ed1d735e1a2a8beaa092207"
+      "bytes": 6266,
+      "sha256": "d2989d23ef9f6ddf31d7028e7393e10d37eb5e8050f7c8687b75684f5cf57eec"
+    },
+    {
+      "path": "lab_recipes/skin_appearance.py",
+      "bytes": 16932,
+      "sha256": "bf734280f38e5201f96a1e1c70b1ed53f4183fa9ea4002a8421a993accddfd5a"
+    },
+    {
+      "path": "lab_recipes/skin_attachment.py",
+      "bytes": 8622,
+      "sha256": "d7f242851744deadbbf577bba65adbd82b5167912d09679f3d749c2791455b7e"
+    },
+    {
+      "path": "lab_recipes/skin_transition.py",
+      "bytes": 7197,
+      "sha256": "87d07bd723616bb7886636bb042cba4957d672b335242e7e0fee4092f6730b37"
+    },
+    {
+      "path": "lab_recipes/source_paths.py",
+      "bytes": 2111,
+      "sha256": "521fd39d7f294ade4d0dde50366bd29e20f8432f1c35f333fd2a7f93efa13026"
+    },
+    {
+      "path": "lab_recipes/surface_routes.py",
+      "bytes": 3188,
+      "sha256": "9720360c99305c58bfc06482b951b5819a9128e0012ac274c87f662b447c7da0"
     },
     {
       "path": "lab_recipes/triangle_depth_bound.py",
@@ -598,8 +663,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8240,
-      "sha256": "834b9b80766f15562c1a8e338daae560236f3e3645e5a10912222758bcd17f02"
+      "bytes": 8567,
+      "sha256": "5173293b42c0f63e86a1773fab6f15cdb56bc3ca7fa2f8a1ec926f1a51c5d2ac"
     },
     {
       "path": "repair.py",
@@ -767,6 +832,16 @@
       "sha256": "170284d62b17d81ef41e146faaccc74fe26847ac1585395ae8a619c3a8f5e34d"
     },
     {
+      "path": "tests/test_anchored_lash.py",
+      "bytes": 3000,
+      "sha256": "906fce61f65efbd6421ce156719aa15230e04c1f0b60e8abe6518b0ca7bc3afa"
+    },
+    {
+      "path": "tests/test_appearance_contract_guards.py",
+      "bytes": 6094,
+      "sha256": "2ed96b1e17998566c82e409885c9e31458b41af25fbb159db957bd5c66bd3e63"
+    },
+    {
       "path": "tests/test_blink_handoff.py",
       "bytes": 9330,
       "sha256": "db0f1fe8f03fa5b1f8054db46b0a3d9587d8b908c6ebda7a6d3b756bd664e0c1"
@@ -777,14 +852,54 @@
       "sha256": "efdb7087c5295a5298ebf26fb6d06c6e47de3bdd947994026f740e7179ac6985"
     },
     {
+      "path": "tests/test_lash_contacts.py",
+      "bytes": 2849,
+      "sha256": "382c1539c9ef56e7427ac677c7bec535f8028f49300d00eef2f2aeb70d549d74"
+    },
+    {
+      "path": "tests/test_lash_transfer.py",
+      "bytes": 4249,
+      "sha256": "54acc390be0e671f27b422aa5eefd414a0d0bd8bd633c2f70625ace724328e43"
+    },
+    {
+      "path": "tests/test_lid_normals.py",
+      "bytes": 3542,
+      "sha256": "e6a0baed32bfb92f808fb7ef681d8c0980a27c437f30215782bba1cd4d08c364"
+    },
+    {
       "path": "tests/test_lid_recipe_contract.py",
       "bytes": 8133,
       "sha256": "7c165e548a80984a3096cbac4b90ee89594509b10190f3fa4ec77c25d8ad796a"
     },
     {
       "path": "tests/test_lid_surface_obstacle.py",
-      "bytes": 4785,
-      "sha256": "2fe8b576bce69c89c14d42bb2d234e2043f69b278863220602a7c32c7eb6b458"
+      "bytes": 5452,
+      "sha256": "99405dad2425dae02852936ce63e3aed4006d24dcfa70c1cd8b86f266e35539b"
+    },
+    {
+      "path": "tests/test_native_render_controls.py",
+      "bytes": 7398,
+      "sha256": "53229914ee0fabfd41f72b3be35e757dc2ec89ee706e418acdcb9b9633a46bb4"
+    },
+    {
+      "path": "tests/test_skin_appearance.py",
+      "bytes": 6008,
+      "sha256": "2c0684fe74e9ea96e2811605ffdbb03f44a2f905164857c6e497503843eb7fbf"
+    },
+    {
+      "path": "tests/test_skin_attachment.py",
+      "bytes": 3500,
+      "sha256": "fc9cb32202a7f5045657c1175a752b26bb562726f189d4c4e51dd6314fa79a2b"
+    },
+    {
+      "path": "tests/test_skin_transition.py",
+      "bytes": 2100,
+      "sha256": "1c6eb0a8a4728649a9527436529d47f3600b769c62b3af1d083d280331f71d36"
+    },
+    {
+      "path": "tests/test_surface_clearance.py",
+      "bytes": 2205,
+      "sha256": "9efa28dd7d098717c985cd91fdff0aceab83a5fe99112d51723703acb4d82856"
     },
     {
       "path": "tests/test_triangle_depth_bound.py",
@@ -807,9 +922,14 @@
       "sha256": "2cf831caed3013b849e91263da5e6b7fb8a6813cf829de1453463c6972accdb7"
     },
     {
+      "path": "tools/native_render_verification.py",
+      "bytes": 11654,
+      "sha256": "3ee9dfd32ff667ada611ffdd81492dc2e673b2cb1527f2dcf5312fe78b1858a0"
+    },
+    {
       "path": "tools/package-manifest.cjs",
-      "bytes": 3050,
-      "sha256": "e83d1ce4ff6b4b230a71a2531310e1de8721df90c419b8ed0ef1f248343a2567"
+      "bytes": 3067,
+      "sha256": "731c5843162b83b95464ea9c14feef86507f4c979b2733af77ec3fd88ae2f52f"
     },
     {
       "path": "tools/review-server.cjs",

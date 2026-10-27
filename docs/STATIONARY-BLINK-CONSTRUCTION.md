@@ -96,3 +96,9 @@ to skin, and whole-component displacement still stretched lashes excessively.
 See the diagnosis for measured results. Before another native construction,
 validate coherent texture transfer, actual skin binding and shape-preserving
 lash attachment outside the Lab. The bound helper does not implement those.
+
+The follow-up modules and measured contracts are now documented in
+[the visual diagnosis](STATIONARY-BLINK-VISUAL-DIAGNOSIS.md) and
+[the native verification sequence](NATIVE-BLINK-VERIFICATION.md).
+The constructor automatically orients its generated closed core outward;
+attachment strips still require their own source-normal orientation.

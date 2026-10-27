@@ -3,6 +3,7 @@
 """Measured-aperture closed hood surface. Actual export auditing is separate."""
 import numpy as np,math
 from lab_recipes.aperture_contract import validate_ordered_rim, validate_surface_parameters
+from lab_recipes.lid_normals import orient_closed_generated_mesh
 def curve(eye):
  validate_ordered_rim(eye['rim_xyz'])
  rim=np.array(eye['rim_xyz']);smooth=[]
@@ -79,5 +80,9 @@ def build(eye,upper,d,front_depth=None,triangle_depth_bound=None):
   if bounds.shape!=(len(faces),) or np.isnan(bounds).any() or np.isposinf(bounds).any():raise ValueError('triangle_depth_bound must return finite depth or negative infinity for an empty footprint')
   vertex_obstacle=np.full(len(p0),-np.inf)
   for k in range(3):np.maximum.at(vertex_obstacle,faces[:,k],bounds)
+ # The upper parameterization has the opposite orientation to the lower one.
+ # Decide from the final neutral geometry (after measured depth bounds), not
+ # from a side label. The reviewed helper is idempotent for downstream checks.
+ faces=orient_closed_generated_mesh(positions(0),faces)['faces']
  return positions,faces
 

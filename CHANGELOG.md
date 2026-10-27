@@ -3,6 +3,11 @@
 
 ## Unreleased: stationary-blink diagnosis and construction correction
 
+- Reproduce native lid striping, detached fixed anchors and excessive lash
+  stretch; add complete source-boundary certificates, measured skin colors,
+  outward generated-core winding, normal targets and constrained lash contacts.
+- Add matched native-only Blender verification; numerical corrections remain
+  distinct from the still-pending visual handoff. Preserve the failed evidence.
 - Reproduce the rejected input's closure failure outside the Lab and distinguish
   the unweighted depth clamp, split lash masks and between-keyframe collapse.
 - Correct the semantic diagnosis: predecessor eye labels selected dark lash
