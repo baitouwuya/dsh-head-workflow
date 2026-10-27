@@ -8,6 +8,13 @@ another head. Use the incoming model in a documented common frame: X is depth
 toward the viewer, Y is lateral and Z is up. These are source-only geometry and
 audit helpers, not an automatic anatomical landmark detector.
 
+Treat predecessor anatomical region names as unverified. Cross-check connected
+geometry, original UV/texture appearance and component-only views before
+assigning eye, lash and skin roles. In the diagnosed input, inherited eye labels
+selected actual lash bands while inherited lash labels selected pale collars.
+Do not place true lashes in the stationary-eye obstacle set. Report separately
+any source eye boundary openings and any ambiguous semantic assignments.
+
 ```python
 from lab_recipes.aperture_contract import (
     construction_envelope_from_samples, rim_from_upper_lower_chains,
@@ -76,9 +83,12 @@ follow their corresponding lids coherently without cutting an edit mask through
 connected source geometry.
 
 The integrated constructor reproduced zero full-closure misses on 5,302 frozen
-input probes, zero float32 degenerates, zero fixed-anchor movement/reset error
+mixed-reference probes (4,999 eye/detail and 303 lash first hits), zero float32
+degenerates, zero fixed-anchor movement/reset error
 and zero continuous-interval collapses. All first hits were generated lid
 surfaces; rejected added globes were excluded and original source correspondence
-was checked exactly. These are numerical construction results only. The fresh
+was checked exactly. This is not proof of a complete anatomical aperture or
+correct semantic eye/lash partition. These are numerical construction results
+only. The fresh
 native Lab must still verify appearance, source-skin attachment, original lash
 binding, stationary-eye topology, and its own exported/reimported artifact.

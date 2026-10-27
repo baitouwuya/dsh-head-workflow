@@ -19,6 +19,35 @@ every one of those probes, corroborating their frame and aperture binding.
 All 50,453 original source triangles were retained in the corrected failed
 candidate. Retaining topology did not establish usable deformation.
 
+## Anatomical label correction
+
+Subsequent independent connectivity, UV/color and component-only projection
+checks confirmed an additional root cause. The prepared model's historical
+`eye_surface` regions select the dark upper lash bands; its `upper_lash` regions
+select the pale skin collars. The failed adapter expanded the eye partition to
+include actual blue eyes and details, but retained the dark bands in the
+stationary group. It therefore froze the real upper lashes and animated pale
+collars instead. Anatomical labels in predecessor metadata are hypotheses, not
+verified semantic correspondence.
+
+The 5,302 historical probes are a **mixed reference**: 4,999 original first hits
+are blue-eye/detail surfaces and 303 are dark lash bands. The rejected endpoint
+failure remains real: 296 right and 210 left hits expose blue-eye surfaces;
+another 6 right and 7 left hits expose the misclassified bands. Preserve the
+original 302 / 217 measurements for comparison rather than silently relabeling
+them pure-eye counts. The corrected constructor's zero-hit result over this
+mixed reference proves numerical coverage of that set only. It does not prove
+complete anatomical aperture coverage, semantic eye/lash assignments, or lash
+attachment. The freshly inspected blue eye on one side also has 48 inherited
+position-welded boundary edges; stationary behavior is not proof of closed
+anatomy.
+
+The fresh native pass independently detected this semantic error and derives a
+new input-bound classification. Its actual exported result still needs its own
+handoff. Local diagnostic proof must not be promoted into native acceptance.
+
+## Geometric and measurement defects
+
 The following defects were isolated rather than inferred from a test score.
 Items 1, 2 and 5 explain the exported skin-warp candidate. Items 3 and 4 were
 reproduced in a separate diagnostic of the proposed surface-recipe replacement;

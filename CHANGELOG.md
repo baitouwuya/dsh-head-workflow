@@ -5,6 +5,9 @@
 
 - Reproduce the rejected input's closure failure outside the Lab and distinguish
   the unweighted depth clamp, split lash masks and between-keyframe collapse.
+- Correct the semantic diagnosis: predecessor eye labels selected dark lash
+  bands and lash labels selected pale collars. Qualify the historical mixed
+  probe set and require fresh texture/geometry semantic checks in the guidance.
 - Validate simple ordered aperture contours; explicitly construct conservative
   envelopes from measured samples without relabeling them anatomical rims.
 - Add static, local swept-triangle bounds from actual stationary eye geometry;

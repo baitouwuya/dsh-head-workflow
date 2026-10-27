@@ -58,8 +58,8 @@
     },
     {
       "path": "canvas-chain/head-eyes-blink.prompt.md",
-      "bytes": 5044,
-      "sha256": "142eb941f7bb990a43ca076c49f0f7460957ef21ea31ed61ee84e30791de99cd"
+      "bytes": 5567,
+      "sha256": "90dfab88730b2f4b75823534ba31a497728df451b10f1b6b8525a77fa6b9b763"
     },
     {
       "path": "canvas-chain/head-fit.prompt.md",
@@ -103,8 +103,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 4372,
-      "sha256": "97a578aa806f1c4dbfa34221553fddcb5c138ab376ae3e285fa33c2b11a4dcc6"
+      "bytes": 4604,
+      "sha256": "61eb0afecbdfdd33fc7a8fa184bbb1bb07908ac6847894d02778966e3c20c34d"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
@@ -138,13 +138,13 @@
     },
     {
       "path": "docs/STATIONARY-BLINK-CONSTRUCTION.md",
-      "bytes": 4883,
-      "sha256": "bdb42dd2e4bf75f3a21a58ca8f582d7b3a00ceaaf2a4d9588c93ba1e5eb8e2b1"
+      "bytes": 5492,
+      "sha256": "2c32b83024200bc1c1b5e373803603f19fd4387431a6cb8d6612d6af2d346c7b"
     },
     {
       "path": "docs/STATIONARY-BLINK-DIAGNOSIS.md",
-      "bytes": 6124,
-      "sha256": "1725970d697da6ef19728484b59e1c65a066175faccf4a84c4ec32faa4c2c841"
+      "bytes": 7792,
+      "sha256": "fc1283aa1f976536c08ecb3bd5b556bbd62863d30222b3c41bde5f41efe5fc50"
     },
     {
       "path": "docs/TRIPO-LAB.md",
