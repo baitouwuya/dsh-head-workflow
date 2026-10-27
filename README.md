@@ -10,6 +10,37 @@ A reusable Blender command for targeted reconstruction of a rigged character's e
 
 Version 0.1.4 adds the canvas driver (`driver/`) that operates a Tripo Studio canvas from outside the UI, and records the measured eyes-and-gaze limit in `docs/GAZE-LIMITS.md`: the v0.1.2 recipe delivers stationary eyeballs plus blink, and gaze is not a supported stage.
 
+The stationary-blink development correction adds validated contour construction,
+conservative measured-eye depth bounds and continuous exported-morph audits.
+See [the reproduced causes](docs/STATIONARY-BLINK-DIAGNOSIS.md),
+[the construction API](docs/STATIONARY-BLINK-CONSTRUCTION.md), and the
+[reusable head-only Lab prompt](canvas-chain/head-eyes-blink.prompt.md).
+Numerical construction checks pass on the diagnosed input; native appearance,
+lash/skin attachment and export verification remain separate acceptance checks.
+The subsequent [visual failure reproduction](docs/STATIONARY-BLINK-VISUAL-DIAGNOSIS.md)
+adds measured source-skin boundary attachment, coherent color/normal transfer and
+constrained whole-lash deformation. The direct Smart Mesh native pass rendered
+successfully using the Lab's supplied Blender, but failed complete skin-boundary
+attachment before a full candidate. No primary model was approved or retried.
+The subsequent [exterior continuity correction](docs/EXTERIOR-SKIN-CONTINUITY.md)
+was reproduced and constructed in bridged host Blender. All four boundaries pass
+their whole-segment checks in host and native runs. The native follow-up stopped
+at original-lash contact; final appearance/export acceptance remains incomplete.
+
+The [visual handoff correction](docs/VISUAL-BLINK-HANDOFF.md) separates numerical
+diagnostics from rendered-motion acceptance, fixes double-evaluated preview
+normals, and adds native-only sealing, complete-head attachment and own-file
+animation verification. Host models remain diagnosis only. A new native result
+must be built by its canvas Lab, reviewed from its own motion renders, published
+and selected before this stage is complete.
+
+That native follow-up completed one construction but failed its own motion
+review: the outer lash loses visible attachment and the closed-lid profile is
+implausible. Four right-eye videos and the rejected native GLB/BLEND are preserved
+in the verified evidence archive; left/bilateral rendering remained incomplete
+after exit 143. No primary model was published or selected. The native result
+and verified hashes are recorded in the visual handoff document.
+
 This is a fitted workflow, not an arbitrary-head repair service. The supplied profile targets one known input topology and coordinate frame. It includes original-character numeric measurements and two local lid corrections. Use your separately held original input GLB for an exact-profile attempt. Other heads require refitting and all checks must be rerun.
 
 ## Requirements
@@ -81,4 +112,9 @@ node --test tests/verify-glb.test.cjs
 ```
 
 These tests catch configuration and file-format errors; they do not replace the Blender build, anatomy checks, actual browser deformation test or visual review.
+
+The added source-only geometry regressions require NumPy in the Python test
+environment. They need neither Blender nor private model assets. They cover
+invalid contours, neutral projection, measured swept bounds, lash masks and
+seams, and collapse between LINEAR morph knots.
 

@@ -2,9 +2,9 @@
   "SPDX-License-Identifier": "GPL-3.0-or-later",
   "SPDX-FileCopyrightText": "2026 Head Workflow contributors",
   "name": "head-workflow",
-  "version": "0.1.4",
+  "version": "0.1.6-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Blender5.2 clean rebuild verified; Blender4.2 Lab reproduction in VERIFICATION.md; canvas driver 0.2.59 included; eyes-and-gaze limit recorded in docs/GAZE-LIMITS.md",
+  "status": "Single native visual follow-up rejected for lash attachment and lid profile; four right-eye videos preserved, left/bilateral rendering incomplete after exit 143; no primary published or selected and no further attempt",
   "files": [
     {
       "path": ".gitattributes",
@@ -57,6 +57,11 @@
       "sha256": "d8893e144a46ef4b7e2390fbfcf2d8e9eac37226ec21fd56b390520ee9cccb6b"
     },
     {
+      "path": "canvas-chain/head-eyes-blink.prompt.md",
+      "bytes": 8111,
+      "sha256": "aa249244e60eaca8582e1e91b4e7c6ea26159630eba425e944d9bb424f568c75"
+    },
+    {
       "path": "canvas-chain/head-fit.prompt.md",
       "bytes": 1922,
       "sha256": "84565bf6e936760871d0388b0afeed16fdb277a566ce679545b57d0dab941aed"
@@ -98,8 +103,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3362,
-      "sha256": "026c1239720449612bf098231d49227bff328acdf7a7e6b98888e3750a568808"
+      "bytes": 5379,
+      "sha256": "6921a698052071e943ead2b981757eea1b87a75e321d507e749d855a7763db1f"
+    },
+    {
+      "path": "docs/ABLATION-CONTRACT.md",
+      "bytes": 2524,
+      "sha256": "0dc53ead06361c40a57a6a0a13571a078077b4ede9235c6e7bc4ad812eafcf88"
     },
     {
       "path": "docs/blender-4-5-compat.patch",
@@ -117,9 +127,34 @@
       "sha256": "bdae1bbda241d6c1f101915f874ebd9997381a7a35894659b056efb3b82715da"
     },
     {
+      "path": "docs/EXTERIOR-SKIN-CONTINUITY.md",
+      "bytes": 6394,
+      "sha256": "066f3926c29c1ca13fc2e01dd8b9f7683160c98cf38d447975c65c3b2f4dcfd7"
+    },
+    {
+      "path": "docs/FULL-LOOK-CONTRACT.md",
+      "bytes": 6059,
+      "sha256": "833cb7499abd4636787cc3c53df36081354c3231e6dc24bd6fcb4065c50af4de"
+    },
+    {
       "path": "docs/GAZE-LIMITS.md",
       "bytes": 2265,
       "sha256": "ec9126f2264fb6516c8890c6d8882ff22b1031a1f33a6e4c2b48f696e55d7d95"
+    },
+    {
+      "path": "docs/NATIVE-BLINK-VERIFICATION.md",
+      "bytes": 4024,
+      "sha256": "a8bc688203482749857aa887ad3af6623c82ec68a2c764ad3ad42d621262b22e"
+    },
+    {
+      "path": "docs/NATIVE-FULL-LOOK-EXPORT.md",
+      "bytes": 5162,
+      "sha256": "d516cd41b849910d73318bab7a0dd0f011fcf186433fe2686e4d78c2cc534152"
+    },
+    {
+      "path": "docs/NATIVE-RENDER-CONTROLS.md",
+      "bytes": 2256,
+      "sha256": "a131292edee15438e73e77bdd7f0ef84a21df8a69f214540c013da4979267c09"
     },
     {
       "path": "docs/REPAIR-PIPELINE.md",
@@ -132,9 +167,29 @@
       "sha256": "57961748b2e1b07ccdbcdc17a0c6ae1c5fa4a7d7b6e942cdec4b44d4a6123827"
     },
     {
+      "path": "docs/STATIONARY-BLINK-CONSTRUCTION.md",
+      "bytes": 6202,
+      "sha256": "e57be57927645a81e557ab909bcd84d35491b651fec54117e50a9f490b747d76"
+    },
+    {
+      "path": "docs/STATIONARY-BLINK-DIAGNOSIS.md",
+      "bytes": 9887,
+      "sha256": "bd0b046c50635456702a32fc651e182554b08acaaa4de6dc88c7211a002c0b41"
+    },
+    {
+      "path": "docs/STATIONARY-BLINK-VISUAL-DIAGNOSIS.md",
+      "bytes": 7247,
+      "sha256": "82d3dd8aef442d70b0eeb68fd3865be18b5c2998902d08cec535504386848990"
+    },
+    {
       "path": "docs/TRIPO-LAB.md",
       "bytes": 3135,
       "sha256": "36040439d51e2006d1c096630bd6caab58e17b0ec33bedfa398973e8a0186648"
+    },
+    {
+      "path": "docs/VISUAL-BLINK-HANDOFF.md",
+      "bytes": 8214,
+      "sha256": "47510116daba99e1eeaa72d463f84020fc039c74a1791a79072a23df6c3fa6dc"
     },
     {
       "path": "driver/artifact-download.js",
@@ -523,8 +578,8 @@
     },
     {
       "path": "head_workflow/stages/fit_lids_and_blink.py",
-      "bytes": 4906,
-      "sha256": "3c035fae6e74c24a58f2a2cb33fe613033e51fbd8308aff769e248d8ab7fd042"
+      "bytes": 5015,
+      "sha256": "fd7d13219a73ae7f6c98452b30fd195102a81613502a178f158f8f630a978239"
     },
     {
       "path": "head_workflow/stages/head_helpers.py",
@@ -547,9 +602,134 @@
       "sha256": "1eb212f8548cf05eef60d0a170c75980601b91606ad2cd86cb51befe63b672c3"
     },
     {
+      "path": "lab_recipes/anchored_lash.py",
+      "bytes": 6699,
+      "sha256": "eb29eeb0e6a4be0e47363e94e6cd5c9a21b976625b044e280597c24aefdbbae5"
+    },
+    {
+      "path": "lab_recipes/aperture_contract.py",
+      "bytes": 8571,
+      "sha256": "648d2eb2ff96e9b85a5dbf4aeaeecec92bf41a0828f27bf92fce55993f4413b4"
+    },
+    {
+      "path": "lab_recipes/blink_handoff.py",
+      "bytes": 12329,
+      "sha256": "85d3facc83a8509fb828317beb526c79bd2b77f200f0261665d325b3130bbf3c"
+    },
+    {
+      "path": "lab_recipes/construction_diagnostics.py",
+      "bytes": 1616,
+      "sha256": "085000decc22e9740e50a9ba2e870af01f61422d7213e8d080860d9c1b15036b"
+    },
+    {
+      "path": "lab_recipes/exterior_skin_boundary.py",
+      "bytes": 8101,
+      "sha256": "6e8940c3f9bf91be4105e524f747488e78bfad1e3c1f81d1d7d33b1bb4236095"
+    },
+    {
+      "path": "lab_recipes/eye_clearance.py",
+      "bytes": 4372,
+      "sha256": "f487fbc20061beeb084eac6a91e0cac8887da1dbb21077509d7aeb4811aeb1c5"
+    },
+    {
+      "path": "lab_recipes/fair_disk_patch.py",
+      "bytes": 2586,
+      "sha256": "a607e4280170a7a3d1ad814b3f1c7cb2d2b91df6fae7523f24d50493a3272c87"
+    },
+    {
+      "path": "lab_recipes/fixed_strip_contact.py",
+      "bytes": 5737,
+      "sha256": "6ded5814f91be66c92bd724b9ca32542db0f8b9f3d782bfb2cbf0e2bee9003a5"
+    },
+    {
+      "path": "lab_recipes/frontmost_skin.py",
+      "bytes": 8392,
+      "sha256": "54badbcbf679b2854057f052971e93b72588fbf4ba2789838248ef60a831baf9"
+    },
+    {
+      "path": "lab_recipes/lash_contacts.py",
+      "bytes": 6987,
+      "sha256": "66b1e2416b6582a6de70bff58b230bf7c7afda141e317b4ad9bf996d9f5fe2f8"
+    },
+    {
+      "path": "lab_recipes/lash_transfer.py",
+      "bytes": 8360,
+      "sha256": "55b2166ea2a450cb931c484d3c40ffe65bb07ddec5636a45c5ca8dfdf800ae93"
+    },
+    {
+      "path": "lab_recipes/lid_normals.py",
+      "bytes": 10271,
+      "sha256": "2d13ca0475ea9e2975bda10504e9cc02209df43af635ac076ac763f467c17a51"
+    },
+    {
       "path": "lab_recipes/lid_surface.py",
-      "bytes": 3618,
-      "sha256": "5d35a00731109d2735e68b3f5cda949d5fd919b92ab8a1d4b5e3f6e18449dce1"
+      "bytes": 6266,
+      "sha256": "d2989d23ef9f6ddf31d7028e7393e10d37eb5e8050f7c8687b75684f5cf57eec"
+    },
+    {
+      "path": "lab_recipes/neutral_band_rail.py",
+      "bytes": 5206,
+      "sha256": "d8ef561d60bb65e40fd84ca697afebd530d9314c601117b8ff51c2b34958f39d"
+    },
+    {
+      "path": "lab_recipes/original_lash_motion.py",
+      "bytes": 8200,
+      "sha256": "4571eebdb93e7407529160b6c61591706e3b2903f23044b9cfdbb1fbf39dcf3a"
+    },
+    {
+      "path": "lab_recipes/skin_appearance.py",
+      "bytes": 16932,
+      "sha256": "bf734280f38e5201f96a1e1c70b1ed53f4183fa9ea4002a8421a993accddfd5a"
+    },
+    {
+      "path": "lab_recipes/skin_attachment.py",
+      "bytes": 8622,
+      "sha256": "d7f242851744deadbbf577bba65adbd82b5167912d09679f3d749c2791455b7e"
+    },
+    {
+      "path": "lab_recipes/skin_route_preflight.py",
+      "bytes": 4437,
+      "sha256": "b55b1b276a264244e3692de0f639da5f4ab1d18bce6eb7403706b606437002d3"
+    },
+    {
+      "path": "lab_recipes/skin_transition_visible.py",
+      "bytes": 7452,
+      "sha256": "3e8933ee70c7d01ed7c6e6b7945aa43cd4a007da118307613d5f549fd07ef7ee"
+    },
+    {
+      "path": "lab_recipes/skin_transition.py",
+      "bytes": 7197,
+      "sha256": "87d07bd723616bb7886636bb042cba4957d672b335242e7e0fee4092f6730b37"
+    },
+    {
+      "path": "lab_recipes/source_band_margin.py",
+      "bytes": 2777,
+      "sha256": "95e65d9882479ca13d460ef5cbc21b1c55630f4a1d96078697adb5faf4a96cff"
+    },
+    {
+      "path": "lab_recipes/source_paths.py",
+      "bytes": 2111,
+      "sha256": "521fd39d7f294ade4d0dde50366bd29e20f8432f1c35f333fd2a7f93efa13026"
+    },
+    {
+      "path": "lab_recipes/source_pigment_cover.py",
+      "bytes": 5267,
+      "sha256": "e8db17c16512f8039e13777b2656c7c81e8ab136864ecab424e3f2da2589e8f8"
+    },
+    {
+      "path": "lab_recipes/surface_routes.py",
+      "bytes": 3188,
+      "sha256": "9720360c99305c58bfc06482b951b5819a9128e0012ac274c87f662b447c7da0"
+    },
+    {
+      "path": "lab_recipes/triangle_depth_bound.py",
+      "bytes": 1753,
+      "sha256": "897509e050cce7690492da81d2c827567bf04fa75883a20a47901739fd46299d"
+    },
+    {
+      "path": "lab_recipes/visual_front_surface.py",
+      "bytes": 12469,
+      "sha256": "b3c4f333cb76d05f522c12696251049c4e4e2506641616cac85b613278b00a14"
     },
     {
       "path": "LICENSE",
@@ -568,8 +748,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7437,
-      "sha256": "ba9e87c2adfd35d530dfc4067df6203a2f2967e3f9e4cdbb7ed4f6258509d910"
+      "bytes": 9872,
+      "sha256": "2dd864e076f10288d61f4843099abcb536e86ef674b002a1346fd7a4c0a71451"
     },
     {
       "path": "repair.py",
@@ -737,9 +917,164 @@
       "sha256": "170284d62b17d81ef41e146faaccc74fe26847ac1585395ae8a619c3a8f5e34d"
     },
     {
+      "path": "tests/test_anchored_lash.py",
+      "bytes": 3000,
+      "sha256": "906fce61f65efbd6421ce156719aa15230e04c1f0b60e8abe6518b0ca7bc3afa"
+    },
+    {
+      "path": "tests/test_appearance_contract_guards.py",
+      "bytes": 6094,
+      "sha256": "2ed96b1e17998566c82e409885c9e31458b41af25fbb159db957bd5c66bd3e63"
+    },
+    {
+      "path": "tests/test_blender_runtime_compat.py",
+      "bytes": 1365,
+      "sha256": "eed74bd5e8339c38febb5fe7a144e39ddcce5b0c32097bc4579e1d47da4fef76"
+    },
+    {
+      "path": "tests/test_blink_handoff.py",
+      "bytes": 9330,
+      "sha256": "db0f1fe8f03fa5b1f8054db46b0a3d9587d8b908c6ebda7a6d3b756bd664e0c1"
+    },
+    {
       "path": "tests/test_config.py",
       "bytes": 1968,
       "sha256": "efdb7087c5295a5298ebf26fb6d06c6e47de3bdd947994026f740e7179ac6985"
+    },
+    {
+      "path": "tests/test_construction_diagnostics.py",
+      "bytes": 1585,
+      "sha256": "66a530f48837f7fe55a1678da9c22f3609eedd0ca642d1ef5dc14123f4f2bede"
+    },
+    {
+      "path": "tests/test_exterior_boundary.py",
+      "bytes": 2658,
+      "sha256": "3931eb0af9273def958a67e38bbf002f2ee78c74a14a9adbf3eff603003b3948"
+    },
+    {
+      "path": "tests/test_fixed_strip_contact.py",
+      "bytes": 2249,
+      "sha256": "a87ba594a4947549970e97871c86b09bd012a700b3d101f273e44833ad4bca98"
+    },
+    {
+      "path": "tests/test_frontmost_skin.py",
+      "bytes": 2481,
+      "sha256": "c589a893771ae67548818b56e13fc075bdb10e7dd77bcdaa7a2e765160b523a5"
+    },
+    {
+      "path": "tests/test_full_look_arrays.py",
+      "bytes": 2074,
+      "sha256": "f19c45d9f3868d06b2b785630f1ab73b86233b40b78b2432f13443baf98ec13e"
+    },
+    {
+      "path": "tests/test_full_look_rest_normals.py",
+      "bytes": 1389,
+      "sha256": "421290f2f080fff606ad012ab16abeb639af6fe15515eae2802c8a406329997c"
+    },
+    {
+      "path": "tests/test_lash_contacts.py",
+      "bytes": 2849,
+      "sha256": "382c1539c9ef56e7427ac677c7bec535f8028f49300d00eef2f2aeb70d549d74"
+    },
+    {
+      "path": "tests/test_lash_support_diagnostics.py",
+      "bytes": 2077,
+      "sha256": "c91293f6ee81ae4ba59027a34dad0f00e4841deae965eb3217f4f4c44a249950"
+    },
+    {
+      "path": "tests/test_lash_transfer.py",
+      "bytes": 4249,
+      "sha256": "54acc390be0e671f27b422aa5eefd414a0d0bd8bd633c2f70625ace724328e43"
+    },
+    {
+      "path": "tests/test_lid_normals.py",
+      "bytes": 3542,
+      "sha256": "e6a0baed32bfb92f808fb7ef681d8c0980a27c437f30215782bba1cd4d08c364"
+    },
+    {
+      "path": "tests/test_lid_recipe_contract.py",
+      "bytes": 8133,
+      "sha256": "7c165e548a80984a3096cbac4b90ee89594509b10190f3fa4ec77c25d8ad796a"
+    },
+    {
+      "path": "tests/test_lid_surface_obstacle.py",
+      "bytes": 5452,
+      "sha256": "99405dad2425dae02852936ce63e3aed4006d24dcfa70c1cd8b86f266e35539b"
+    },
+    {
+      "path": "tests/test_low_frequency_skin.py",
+      "bytes": 2447,
+      "sha256": "b4d5540d38371dbd22d0e432be81946c5cf081242b0758be1ff51c6c206813ba"
+    },
+    {
+      "path": "tests/test_native_cycle_sampling.py",
+      "bytes": 2977,
+      "sha256": "6681a5dce702760eb81961495312c3c4ccaeee4017bfffe69ed593823f9ae342"
+    },
+    {
+      "path": "tests/test_native_export_compatibility.py",
+      "bytes": 3074,
+      "sha256": "be074517d60199e2478758b74cba0a7833f65af233e69417fbee3832601c812f"
+    },
+    {
+      "path": "tests/test_native_glb_clips.py",
+      "bytes": 5089,
+      "sha256": "33056afeed706271277958b728f5d2c278a33d15fc0661b6acc537811e246750"
+    },
+    {
+      "path": "tests/test_native_head_assembly.py",
+      "bytes": 2464,
+      "sha256": "e361b3b535e07700e4ef7857171b59fed8f7402edf55b142f0c36ad88890d224"
+    },
+    {
+      "path": "tests/test_native_render_controls.py",
+      "bytes": 7398,
+      "sha256": "53229914ee0fabfd41f72b3be35e757dc2ec89ee706e418acdcb9b9633a46bb4"
+    },
+    {
+      "path": "tests/test_neutral_band_rail.py",
+      "bytes": 2384,
+      "sha256": "70cdc060a176449bb8a4e49c9b6d6c8d90708195f9afa363af6aba2c70e27386"
+    },
+    {
+      "path": "tests/test_skin_appearance.py",
+      "bytes": 6008,
+      "sha256": "2c0684fe74e9ea96e2811605ffdbb03f44a2f905164857c6e497503843eb7fbf"
+    },
+    {
+      "path": "tests/test_skin_attachment.py",
+      "bytes": 3500,
+      "sha256": "fc9cb32202a7f5045657c1175a752b26bb562726f189d4c4e51dd6314fa79a2b"
+    },
+    {
+      "path": "tests/test_skin_route_preflight.py",
+      "bytes": 2278,
+      "sha256": "1df2c101c1a0c91d1ba68bee242e26307c920e0ee61974a4850bed8313f1cfca"
+    },
+    {
+      "path": "tests/test_skin_transition.py",
+      "bytes": 2100,
+      "sha256": "1c6eb0a8a4728649a9527436529d47f3600b769c62b3af1d083d280331f71d36"
+    },
+    {
+      "path": "tests/test_source_pigment_cover.py",
+      "bytes": 1920,
+      "sha256": "7a84dba22eee916c770be6bad80ce4983ee5e4436ac13f20a9aa45af0296c91b"
+    },
+    {
+      "path": "tests/test_surface_clearance.py",
+      "bytes": 2205,
+      "sha256": "9efa28dd7d098717c985cd91fdff0aceab83a5fe99112d51723703acb4d82856"
+    },
+    {
+      "path": "tests/test_triangle_depth_bound.py",
+      "bytes": 1187,
+      "sha256": "7b9f46eeda5658509a1b15404a28339f2ce61fe1a90236e012fb79cb758abd04"
+    },
+    {
+      "path": "tests/test_visual_front_surface.py",
+      "bytes": 2839,
+      "sha256": "a8754b502ebf8f3aa20333c5c4abcb4db2e20b08993d4c6725338a0968c13dfc"
     },
     {
       "path": "tests/verify-glb.test.cjs",
@@ -752,14 +1087,69 @@
       "sha256": "f4b10d0802e40878003932535807484fbe2f35a4408ded64395a733b7e033521"
     },
     {
+      "path": "tools/blender_runtime_compat.py",
+      "bytes": 1003,
+      "sha256": "20162f1d2358f2a8845487bc432d70786929db70ad3faab6f0b230f260f162bc"
+    },
+    {
+      "path": "tools/build_exterior_lid_boundaries.py",
+      "bytes": 6539,
+      "sha256": "58a150aa50e6a4e6287081880796ed705cb41b275b742b4a1206a60141f485ec"
+    },
+    {
+      "path": "tools/build_original_lash_blink.py",
+      "bytes": 2587,
+      "sha256": "7cda355e0db2265987a12ab49ddef7f974aa444a6bad994c2bf241bee2a3f9cc"
+    },
+    {
+      "path": "tools/build_visual_blink.py",
+      "bytes": 4076,
+      "sha256": "783d1874bb07556530024dac41b85c8d945c89106afd89260673dc8c491a30a7"
+    },
+    {
+      "path": "tools/full_look_ablation.py",
+      "bytes": 7508,
+      "sha256": "e7a9feb7b6a99f58bd4959376c76f5022165763a94e6ff286da6d5dd9032b353"
+    },
+    {
+      "path": "tools/full_look_arrays.py",
+      "bytes": 13985,
+      "sha256": "3cd3fe0cf98f56acdc16a9bf049c3502031651edebbad7d8a01113d570792881"
+    },
+    {
+      "path": "tools/full_look_review.py",
+      "bytes": 19505,
+      "sha256": "8940c56d22b557c0ff691f5847bbcd813fea9447f811bd8ee2239a92d48ba631"
+    },
+    {
       "path": "tools/matched-viewer-baseline.js",
       "bytes": 9884,
       "sha256": "2cf831caed3013b849e91263da5e6b7fb8a6813cf829de1453463c6972accdb7"
     },
     {
+      "path": "tools/native_cycle_verification.py",
+      "bytes": 12910,
+      "sha256": "d6e1c6a5cde856a314058f72158f031f9164af08e681db6253e0119ddd957f72"
+    },
+    {
+      "path": "tools/native_glb_clips.py",
+      "bytes": 11593,
+      "sha256": "427f0f4833e06815715ad491d0bba08c0ec1f462c4e2454210dcf832950fce8f"
+    },
+    {
+      "path": "tools/native_render_verification.py",
+      "bytes": 11754,
+      "sha256": "aec0808deaf1b220121aba2e8d95d15669d15f987aee6f37ce54a6c4a7f2e82d"
+    },
+    {
+      "path": "tools/native_stage_export.py",
+      "bytes": 14754,
+      "sha256": "d6f2f6670520a13b01ae17f69b2dc58a717fa7472780e17c587a8f9c6e4164d1"
+    },
+    {
       "path": "tools/package-manifest.cjs",
-      "bytes": 2999,
-      "sha256": "7122261720c8f188ed6a391488f76000477cc1ef3d9c5fe3b9e124b54b48ae03"
+      "bytes": 3055,
+      "sha256": "52f6d4fd8e9cf91a56f2501707bb0f1bb4216275bb8ed01337881734ddde01f2"
     },
     {
       "path": "tools/review-server.cjs",

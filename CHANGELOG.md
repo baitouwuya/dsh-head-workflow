@@ -1,6 +1,35 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <!-- SPDX-FileCopyrightText: 2026 Head Workflow contributors -->
 
+## Unreleased: stationary-blink diagnosis and construction correction
+
+- Reproduce hidden-layer skin binding in host Blender; add required exterior
+  boundary fitting, complete visibility checks and fixed core-strip contact
+  certificates. Keep the original route caps and source geometry unchanged.
+- Provide a runtime-argument boundary entry point so native Labs execute the
+  tested four-lid path, with new output directories and input-hash preservation.
+- Reproduce native lid striping, detached fixed anchors and excessive lash
+  stretch; add complete source-boundary certificates, measured skin colors,
+  outward generated-core winding, normal targets and constrained lash contacts.
+- Add matched native-only Blender verification; numerical corrections remain
+  distinct from the still-pending visual handoff. Preserve the failed evidence.
+- Reproduce the rejected input's closure failure outside the Lab and distinguish
+  the unweighted depth clamp, split lash masks and between-keyframe collapse.
+- Correct the semantic diagnosis: predecessor eye labels selected dark lash
+  bands and lash labels selected pale collars. Qualify the historical mixed
+  probe set and require fresh texture/geometry semantic checks in the guidance.
+- Validate simple ordered aperture contours; explicitly construct conservative
+  envelopes from measured samples without relabeling them anatomical rims.
+- Add static, local swept-triangle bounds from actual stationary eye geometry;
+  preserve fixed anchors and avoid point-depth interpolation underestimation.
+- Add original-lash component/seam, neutral/near-neutral and continuous LINEAR
+  morph checks, with explicit runtime thresholds and no empty-data passes.
+- Make the legacy clearance projection weight-dependent; this change alone is
+  not a complete closure repair.
+- Add a generic head-only Lab prompt and document numerical proof separately
+  from native appearance, attachment and export acceptance. Existing tags and
+  historical failed evidence remain unchanged.
+
 ## v0.1.4
 
 Canvas driver published, and the eyes-and-gaze limit documented from a measured run.

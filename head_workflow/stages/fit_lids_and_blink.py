@@ -4,6 +4,7 @@
 
 def run(h):
     import bpy,math,json,collections,numpy as np
+    from lab_recipes.aperture_contract import weighted_clearance_projection
     
     def edge_distance(y,z,poly):
         pt=np.array([y,z]);best=1e9
@@ -41,7 +42,7 @@ def run(h):
             znew=p[2]+(close-bound+(-.00030 if upper else .00030))*w*weight
             go=h.globe_x(e,p[1],p[2]);gn=h.globe_x(e,p[1],znew)
             out[i,2]=znew;out[i,0]=p[0]+(gn-go)*w*weight
-            if dist<.00015:out[i,0]=max(out[i,0],gn+.00045)
+            if dist<.00015:out[i,0]=weighted_clearance_projection(out[i,0],gn+.00045,weight)
             moved+=1
         return out,moved
     h.blink_coords=blink_coords
