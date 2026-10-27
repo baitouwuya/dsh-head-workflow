@@ -14,7 +14,8 @@ Three independent investigations decoded the original exported positions,
 indices, morph deltas and source correspondence outside the cloud Lab. NumPy
 ray intersections against the frozen source-visible aperture reproduced the
 rejected full-blink result exactly: **302 / 2648 right-eye** probes and
-**217 / 2654 left-eye** probes still hit eye surfaces. The neutral source exposes
+**217 / 2654 left-eye** probes still hit historically eye-labelled surfaces
+(semantic qualification below). The neutral source exposes
 every one of those probes, corroborating their frame and aperture binding.
 All 50,453 original source triangles were retained in the corrected failed
 candidate. Retaining topology did not establish usable deformation.
@@ -42,9 +43,42 @@ attachment. The freshly inspected blue eye on one side also has 48 inherited
 position-welded boundary edges; stationary behavior is not proof of closed
 anatomy.
 
-The fresh native pass independently detected this semantic error and derives a
-new input-bound classification. Its actual exported result still needs its own
-handoff. Local diagnostic proof must not be promoted into native acceptance.
+The fresh native pass independently detected this semantic error and derived a
+new input-bound classification. Local diagnostic proof must not be promoted
+into native acceptance.
+
+## Fresh native retry: numerical improvement, failed handoff
+
+The single native retry cloned the construction commit, ran 56 Python and four
+Node tests, and used a freshly inspected semantic map. Export/reimport retained
+all 50,453 original triangles and original image bytes. The new frozen sets each
+contain 6,337 rays, including a conservative surrounding-skin superset. Full
+blink has zero eye hits and empty rays; recasting without lashes confirms real
+lid coverage on every ray. No new sampled degenerates or continuous LINEAR
+interval collapses were found. These references differ from the historical
+mixed set and must not be compared as if their counts were interchangeable.
+
+The visual/anatomical handoff nevertheless **failed**, and no primary GLB was
+published. The exact adapter and matched views explain why:
+
+- Each generated vertex independently receives the UV of a nearest source-skin
+  vertex. Adjacent vertices can select unrelated atlas regions; interpolation
+  across those UVs produces severe dark/skin striping. Preserving the original
+  JPEG bytes does not establish correct appearance transfer.
+- Recipe outer-row vertices are called anchors but are never bound, projected
+  or stitched to source skin. All 388 remain fixed, yet none lies within the
+  declared position tolerance of skin; maximum nearest-surface distance is
+  0.06412694 source units. Fixed motion is not anatomical attachment.
+- Whole lash components receive a lateral interpolated displacement field
+  without a surface attachment frame or strain constraint. This removes hard
+  mask cuts but still stretches source edges up to 3.4469 times.
+
+The remaining appearance, attachment and deformation-transfer work is not
+implemented by the conservative depth-bound helper. A further attempt needs
+a verified coherent UV chart or bake, an actual skin attachment map, and
+shape-preserving lash transfer with strain/visual checks outside the Lab first.
+The failed editable scene, exact candidate, matched renders and all 252 archive
+file hashes were preserved and verified. No later stage or repair loop ran.
 
 ## Geometric and measurement defects
 

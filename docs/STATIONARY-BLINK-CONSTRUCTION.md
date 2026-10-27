@@ -89,6 +89,10 @@ and zero continuous-interval collapses. All first hits were generated lid
 surfaces; rejected added globes were excluded and original source correspondence
 was checked exactly. This is not proof of a complete anatomical aperture or
 correct semantic eye/lash partition. These are numerical construction results
-only. The fresh
-native Lab must still verify appearance, source-skin attachment, original lash
-binding, stationary-eye topology, and its own exported/reimported artifact.
+only. The fresh native retry passed closure and collapse checks but failed
+appearance, source-skin attachment and lash deformation. Its per-vertex nearest
+UV transfer crossed unrelated atlas regions, fixed recipe rows were not bound
+to skin, and whole-component displacement still stretched lashes excessively.
+See the diagnosis for measured results. Before another native construction,
+validate coherent texture transfer, actual skin binding and shape-preserving
+lash attachment outside the Lab. The bound helper does not implement those.

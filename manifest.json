@@ -4,7 +4,7 @@
   "name": "head-workflow",
   "version": "0.1.5-dev",
   "license": "GPL-3.0-or-later",
-  "status": "Stationary-blink failure reproduced; measured constructor and continuous morph checks verified numerically; native appearance, lash/skin attachment and export acceptance pending; earlier verification retained in VERIFICATION.md",
+  "status": "Stationary-blink numerical construction/export checks passed; fresh native handoff failed appearance, skin attachment and lash transfer; no primary model approved; earlier verification retained in VERIFICATION.md",
   "files": [
     {
       "path": ".gitattributes",
@@ -58,8 +58,8 @@
     },
     {
       "path": "canvas-chain/head-eyes-blink.prompt.md",
-      "bytes": 5567,
-      "sha256": "90dfab88730b2f4b75823534ba31a497728df451b10f1b6b8525a77fa6b9b763"
+      "bytes": 6263,
+      "sha256": "5c23a148e61bccc9ef46073425789e7a31c146051281c8eebd12ad952d54c6dd"
     },
     {
       "path": "canvas-chain/head-fit.prompt.md",
@@ -138,13 +138,13 @@
     },
     {
       "path": "docs/STATIONARY-BLINK-CONSTRUCTION.md",
-      "bytes": 5492,
-      "sha256": "2c32b83024200bc1c1b5e373803603f19fd4387431a6cb8d6612d6af2d346c7b"
+      "bytes": 5861,
+      "sha256": "4999c9db9010a6ad97e1508ef489352c985905e7e0573521d7e4e9f6fade95db"
     },
     {
       "path": "docs/STATIONARY-BLINK-DIAGNOSIS.md",
-      "bytes": 7792,
-      "sha256": "fc1283aa1f976536c08ecb3bd5b556bbd62863d30222b3c41bde5f41efe5fc50"
+      "bytes": 9887,
+      "sha256": "bd0b046c50635456702a32fc651e182554b08acaaa4de6dc88c7211a002c0b41"
     },
     {
       "path": "docs/TRIPO-LAB.md",
@@ -808,8 +808,8 @@
     },
     {
       "path": "tools/package-manifest.cjs",
-      "bytes": 3065,
-      "sha256": "040c53a4bb1af687d2d14e560f295d5831f975cacf94f6d9aa2ad54178bc9051"
+      "bytes": 3050,
+      "sha256": "e83d1ce4ff6b4b230a71a2531310e1de8721df90c419b8ed0ef1f248343a2567"
     },
     {
       "path": "tools/review-server.cjs",
