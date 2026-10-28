@@ -1,0 +1,20 @@
+{
+  "base_commit": "352590cb12178ff2ef91fb76e51b6067fa89e0cb",
+  "python_unittest": {"passed": 35, "failed": 0, "new_reference_tests": 29, "native_vrm_tests": 11},
+  "node_verify_glb": {"passed": 4, "failed": 0},
+  "broader_node_baseline": {"passed": 48, "failed": 6},
+  "broader_node_after": {"passed": 48, "failed": 6},
+  "broader_node_last_run_scope": "Initial PD reference delivery; native VRM addition changes no driver code",
+  "unchanged_failing_driver_test_files": [
+    "destination-append.test.cjs",
+    "driver-runtime.test.cjs",
+    "driver.test.cjs",
+    "observer.test.cjs",
+    "representative-recovery.test.cjs",
+    "ui.test.cjs"
+  ],
+  "private_assets_in_changes": false,
+  "host_evidence": "host-verification.json",
+  "native_vrm_host_evidence": "base-vrm-verification.json",
+  "scope": "Normalized reference and independent fitters; no canvas deployment or all-angle collision certification"
+}

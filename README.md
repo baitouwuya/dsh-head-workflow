@@ -75,10 +75,19 @@ See [WORKFLOW.md](WORKFLOW.md) for stage dependencies and [docs/TRIPO-LAB.md](do
 
 ## Tests
 
+Independent normalized F00/M00 eyelid and lash reference fitting is documented
+in [PD reference fitting](docs/PD-REFERENCE-FITTING.md). It includes private-pack
+extraction through the host bridge, reusable numeric profiles, bounded fitters,
+and an opt-in adapter for the rounded-lid recipe; it does not run the canvas.
+The [operator VRM experiment](docs/BASE-VRM-FINDINGS.md) adds a preferred native
+blink target and verifies that PD does not directly shape the imported VRM.
+The [VRM-to-PD converter and schema analysis](docs/VRM-TO-PD-PACK.md) now make a
+private pack from that VRM and drive its native blink through PD. This supplies
+an import adapter, not a VRM exporter: PD's own export stage remains a stub.
+
 ```sh
 python -m unittest discover -s tests -v
 node --test tests/verify-glb.test.cjs
 ```
 
 These tests catch configuration and file-format errors; they do not replace the Blender build, anatomy checks, actual browser deformation test or visual review.
-

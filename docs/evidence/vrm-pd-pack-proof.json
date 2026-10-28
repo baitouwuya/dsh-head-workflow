@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "blender_version": "5.2.0 LTS",
+  "conversion": {
+    "source_sha256": "4066c6b4ea59e92dbbde43dabbe4223ba513e5461a1db4216c1d9d7bba9c1946",
+    "descriptors": 9,
+    "skeleton_nodes": 63,
+    "raw_morph_controls": 57,
+    "expression_controls": 14,
+    "humanoid_roles": 54,
+    "limitations": [
+      "animations, spring bones, constraints, look-at and first-person behavior not executed",
+      "materials/textures/images omitted",
+      "no VRM exporter generated",
+      "no source-authoring identity sliders or correctives can be recovered",
+      "normal/tangent streams recomputed by Blender"
+    ]
+  },
+  "implementation_sha256": {
+    "runtime": "826705e3f5db5929f2f0f0964a53ab9ff12cdcc5c1c724951cd1415c01e91fa3",
+    "convert": "8daad416ff927973b7ff2a4cc19865ab39ae6f1bdafdb3f94af3452d9a0cf4fa",
+    "driver": "8fb1bd4d5bdbdaed18b21b9c99ea6476dbeee4bff210baa93c05975e17c13a01",
+    "gltf": "e85a3a58236611f0f3c2deb568441de5cbf1449df9eb4424215e0ce752d00922"
+  },
+  "real_validate_pack_issues": [],
+  "real_driver_class": "VRMAdapter",
+  "numeric_blink_samples": [
+    {
+      "weight": 0.0,
+      "max_error_over_height": 1.7747833287005706E-07,
+      "rms_error_over_height": 6.183492025458181E-08,
+      "max_motion_over_height": 0.0,
+      "moved_vertices": 0
+    },
+    {
+      "weight": 0.25,
+      "max_error_over_height": 1.7747833287005706E-07,
+      "rms_error_over_height": 6.28608072323329E-08,
+      "max_motion_over_height": 0.0037174054887145758,
+      "moved_vertices": 997
+    },
+    {
+      "weight": 0.5,
+      "max_error_over_height": 1.7747833287005706E-07,
+      "rms_error_over_height": 6.372130636328567E-08,
+      "max_motion_over_height": 0.00743473693728447,
+      "moved_vertices": 997
+    },
+    {
+      "weight": 0.75,
+      "max_error_over_height": 1.7747833287005706E-07,
+      "rms_error_over_height": 6.300221952282284E-08,
+      "max_motion_over_height": 0.011152143590152264,
+      "moved_vertices": 997
+    },
+    {
+      "weight": 1.0,
+      "max_error_over_height": 1.7747833287005706E-07,
+      "rms_error_over_height": 6.171792787310607E-08,
+      "max_motion_over_height": 0.014869548380374908,
+      "moved_vertices": 997
+    }
+  ],
+  "real_pd_operator_samples": [
+    {
+      "weight": 0.0,
+      "max_viewport_write_error_over_height": 0.0
+    },
+    {
+      "weight": 0.25,
+      "max_viewport_write_error_over_height": 0.0
+    },
+    {
+      "weight": 0.5,
+      "max_viewport_write_error_over_height": 0.0
+    },
+    {
+      "weight": 0.75,
+      "max_viewport_write_error_over_height": 0.0
+    },
+    {
+      "weight": 1.0,
+      "max_viewport_write_error_over_height": 0.0
+    }
+  ],
+  "scene_datablocks_restored": true,
+  "export_module_executable_statements": 0,
+  "pd_can_emit_vrm": false,
+  "private_pack_published": false,
+  "audited_addon_sha256": {
+    "core/config.py": "58bb57d31ec968ac4ccd36dca59843468a11bafd3c7937f15097d75df7452eb5",
+    "core/interfaces.py": "e92ce472bfaef78151bc11ebf66037b4c5b88caa87636a9e77827fe393a58114",
+    "core/generic.py": "84fd6ec428b7ab0436c932c2774426df860a0d87afa28e8f74c765b51e89b6df",
+    "core/pipeline.py": "9c179d9a6b62011722341fa8b55551863a0b985bb274f00823f5320e582cbb10",
+    "tools/__init__.py": "4176c3a88bd8d04f47cfd947f06e3bf07f9d3cf6b165915a4dfa8f26437f7f83",
+    "ui/panels.py": "32565c42b1bcd244845fa2d46bebc4a25b1dfbeba5b94dfdd3bc9be0f72319f9",
+    "export/__init__.py": "75cc7c274055ead602dce646f290d78e6892e233d8d8f386de0e6b89302ba534"
+  }
+}

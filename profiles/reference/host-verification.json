@@ -1,0 +1,46 @@
+{
+  "blender_version": "5.2.0 LTS",
+  "scene_state_unchanged": true,
+  "pd_parameter_recovery": {
+    "F00": {
+      "parameters": {
+        "Eye Size Y": 0.25000414085424416,
+        "Outer Eye Slant (Y)": -0.19998044809438686
+      },
+      "status": "residual_tolerance",
+      "rms": 7.453599190965456e-07,
+      "max_abs": 3.660675835612248e-06,
+      "accepted": true,
+      "history": [0.008948816747300858, 0.003520996529112397, 4.958532909434464e-05, 7.453599190965456e-07],
+      "evaluations": 16,
+      "jacobian_rank": 2,
+      "at_bound": [],
+      "expected_parameters": {
+        "Eye Size Y": 0.25,
+        "Outer Eye Slant (Y)": -0.2
+      },
+      "parameter_max_error": 1.955190561314657e-05,
+      "passed": true
+    },
+    "M00": {
+      "parameters": {
+        "Eye Size Y": 0.250004103081894,
+        "Outer Eye Slant (Y)": -0.19998359152465028
+      },
+      "status": "residual_tolerance",
+      "rms": 9.445852427369768e-07,
+      "max_abs": 4.699999999968618e-06,
+      "accepted": true,
+      "history": [0.009453801767055289, 0.003884853303537157, 5.417997151710338e-05, 9.445852427369768e-07],
+      "evaluations": 16,
+      "jacobian_rank": 2,
+      "at_bound": [],
+      "expected_parameters": {
+        "Eye Size Y": 0.25,
+        "Outer Eye Slant (Y)": -0.2
+      },
+      "parameter_max_error": 1.6408475349727336e-05,
+      "passed": true
+    }
+  }
+}

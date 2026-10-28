@@ -18,3 +18,5 @@ node_modules/
 
 # local test output
 test-results*/
+.reference-work/
+private-packs/

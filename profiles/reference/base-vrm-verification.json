@@ -1,0 +1,312 @@
+{
+  "blender_version": "5.2.0 LTS",
+  "private_input_sha256": "4066c6b4ea59e92dbbde43dabbe4223ba513e5461a1db4216c1d9d7bba9c1946",
+  "installed_pd_code_sha256": "d81483bbbd6dc5e638b785350ad7efdb4afa3cabe6f9b488c194af7122a5438b",
+  "native_blink": {
+    "units": "neutral canthus distance = 1",
+    "measurement": "source polyline before coefficient reduction",
+    "eyes": {
+      "positive_x": [
+        {
+          "weight": 0.0,
+          "max_positive_gap": 0.6373742447999999,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.5174620942432463,
+          "max_absolute_depth_difference": 0.062204746299999995,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.25,
+          "max_positive_gap": 0.47595258669999996,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.3857910295956301,
+          "max_absolute_depth_difference": 0.0539550916,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.5,
+          "max_positive_gap": 0.3145910416,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.2536638646507791,
+          "max_absolute_depth_difference": 0.0460904081,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.75,
+          "max_positive_gap": 0.15333743179999998,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.121121778667477,
+          "max_absolute_depth_difference": 0.0383377375,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 1.0,
+          "max_positive_gap": 0.002202765200000012,
+          "max_overlap": 0.022592604500000002,
+          "rms_height_gap": 0.013330038072083052,
+          "max_absolute_depth_difference": 0.030504385200000005,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        }
+      ],
+      "negative_x": [
+        {
+          "weight": 0.0,
+          "max_positive_gap": 0.6373720718,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.5174628101023643,
+          "max_absolute_depth_difference": 0.0622048337,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.25,
+          "max_positive_gap": 0.47594993799999996,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.38579142922727017,
+          "max_absolute_depth_difference": 0.053955223100000005,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.5,
+          "max_positive_gap": 0.3145879888,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.2536639247874759,
+          "max_absolute_depth_difference": 0.046090473199999996,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.75,
+          "max_positive_gap": 0.1533341731,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.12112147493754907,
+          "max_absolute_depth_difference": 0.0383379216,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 1.0,
+          "max_positive_gap": 0.0022040097999999897,
+          "max_overlap": 0.022592471500000016,
+          "rms_height_gap": 0.013330203465832897,
+          "max_absolute_depth_difference": 0.030504628,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        }
+      ]
+    }
+  },
+  "pd_eye_joy": {
+    "units": "neutral canthus distance = 1",
+    "measurement": "source polyline before coefficient reduction",
+    "eyes": {
+      "positive_x": [
+        {
+          "weight": 0.0,
+          "max_positive_gap": 0.5897997881999999,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.47746178732717265,
+          "max_absolute_depth_difference": 0.0462703188,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.25,
+          "max_positive_gap": 0.4179239797,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.33769550809719134,
+          "max_absolute_depth_difference": 0.0332792348,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.5,
+          "max_positive_gap": 0.24649481950000002,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.19619335661313025,
+          "max_absolute_depth_difference": 0.0211989037,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.75,
+          "max_positive_gap": 0.07500771099999999,
+          "max_overlap": 0.0019697317000000047,
+          "rms_height_gap": 0.053770929509745935,
+          "max_absolute_depth_difference": 0.014895712500000002,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 1.0,
+          "max_positive_gap": 0.0,
+          "max_overlap": 0.10156052870000001,
+          "rms_height_gap": 0.093443388985066,
+          "max_absolute_depth_difference": 0.0344125613,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        }
+      ],
+      "negative_x": [
+        {
+          "weight": 0.0,
+          "max_positive_gap": 0.5898017818000001,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.47746414776617147,
+          "max_absolute_depth_difference": 0.046270438600000005,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.25,
+          "max_positive_gap": 0.4179256319,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.3376972809283789,
+          "max_absolute_depth_difference": 0.0332794142,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.5,
+          "max_positive_gap": 0.2465008695,
+          "max_overlap": 0.0,
+          "rms_height_gap": 0.19619647445279936,
+          "max_absolute_depth_difference": 0.021199067300000003,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 0.75,
+          "max_positive_gap": 0.0750106926,
+          "max_overlap": 0.0019705269999999997,
+          "rms_height_gap": 0.05377276022797992,
+          "max_absolute_depth_difference": 0.014895362600000002,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        },
+        {
+          "weight": 1.0,
+          "max_positive_gap": 0.0,
+          "max_overlap": 0.1015578676,
+          "rms_height_gap": 0.09344148229755546,
+          "max_absolute_depth_difference": 0.034412174000000004,
+          "folded_cross_sections": 0,
+          "section_count": 129,
+          "canthus_trim_eye_widths": 0.02
+        }
+      ]
+    }
+  },
+  "unilateral_max_motion_eye_widths": {
+    "blinkLeft": {
+      "positive_x": 0.5894045208934736,
+      "negative_x": 0.13348083565646918
+    },
+    "blinkRight": {
+      "positive_x": 0.2028070488999974,
+      "negative_x": 0.5894074807744616
+    }
+  },
+  "bilateral_minus_left_plus_right_max_error_eye_widths": 0.1812002987302736,
+  "live_experiment": {
+    "import": {
+      "finished": true,
+      "vertices": 3989,
+      "shape_keys": 58,
+      "blink_present": true
+    },
+    "native_blink_import_parity": {
+      "neutral_max_error_eye_widths": 0.00045809948792697915,
+      "morph_delta_max_error_eye_widths": 9.324978359788773e-08,
+      "coincident_neutral_matches": 513,
+      "preview_weights": [0.0, 0.25, 0.5, 0.75, 1.0],
+      "passed": true
+    },
+    "pd_load_finished": true,
+    "pd_evaluate_finished": true,
+    "pd_shaping_trials": [
+      {
+        "control": "Eye Size Y",
+        "value": 0.5,
+        "finished": true,
+        "template_max_motion_in_reference_eye_widths": 0.12650113252179887,
+        "imported_vrm_max_motion_eye_widths": 0.0,
+        "imported_vrm_evaluated_max_motion_eye_widths": 0.0
+      },
+      {
+        "control": "Outer Eye Slant (Y)",
+        "value": 0.5,
+        "finished": true,
+        "template_max_motion_in_reference_eye_widths": 0.05566827088338754,
+        "imported_vrm_max_motion_eye_widths": 0.0,
+        "imported_vrm_evaluated_max_motion_eye_widths": 0.0
+      },
+      {
+        "control": "Move Upper Eyelid Down",
+        "value": 0.5,
+        "finished": true,
+        "template_max_motion_in_reference_eye_widths": 0.05363038583731477,
+        "imported_vrm_max_motion_eye_widths": 0.0,
+        "imported_vrm_evaluated_max_motion_eye_widths": 0.0
+      }
+    ],
+    "topology": {
+      "imported_face_vertices": 3989,
+      "pd_face_vertices": 4169,
+      "index_transfer_compatible": false
+    },
+    "adjustment_bones": {
+      "driven_by_eye_size_y": 36,
+      "missing_in_exported_skin": 34
+    },
+    "direct_pd_driving_supported": false,
+    "pd_updates_distinct_template_object": true,
+    "test_passed": true,
+    "datablock_sets_restored": {
+      "objects": true,
+      "scenes": true,
+      "collections": true,
+      "meshes": true,
+      "armatures": true,
+      "materials": true,
+      "node_groups": true,
+      "images": true,
+      "actions": true,
+      "textures": true,
+      "worlds": true,
+      "cameras": true,
+      "lights": true,
+      "shape_keys": true,
+      "texts": true
+    },
+    "scene_selection_restored": true,
+    "pd_properties_restored": true
+  },
+  "preferred_lid_reference": "base-vrm.json",
+  "recommendation": "Use the native blink for lid motion; retain geometric eyeline-band and open-sheet limitations. Direct PD identity shaping requires a new transfer or template adapter."
+}
